@@ -8,8 +8,6 @@ Summarized the keywords and solutions have faced in my learning and experience.
 
 - Full Version
 
- `Software_Architecture_Mindmap.pdf`
-
  `Software_Architecture_Mindmap.png`
 
 Three main pillars upon software architecture
