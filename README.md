@@ -20,7 +20,7 @@ Three main pillars upon software architecture
 
 and
 
-Many numbers of technologies and methodologies.
+Numerous technologies and methodologies.
 
 ⓒ 2022. (https://github.com/kimtth) all rights reserved.
 
