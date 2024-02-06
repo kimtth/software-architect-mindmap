@@ -66,6 +66,8 @@ This mindmap created by `https://app.mindmapmaker.org/`
 ---
 
 - [freeCodeCamp](https://www.freecodecamp.org): Learn to code for free. [youtube](https://www.youtube.com/freecodecamp)
+- [Ultimate Collection of 60 YouTube Courses for 21 Programming Languages](https://dev.to/arjuncodess/ultimate-collection-of-60-youtube-courses-for-21-programming-languages-mega-list-47b5)
+- [Computer Science courses with video lectures](https://github.com/Developer-Y/cs-video-courses)
 
 ---
 
@@ -196,4 +198,49 @@ This mindmap created by `https://app.mindmapmaker.org/`
         🔹 𝗦𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗮𝗹: here we have an Adapter, Bridge, and Decorator, ...
         🔹 𝗕𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝗮𝗹: here we have Command, Iterator, State, Strategy, ...
         
+    </details>
+
+- Memory consistency model: [A Primer on Memory Consistency and Cache Coherence](https://link.springer.com/book/10.1007/978-3-031-01764-3)
+
+    <details>
+
+    <summary>SC vs TSO vs Relaxed Memory Consistency</summary>
+
+        𝟭. Sequential Consistency (SC): Operations execute in order as per the program.
+        🔹 SC preserves order for two memory operations from the same thread for all four combinations of loads and stores (Load → Load, Load → Store, Store → Store, and Store → Load). 
+        🔹 MIPS R10000
+
+        𝟮. Total Store Order (TSO): Reads can happen before preceding writes complete. 
+        🔹 TSO preserves the first three orders (Load → Load, Load → Store, Store → Store) but not Store → Load order.
+        🔹 x86 CPU.
+    
+        𝟯. Relaxed Memory Consistency: Allows more reordering of operations for performance. 
+        🔹 ARM and RISC-V
+
+    </details>
+
+- API Gateway vs Load Balancer
+  - **API Gateway**: Manages access to backend services, handles tasks like rate-limiting, authentication, logging, and security policies.
+  - **Load Balancer**: Distributes network traffic across multiple servers for high availability and even load distribution.
+
+- Data engineering Vocab 101 [ref](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20)
+
+  <img src="files/data-engineering-101.jpg" alt="Data engineering 101" width="400"/>
+
+- DevOps, Platform engineering and SRE (site reliability engineering) [ref](https://www.splunk.com/en_us/blog/learn/sre-vs-devops-vs-platform-engineering.html)
+
+    <details>
+
+    <summary>SRE vs. DevOps vs. Platform Engineering</summary>
+
+    🔹DevOps, SRE, and Platform Engineering are practices that streamline software development and maintenance. They all involve automation and collaboration.
+
+    🔹DevOps covers the entire software development process promoting team collaboration.
+
+    🔹SRE focuses on system reliability, including application monitoring and emergency response.
+
+    🔹Platform Engineering manages the infrastructure and tools needed for software development and operations.
+    
+    🔹DevOps is about the whole development process, SRE emphasizes reliability and scalability, and Platform Engineering is about infrastructure and tool management.
+
     </details>
