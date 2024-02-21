@@ -73,9 +73,9 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 - [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista Industry Insight
 
-## Newsletter
+---
 
-- [Substack Leaderboard](https://substack.com/browse/technology)
+- [Substack Leaderboard](https://substack.com/browse/technology): Newsletter
 
 ## Engineering blog
 
@@ -243,4 +243,34 @@ This mindmap created by `https://app.mindmapmaker.org/`
     
     🔹DevOps is about the whole development process, SRE emphasizes reliability and scalability, and Platform Engineering is about infrastructure and tool management.
 
+    </details>
+
+- Web services and APIs (SOAP, RestAPI, GraphQL, gRPC and Kafka) [ref](https://www.redhat.com/architect/apis-soap-rest-graphql-grpc)
+
+    <details>
+
+    <summary>SOAP, RestAPI, GraphQL, gRPC and Kafka</summary>
+
+    🔹SOAP (Simple Object Access Protocol): XML-based protocol for web services, heayweight, favored for security and reliability.
+
+    🔹REST (Representational State Transfer): Uses HTTP methods, simple and easy to use, but can be resource-heavy.
+
+    🔹GraphQL: Allows flexible data queries, reduces data over-fetching.
+
+    🔹gRPC (Google Remote Procedure Call)**: High-performance RPC framework, ideal for connecting microservices. Built on top of HTTP/2 and uses Protocol Buffers for data exchange.
+
+    🔹Kafka: Distributed streaming platform, uses publish-subscribe model for message queueing. real-time consistency. "at-least-once" delivery.
+    </details>
+
+- Real-time communication and messaging (MQTT, AMQP and WebSocket) [ref](https://www.cloudamqp.com/blog/amqp-vs-mqtt.html)
+
+    <details>
+
+    <summary>MQTT vs AMQP vs WebSocket</summary>
+
+    🔹MQTT (Message Queuing Telemetry Transport): Lightweight messaging protocol, uses publish-subscribe model, ideal for IoT and M2M communication. Three levels of Quality of Service (QoS): “At most once” (QoS 0), “At least once” (QoS 1), and “Exactly once” (QoS 2).
+
+    🔹AMQP (Advanced Message Queuing Protocol): Open-standard application layer protocol, robust message delivery, routing, and security features. Two qualities of service: “At most once (delivered once or lost)” and “At least once (delivered one or more times.)”.
+
+    🔹WebSocket: Enables full-duplex communication channels over a single TCP connection
     </details>
