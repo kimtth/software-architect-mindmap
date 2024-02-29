@@ -39,6 +39,8 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Microsoft .NET Application Architecture - Reference Apps](https://github.com/dotnet-architecture/eShopOnWeb)
 - [Software Architecture Books](https://github.com/mhadidg/software-architecture-books)
 - [System Design Fight Club](https://github.com/systemdesignfightclub/SDFC)
+- [System Design - Neo Kim](https://github.com/systemdesign42/system-design)
+- [Awesome System Design Resources](https://github.com/ashishps1/awesome-system-design-resources)
 
 ---
 
@@ -72,6 +74,8 @@ This mindmap created by `https://app.mindmapmaker.org/`
 ---
 
 - [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista Industry Insight
+- [Gartner Top Strategic Technology Trends 2024](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)
+- [MAD (ML/AI/Data) Landscape](https://mad.firstmark.com/)
 
 ---
 
@@ -156,6 +160,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 1. [CS 229 Machine Learning Cheatsheets](https://github.com/afshinea/stanford-cs-229-machine-learning)
 1. [Machine Learning Interview Guide](https://github.com/Sroy20/machine-learning-interview-guide)
 1. [Awesome Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning)
+1. [365 Data Science Flashcards](https://365datascience.com/flashcards/)
 
 ## Terminology
 
@@ -183,9 +188,9 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
         These patterns represent a way to implement an architectural style, so we can do this regularly. Some examples are how to separate the user interface (UI) and data, how internal modules interact, and what layers we will use. Patterns answer these types of questions. They usually impact the code base and how to structure the code inside. Examples of architectural patterns include:
 
-        🔹 Model-View-Presenter (MVP)
-        🔹 Model-View-Controller (MVC)
-        🔹 Model–View–Viewmodel (MVVM)
+        🔹 Model-View-Presenter (MVP): 1:1 Relationship between View and Presenter. e.g., Windows forms
+        🔹 Model-View-Controller (MVC): e.g., Smalltalk, ASP.Net MVC
+        🔹 Model–View–Viewmodel (MVVM): One to Many relationship between View and ViewModel. e.g., Silverlight, WPF, AngularJs: 
         🔹 Domain-Driven Design
 
         𝟯. 𝗗𝗲𝘀𝗶𝗴𝗻 𝗽𝗮𝘁𝘁𝗲𝗿𝗻𝘀
@@ -273,4 +278,23 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹AMQP (Advanced Message Queuing Protocol): Open-standard application layer protocol, robust message delivery, routing, and security features. Two qualities of service: “At most once (delivered once or lost)” and “At least once (delivered one or more times.)”.
 
     🔹WebSocket: Enables full-duplex communication channels over a single TCP connection
+    </details>
+
+- Reactive programming vs event-driven architecture [ref](https://reactiveweb.org/reactive-programming-vs-event-driven-key-differences/)
+  - Event-Driven: Handles user actions or system events. More general and can be used in any context where an event occurs
+  - Reactive: Data-driven approach. managing data streams and propagating changes, like in a spreadsheet model.
+
+- RABC vs ReABC: RBAC (Role-Based Access Control) is an authorization model that assigns permissions based on predefined roles. On the other hand, ReBAC (Relationship-Based Access Control) extends RBAC’s capabilities by considering relationships between entities.
+- Conway's law: Software engineering principle that states that the structure of a system reflects the structure of the organization that designs it.
+- Data Management in Distributed systems (Partitioning, Shuffling and Bucketing)
+
+    <details>
+
+    <summary>Partitioning vs Shuffling vs Bucketing</summary>
+
+    🔹Partitioning: The process of dividing a large dataset into smaller parts, known as partitions. This process splits Hive table's files into multiple files. For example, `../hive/warehouse/sales_table/product_id=P1`.
+
+    🔹Shuffling: Shuffling is the process of redistributing data across different partitions. The overhead of operations can be ranked as follows: `orderby` > `join` > `groupby`.
+
+    🔹Bucketing: This is the process of decomposing data into manageable parts based on a certain column, thereby improving query performance and storage efficiency. It is best used when there are very few repeating values in a column (for example - a primary key column). For instance, Bucket0: `../hive/warehouse/sales_table/product_id=P1/000000_0`, Bucket1: `../hive/warehouse/sales_table/product_id=P1/000001_0`, and so on.
     </details>
