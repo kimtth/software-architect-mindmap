@@ -162,7 +162,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 1. [Awesome Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning)
 1. [365 Data Science Flashcards](https://365datascience.com/flashcards/)
 
-## Terminology
+## Terminology and Comparisons
 
 - [Gartner's PACE Layered Application Strategy](https://cio-wiki.org/wiki/Gartner%27s_PACE_Layered_Application_Strategy): A methodology for categorizing, selecting, managing and governing applications based on their characteristics and the speed of change they require1.
 - [JIT vs AOT](https://stackoverflow.com/questions/32653951/when-does-ahead-of-time-aot-compilation-happen): JIT and AOT are two types of compilers that differ in when they convert a program from one language to another, either at run-time or build-time.
@@ -297,4 +297,32 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹Shuffling: Shuffling is the process of redistributing data across different partitions. The overhead of operations can be ranked as follows: `orderby` > `join` > `groupby`.
 
     🔹Bucketing: This is the process of decomposing data into manageable parts based on a certain column, thereby improving query performance and storage efficiency. It is best used when there are very few repeating values in a column (for example - a primary key column). For instance, Bucket0: `../hive/warehouse/sales_table/product_id=P1/000000_0`, Bucket1: `../hive/warehouse/sales_table/product_id=P1/000001_0`, and so on.
+    </details>
+
+- SSO (Single Sign-On) is an authentication scheme that allows a user to log in with a single ID and password to any of several related, yet independent, software systems.
+
+    <details>
+
+    <summary>SSO workflow, Types of SSO, SSO Implementations</summary>
+
+    🔹SSO workflow: Identoty Provider (IdP), Service Provider (SP), SSO Server
+    - IdP: Central Authentication server e.g., Google
+    - SP: Individual Applications rely on SSO e.g, Trello
+    - SSO Server: Bridge between IdP and SPs
+
+    🔹Types of SSO: SAML, OAuth (Open Authorization) 2.0, Open ID Connect (OIDC)
+
+    | Protocol | Purpose | Token Format | - |
+    | --- | --- | --- | --- |
+    | OAuth 2.0 | Open standard for Authorization | Access Tokens | Temporary access to 3rd party app |
+    | OpenID Connect (OIDC) | Open standard for Authentication | JSON Web Token (JWT) | Newer type of SSO based on OAuth 2.0, Straightforward protocol than SAML |
+    | SAML | Authentication, Authorization | XML | Most common, Use SAML Protocol to exchange authentication between SSO server and SP |
+
+    🔹Some other Types of SSO: Kerberos, Smart card authentication
+    - Kerberos: Less suitable for internet-facing SSO due to the shared secret between KDC (Key Distributin Center) and all participants.
+    - Smart card authentication: Physical card
+
+    🔹SSO Implementations: Microsoft Entra ID (FKA Micorsoft Active Directory), Okta, Ping Identity, OneLogin, Auth0
+
+
     </details>
