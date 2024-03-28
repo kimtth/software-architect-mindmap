@@ -59,6 +59,17 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Azure Cloud Adoption Framework :CAF](https://learn.microsoft.com/en-gb/azure/cloud-adoption-framework/): organization-wide adoption guidance
 - [Azure Well-architected Framework :WAF](https://learn.microsoft.com/en-us/azure/well-architected/): workload-focussed design and continuous improvement guidance
 - [Azure Architecture Center :AAC](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/?product=popular): architecture patterns and reference architectures
+  - [Best practices in cloud applications](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices)
+  - [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+  - [Landing zone](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-virtual-desktop/design-guide?tabs=baseline)
+    - Abstractly speaking, a landing zone helps you plan for and design an Azure deployment, by conceptualizing a designated area for placement and integration of resources. There are two types of landing zones:
+    1. `platform landing zone`: provides centralized enterprise-scale foundational services for workloads and applications.
+    2. `application landing zone`: provides services specific to an application or workload.
+- [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals)
+  - `Latency` is the response time of your application, usually expressed in milliseconds
+  - `Throughput` is how many transactions per second or minute your application can handle
+  - `Errors` is usually measured in a percent of
+  - `Saturation` is the ability of your application to use the available CPU and Memory
 
 ---
 
@@ -80,6 +91,10 @@ This mindmap created by `https://app.mindmapmaker.org/`
 ---
 
 - [Substack Leaderboard](https://substack.com/browse/technology): Newsletter
+
+---
+
+- [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Bluelight Consulting
 
 ## Engineering blog
 
@@ -225,12 +240,38 @@ This mindmap created by `https://app.mindmapmaker.org/`
     </details>
 
 - API Gateway vs Load Balancer
-  - **API Gateway**: Manages access to backend services, handles tasks like rate-limiting, authentication, logging, and security policies.
-  - **Load Balancer**: Distributes network traffic across multiple servers for high availability and even load distribution.
+  - API Gateway: Manages access to backend services, handles tasks like rate-limiting, authentication, logging, and security policies.
+  - Load Balancer: Distributes network traffic across multiple servers for high availability and even load distribution.
 
-- Data engineering Vocab 101 [ref](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20)
+- Data engineering & Data Scientists Vocab 101 [ref](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20)
 
-  <img src="files/data-engineering-101.jpg" alt="Data engineering 101" width="400"/>
+    <details>
+
+    <summary>Expand</summary>
+    🔹 Data engineering Vocab 101
+
+    [ref](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20)
+
+    <img src="files/data-engineering-101.jpg" alt="Data engineering 101" width="400"/>
+
+    🔹 75 Key Terms That Data Scientists Remember by Heart 
+    
+    [ref](https://www.blog.dailydoseofds.com/p/75-key-terms-that-data-scientists)
+
+    <img src="files/de01.png" alt="Data engineering 01" width="400"/>
+
+    🔹 A Comprehensive NumPy Cheat Sheet Of 40 Most Used Methods 
+    
+    [ref](https://www.blog.dailydoseofds.com/p/a-comprehensive-numpy-cheat-sheet)
+
+    <img src="files/de02.png" alt="Data engineering 02" width="400"/>
+
+    🔹 15 Pandas ↔ Polars ↔ SQL ↔ PySpark Translations 
+    
+    [ref](https://www.blog.dailydoseofds.com/p/15-pandas-polars-sql-pyspark-translations)
+
+    <img src="files/de03.png" alt="Data engineering 03" width="400"/>
+    </details>
 
 - DevOps, Platform engineering and SRE (site reliability engineering) [ref](https://www.splunk.com/en_us/blog/learn/sre-vs-devops-vs-platform-engineering.html)
 
@@ -305,7 +346,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     <summary>SSO workflow, Types of SSO, SSO Implementations</summary>
 
-    🔹SSO workflow: Identoty Provider (IdP), Service Provider (SP), SSO Server
+    🔹SSO workflow: Identity Provider (IdP), Service Provider (SP), SSO Server
     - IdP: Central Authentication server e.g., Google
     - SP: Individual Applications rely on SSO e.g, Trello
     - SSO Server: Bridge between IdP and SPs
@@ -324,5 +365,47 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     🔹SSO Implementations: Microsoft Entra ID (FKA Micorsoft Active Directory), Okta, Ping Identity, OneLogin, Auth0
 
+    </details>
+
+- Deployment Styles: Blue/Green, Canary, and A/B
+
+    <details>
+
+    <summary>Blue/Green, Canary, A/B</summary>
+
+    🔹Blue/Green Deployment: Two identical environments, "Blue" and "Green". Deploy new version in inactive environment, test, then switch users to it. For example, AWS supports blue/green deployment strategies including Elastic Beanstalk, OpsWorks, CloudFormation, CodeDeploy, and Amazon ECS.
+
+    🔹Canary Deployment: Roll out new version to a small group of users, monitor feedback, then do a full-scale release.
+
+    🔹A/B Testing: Compare two versions of a webpage or app to see which performs better. A typical example of A/B testing is website usability testing.
 
     </details>
+
+- Flaky Test: A Flaky Test is a test that sometimes passes and sometimes fails, despite no changes in the code. Causes can include poorly written tests, async waits, test order dependency, and concurrency issues. They can slow down CI/CD pipelines and cause issues for end users. [ref](https://github.com/jmicco/JaSST_tutorial)
+
+- Hadoop Ecosystem
+    <details>
+    <summary>Hadoop vs Azure, AWS, GCP</summary>
+
+    🔹1. **HDFS (File Storage)**: Azure Data Lake Storage, Amazon S3, Google Cloud Storage
+
+    🔹2. **YARN (Resource Management)**: No direct equivalent in Azure, AWS, GCP
+
+    🔹3. **MapReduce (Data Processing)**: HDInsight, Amazon EMR, Google Cloud Dataproc
+
+    🔹4. **Spark (Fast Data Processing)**: Databricks, Spark in HDInsight, Azure Synapse Analytics, Amazon EMR, Google Cloud Dataproc
+
+    🔹5. **PIG, HIVE (Query Data)**: HDInsight, Azure Synapse Analytics, Amazon EMR, Google Cloud Dataproc
+
+    🔹6. **HBase (NoSQL DB)**: Azure Cosmos DB, HBase on a virtual machine (VM), HBase in Azure HDInsight, Amazon DynamoDB, Google Cloud Bigtable
+
+    🔹7. **Mahout, Spark MLLib (ML Libraries)**: Databricks, Amazon SageMaker, No direct equivalent in GCP
+
+    🔹8. **Solar, Lucene (Search/Index)**: Azure Cognitive Search, Amazon CloudSearch, Google Cloud Search
+
+    🔹9. **Zookeeper (Cluster Management)**: No direct equivalent in Azure, Amazon Managed Apache ZooKeeper, No direct equivalent in GCP
+
+    🔹10. **Oozie (Job Scheduling)**: Azure Data Factory, AWS Step Functions, Google Cloud Composer
+    </details>
+    
+
