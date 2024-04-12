@@ -70,6 +70,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
   - `Throughput` is how many transactions per second or minute your application can handle
   - `Errors` is usually measured in a percent of
   - `Saturation` is the ability of your application to use the available CPU and Memory
+- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf)
 
 ---
 
@@ -271,6 +272,19 @@ This mindmap created by `https://app.mindmapmaker.org/`
     [ref](https://www.blog.dailydoseofds.com/p/15-pandas-polars-sql-pyspark-translations)
 
     <img src="files/de03.png" alt="Data engineering 03" width="400"/>
+
+    🔹 11 Key Probability Distributions 
+
+    [ref](https://www.blog.dailydoseofds.com/p/11-key-probability-distributions)
+
+    <img src="files/de04.png" alt="Data engineering 04" width="400"/>
+
+    🔹 6 Must-Know Types of Clustering Algorithms in Machine Learning 
+
+    [ref](https://blog.dailydoseofds.com/p/beyond-kmeans-6-must-know-types-of)
+
+    <img src="files/de05.png" alt="Data engineering 05" width="400"/>
+
     </details>
 
 - DevOps, Platform engineering and SRE (site reliability engineering) [ref](https://www.splunk.com/en_us/blog/learn/sre-vs-devops-vs-platform-engineering.html)
@@ -408,4 +422,71 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹10. **Oozie (Job Scheduling)**: Azure Data Factory, AWS Step Functions, Google Cloud Composer
     </details>
     
+- Software defined Networking(SDN) Northbound vs Southbound
+    <details>
+    <summary>Expand</summary>
 
+    ```mermaid
+    graph TD
+        A[Application layer - routing, load balancing, etc] -->|Northbound APIs| B[Control layer - SDN controller]
+        B -->|Southbound APIs| C[Infrastructure layer - physical switches, data plane]
+    ```
+
+    🔹The **Controller** is the SDN network's brain, directing traffic flows.
+
+    🔹 The **Southbound Interface** communicates the controller's decisions to the switches using protocols like OpenFlow.
+
+    🔹**SDN Switches** direct traffic based on the controller's instructions.
+
+    🔹**Network Devices** (servers, routers, etc.) send and receive data flows as directed by the SDN switches.
+
+    🔹The **Northbound Interface** uses APIs to exchange data between the controller and applications.
+
+    🔹**SDN Applications** use network data to perform tasks, communicating their needs to the controller.
+
+    ```mermaid
+    graph LR
+    A[Controller] -- API --> B[Southbound Interface]
+    B -- OpenFlow --> C[SDN Switches]
+    C -- Data Flow --> D[Network Devices]
+    A -- API --> E[Northbound Interface]
+    E -- Applications --> F[SDN Applications]
+    ```
+    </details>
+
+- Cracking coding interviews
+    <details>
+    <summary>Expand</summary>
+
+    🔹**src**: [ref](https://x.com/systemdesign42/status/1776590986837160427)
+
+    🔹Two Pointers: Navigating arrays with two indices. [ref](https://www.pluralsight.com/resources/blog/guides/algorithm-templates-two-pointers-part-2)
+
+    🔹Intervals: Working with ranges of values. [ref](https://medium.com/@timpark0807/leetcode-is-easy-the-interval-pattern-d68a7c1c841) / [ref](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solutions/93735/a-concise-template-for-overlapping-interval-problem/) / [ref](https://leetcode.com/discuss/general-discussion/794725/General-Pattern-for-greedy-approach-for-Interval-based-problems)
+
+    🔹Dynamic Programming: Solving complex problems by breaking them down into simpler subproblems. [ref](https://www.youtube.com/watch?v=ZwDDLAeeBM0&t=294s) / [ref](https://leetcode.com/discuss/general-discussion/651719/how-to-solve-dp-string-template-and-4-steps-to-be-followed)
+
+    🔹Tree Traversal: Visiting all nodes in a tree. [ref](https://medium.com/leetcode-patterns/leetcode-pattern-0-iterative-traversals-on-trees-d373568eb0ec) / [ref](https://leetcode.com/problems/binary-tree-postorder-traversal/solutions/45551/Preorder-Inorder-and-Postorder-Iteratively-Summarization/)
+
+    🔹DFS-BFS: Depth-first and breadth-first search algorithms. [ref](https://leetcode.com/problems/pacific-atlantic-water-flow/solutions/438276/Python-beats-98.-DFS-template-for-Matrix/) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-2-dfs-bfs-25-of-the-problems-part-2-a5b269597f52) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-1-bfs-dfs-25-of-the-problems-part-1-519450a84353) / [ref](https://www.youtube.com/watch?v=TIbUeeksXcI)
+
+    🔹Binary Search: Finding an element in a sorted array. [ref](https://leetcode.com/problems/binary-search/solutions/423162/Binary-Search-101-The-Ultimate-Binary-Search-Handbook/)
+
+    🔹Array: A data structure holding elements. [ref](https://leetcode.com/problems/reverse-pairs/solutions/97268/General-principles-behind-problems-similar-to-%22Reverse-Pairs%22/)
+
+    🔹Sliding Window: A subset of data that moves. [ref](https://www.pluralsight.com/resources/blog/guides/algorithm-templates-two-pointers-part-3) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-2-sliding-windows-for-strings-e19af105316b) / [ref](https://leetcode.com/problems/minimum-window-substring/solutions/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems/) / [ref](https://leetcode.com/problems/find-all-anagrams-in-a-string/solutions/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem./) / [ref](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/108870/Most-consistent-ways-of-dealing-with-the-series-of-stock-problems/)
+
+    🔹Backtracking: Trying out all possibilities to find a solution. [ref](https://leetcode.com/problems/permutations/solutions/18284/Backtrack-Summary:-General-Solution-for-10-Questionsh/) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-3-backtracking-5d9e5a03dc26) / [ref](https://leetcode.com/problems/combination-sum/solutions/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)/)
+
+    🔹Combination: Finding all possible arrangements of elements. [ref](https://leetcode.com/problems/combination-sum-iv/solutions/85120/C++-template-for-ALL-Combination-Problem-Set/)
+
+    🔹Trie: A tree-like data structure for storing strings. [ref](https://leetcode.com/discuss/general-discussion/931977/beginner-friendly-guide-to-trie-tutorial-practice-problems)
+
+    🔹Word Break: Dividing a string into words. [ref](https://leetcode.com/problems/concatenated-words/solutions/836924/Python-Template-Word-Break-I-Word-Break-II-Concatenated-Words/)
+
+    🔹Bit Manipulation: Performing operations on binary numbers. [ref](https://leetcode.com/problems/sum-of-two-integers/solutions/84278/A-summary:-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently/) / [ref](https://leetcode.com/problems/single-number-ii/solutions/43295/Detailed-explanation-and-generalization-of-the-bitwise-operation-method-for-single-numbers/)
+
+    🔹Sum: Adding numbers together. [ref](https://leetcode.com/problems/two-sum/solutions/737092/Sum-MegaPost-Python3-Solution-with-a-detailed-explanation/)
+
+    🔹Monotonic Stack: A stack keeping elements in an ordered manner. [ref](https://leetcode.com/problems/sum-of-subarray-minimums/solutions/178876/stack-solution-with-very-detailed-explanation-step-by-step/)
+    </details>
