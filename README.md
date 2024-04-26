@@ -96,6 +96,9 @@ This mindmap created by `https://app.mindmapmaker.org/`
 ---
 
 - [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Bluelight Consulting
+- [Power BI DAX Patterns](https://www.daxpatterns.com/patterns/)
+- [OOP Design Patterns](https://refactoring.guru/design-patterns)
+- [Data Engineering Wiki](https://dataengineering.wiki/Index)
 
 ## Engineering blog
 
@@ -284,6 +287,12 @@ This mindmap created by `https://app.mindmapmaker.org/`
     [ref](https://blog.dailydoseofds.com/p/beyond-kmeans-6-must-know-types-of)
 
     <img src="files/de05.png" alt="Data engineering 05" width="400"/>
+
+    🔹 25 Most Important Mathematical Definitions in Data Science
+
+    [ref](https://blog.dailydoseofds.com/p/25-most-important-mathematical-definitions)
+
+    <img src="files/de06.png" alt="Data engineering 06" width="400"/>
 
     </details>
 
@@ -490,3 +499,12 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     🔹Monotonic Stack: A stack keeping elements in an ordered manner. [ref](https://leetcode.com/problems/sum-of-subarray-minimums/solutions/178876/stack-solution-with-very-detailed-explanation-step-by-step/)
     </details>
+
+- Medallion architecture: A data design pattern for lakehouses. It enhances data quality across three layers: bronze (raw), silver (curated), and gold (presentation). This “multi-hop” architecture allows data to transition between layers as required. [ref](https://www.databricks.com/glossary/medallion-architecture)
+
+- Slowly changing dimensions (SCD): Slowly Changing Dimensions change over time, but at a slow pace and unpredictably. For example, a customer’s address in a retail business.
+
+- Star schema: The Star Schema is a data model for data warehouses. It has a central fact table for measurable data and surrounding dimension tables for descriptive data. [ref](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema)
+
+- OLAP vs OLTP: `OLAP`: Used for complex data analysis and business reporting, such as financial analysis and sales forecasting. `OLTP`: Used for real-time processing of online transactions, including everyday transactions like ATM withdrawals and in-store purchases.
+
