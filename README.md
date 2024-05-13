@@ -117,7 +117,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ## Computer Science Papers
 
-- [Computer Science Papers Every Developers Should Read](https://x.com/milan_milanovic/status/1747167493553062398?s=20)
+#### [Computer Science Papers Every Developers Should Read](https://x.com/milan_milanovic/status/1747167493553062398?s=20) 
 
 1. On the Criteria To Be Used in Decomposing Systems into Modules (1972), D.L. Parnas: [ref](https://win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
 2. An Axiomatic Basis for Computer Programming (1969), C.A.R. Hoare: [ref](http://sunnyday.mit.edu/16.355/Hoare-CACM-69.pdf)
@@ -130,7 +130,37 @@ This mindmap created by `https://app.mindmapmaker.org/`
 9. A Relational Model of Data for Large Shared Data Banks (1969), E.F. Codd: [ref](https://dl.acm.org/doi/10.1145/362384.362685)
 10. Why Functional Programming Matters (1990), J. Hughes: [ref](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf)
 
-- Distributed Systems! Here's a reading list of 70+ Distributed Systems papers *mostly from conferences in just last 2 years*! [70+ Distributed Systems papers](https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit) [Jan 2024]
+#### Distributed Systems!
+
+- Here's a reading list of 70+ Distributed Systems papers *mostly from conferences in just last 2 years*! [70+ Distributed Systems papers](https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit) [Jan 2024]
+
+#### [25 Papers That Completely Transformed the Computer World](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software) [May 2024]
+
+1. Dynamo - Amazon’s Highly Available Key Value Store  [ref](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
+2. Google File System: Insights into a highly scalable file system [ref](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
+3. Scaling Memcached at Facebook: A look at the complexities of Caching [ref](https://research.facebook.com/file/839620310074473/scaling-memcache-at-facebook.pdf)
+4. BigTable: The design principles behind a distributed storage system [ref](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf)
+5. Borg - Large Scale Cluster Management at Google [ref](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43438.pdf)
+6. Cassandra: A look at the design and architecture of a distributed NoSQL database [ref](https://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf)
+7. Attention Is All You Need: Into a new deep learning architecture known as the transformer [ref](https://arxiv.org/abs/1706.03762)
+8. Kafka: Internals of the distributed messaging platform [ref](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/09/Kafka.pdf)
+9. FoundationDB: A look at how a distributed database [ref](https://www.foundationdb.org/files/fdb-paper.pdf)
+10. Amazon Aurora: To learn how Amazon provides high-availability and performance [ref](https://web.stanford.edu/class/cs245/readings/aurora.pdf)
+11. Spanner: Design and architecture of Google’s globally distributed databas [ref](https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
+12. MapReduce: A detailed look at how MapReduce enables parallel processing of massive volumes of data [ref](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/16cb30b4b92fd4989b8619a61752a2387c6dd474.pdf)
+13. Shard Manager: Understanding the generic shard management framework [ref](https://dl.acm.org/doi/pdf/10.1145/3477132.3483546)
+14. Dapper: Insights into Google’s distributed systems tracing infrastructure [ref](https://static.googleusercontent.com/media/research.google.com/en//archive/papers/dapper-2010-1.pdf)
+15. Flink: A detailed look at the uniﬁed architecture of stream and batch processing [ref](https://www.researchgate.net/publication/308993790_Apache_Flink_Stream_and_Batch_Processing_in_a_Single_Engine)
+16. A Comprehensive Survey on Vector Databases [ref](https://arxiv.org/pdf/2310.11703.pdf)
+17. Zanzibar: A look at the design, implementation and deployment of a global system for managing access control lists at Google [ref](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/d84ab6c93881af998de877d0070a706de7bec6d8.pdf)
+18. Monarch: Architecture of Google’s in-memory time series database [ref](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/d84ab6c93881af998de877d0070a706de7bec6d8.pdf)
+19. Thrift: Explore the design choices behind Facebook’s code-generation tool [ref](https://thrift.apache.org/static/files/thrift-20070401.pdf)
+20. Bitcoin: The ground-breaking introduction to the peer-to-peer electronic cash system [ref](https://bitcoin.org/bitcoin.pdf)
+21. WTF - Who to Follow Service at Twitter: Twitter’s (now X) user recommendation system [ref](https://web.stanford.edu/~ashishg/papers/wtf_overview.pdf)
+22. MyRocks: LSM-Tree Database Storage Engine [ref](https://www.vldb.org/pvldb/vol13/p3217-matsunobu.pdf)
+23. GoTo Considered Harmful [ref](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf)
+24. Raft Consensus Algorithm: To learn about the more understandable consensus algorithm [ref](https://raft.github.io/raft.pdf)
+25. Time Clocks and Ordering of Events: The extremely important paper that explains the concept of time and event ordering in a distributed system [ref](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)
 
 ## Data Science (ML/NN)
 
