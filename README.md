@@ -51,50 +51,68 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ---
 
+- [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals)
+
+    <details>
+    <summary>Expand</summary>
+
+    🔹 `Latency` is the response time of your application, usually expressed in milliseconds
+
+    🔹 `Throughput` is how many transactions per second or minute your application can handle
+
+    🔹 `Errors` is usually measured in a percent of
+
+    🔹 `Saturation` is the ability of your application to use the available CPU and Memory
+
+    </details>
+- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf)
+
+## Cloud Architecture
+
 - [AWS to Azure services comparison](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/services)
 - [Google Cloud to Azure services comparison](https://learn.microsoft.com/en-us/azure/architecture/gcp-professional/services)
 - [Compare AWS and Azure services to Google Cloud](https://cloud.google.com/docs/get-started/aws-azure-gcp-service-comparison)
 - [Microsoft Azure Developer's Cheat Sheet](https://github.com/milanm/azure-cheat-sheet): Every product, feature and service in the Azure family
-- [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): Interactive Online Platform that Visualizes Algorithms from Code
 - [Azure Cloud Adoption Framework :CAF](https://learn.microsoft.com/en-gb/azure/cloud-adoption-framework/): organization-wide adoption guidance
 - [Azure Well-architected Framework :WAF](https://learn.microsoft.com/en-us/azure/well-architected/): workload-focussed design and continuous improvement guidance
 - [Azure Architecture Center :AAC](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/?product=popular): architecture patterns and reference architectures
   - [Best practices in cloud applications](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices)
   - [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
   - [Landing zone](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-virtual-desktop/design-guide?tabs=baseline)
-    - Abstractly speaking, a landing zone helps you plan for and design an Azure deployment, by conceptualizing a designated area for placement and integration of resources. There are two types of landing zones:
+
+    <details>
+    <summary>Expand</summary>
+
+    🔹 Abstractly speaking, a landing zone helps you plan for and design an Azure deployment, by conceptualizing a designated area for placement and integration of resources. 
+    
+    There are two types of landing zones:
+    
     1. `platform landing zone`: provides centralized enterprise-scale foundational services for workloads and applications.
     2. `application landing zone`: provides services specific to an application or workload.
-- [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals)
-  - `Latency` is the response time of your application, usually expressed in milliseconds
-  - `Throughput` is how many transactions per second or minute your application can handle
-  - `Errors` is usually measured in a percent of
-  - `Saturation` is the ability of your application to use the available CPU and Memory
-- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf)
 
----
+    </details>
+
+## Computer Science courses
 
 - [Kaggle Solutions and Ideas](https://github.com/faridrashidi/kaggle-solutions): Collection of Kaggle Solutions and Ideas
 - [Best-of Machine Learning with Python](https://github.com/ml-tooling/best-of-ml-python): A ranked list of awesome machine learning Python libraries. Updated weekly.
-
----
-
 - [freeCodeCamp](https://www.freecodecamp.org): Learn to code for free. [youtube](https://www.youtube.com/freecodecamp)
 - [Ultimate Collection of 60 YouTube Courses for 21 Programming Languages](https://dev.to/arjuncodess/ultimate-collection-of-60-youtube-courses-for-21-programming-languages-mega-list-47b5)
 - [Computer Science courses with video lectures](https://github.com/Developer-Y/cs-video-courses)
 
----
+## Industry Trends
 
 - [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista Industry Insight
 - [Gartner Top Strategic Technology Trends 2024](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)
 - [MAD (ML/AI/Data) Landscape](https://mad.firstmark.com/)
 
----
+## Newsletter
 
 - [Substack Leaderboard](https://substack.com/browse/technology): Newsletter
 
----
+## Tools
 
+- [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): Interactive Online Platform that Visualizes Algorithms from Code
 - [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Bluelight Consulting
 - [Power BI DAX Patterns](https://www.daxpatterns.com/patterns/)
 - [OOP Design Patterns](https://refactoring.guru/design-patterns)
@@ -115,9 +133,57 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Slack Engineering](https://slack.engineering/)
 - [79 Engineering Blogs To Level Up Your System Design Skills](https://blog.bytebytego.com/p/79-engineering-blogs-to-level-up)
 
+
+## Computer Science Books
+
+1. General
+    - The Pragmatic Programmer by David Thomas and Andrew Hunt
+    - Modern Software Engineering by David Farley
+    - Code Complete by Steve McConnell
+    - Software Engineering at Google by Titus Winters, Tom Manshreck, and Hyrum Wright
+1. Good Practices
+    - Clean Code by Uncle Bob Martin
+    - Head First Design Patterns by Eric Freeman
+    - Refactoring by Martin Fowler
+    - Design Patterns by Eric Gamma and Others
+1. Data Structures and Algorithms
+    - Grokking Algorithms by Aditya Bhargava
+    - Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein
+    - Cracking the Coding Interview by Gayle Laakmann McDowell
+1. Data
+    - Designing Data-Intensive Applications by Martin Kleppman
+    - Learning SQL by Alan Beaulieu
+1. Testing
+    - Growing Object-Oriented Software by Tests by Steve Freeman
+    Unit Testing Principles, Practices, and Patterns by Vladimir Khorikov
+    - The Art of Unit Testing by Roy Osherove
+    - TDD by Example by Kent Beck
+1. Software Architecture
+    - Fundamentals Of Software Architecture by Mark Richards and Neil Ford
+    - Clean Architecture by Uncle Bob Martin
+    - Software Architecture The Hard Parts by Neal Ford, Mark Richards, Pramod Sadalage, and Zhamak Dehghani
+    - Domain Driven Design Quickly by Abel Avram and Floyd Marinescu
+    - A Philosophy of Software Design by John Ousterhout
+    - System Design Interview by Alex Xu
+    - Domain-Driven Design by Eric Evans
+1. Distributed Systems
+    - Understanding Distributed Systems by Roberto Vitillo
+    - Designing Distributed Systems by Brendan Burns
+1. DevOps
+    - DevOps Handbook by Gene Kim, Patrick Debois, John Willis, and Jez Humble
+    - Continuous Delivery by Jez Humble and David Farley
+    - Accelerate by Nicole Forsgren, Jez Humble, and Gene Kim
+1. Machine Learning
+    - The Hundred-Page Machine Learning Book by Andriy Burkov
+    - Designing Machine Learning Systems by Chip Huyen
+
+- [ref](https://newsletter.techworld-with-milan.com/p/learn-things-that-dont-change) / [ref](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software)
+
 ## Computer Science Papers
 
-#### [Computer Science Papers Every Developers Should Read](https://x.com/milan_milanovic/status/1747167493553062398?s=20) 
+### Computer Science Papers Every Developers Should Read
+
+- [ref](https://x.com/milan_milanovic/status/1747167493553062398?s=20) 
 
 1. On the Criteria To Be Used in Decomposing Systems into Modules (1972), D.L. Parnas: [ref](https://win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
 2. An Axiomatic Basis for Computer Programming (1969), C.A.R. Hoare: [ref](http://sunnyday.mit.edu/16.355/Hoare-CACM-69.pdf)
@@ -130,11 +196,13 @@ This mindmap created by `https://app.mindmapmaker.org/`
 9. A Relational Model of Data for Large Shared Data Banks (1969), E.F. Codd: [ref](https://dl.acm.org/doi/10.1145/362384.362685)
 10. Why Functional Programming Matters (1990), J. Hughes: [ref](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf)
 
-#### Distributed Systems!
+### Distributed Systems!
 
 - Here's a reading list of 70+ Distributed Systems papers *mostly from conferences in just last 2 years*! [70+ Distributed Systems papers](https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit) [Jan 2024]
 
-#### [25 Papers That Completely Transformed the Computer World](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software) [May 2024]
+### 25 Papers That Completely Transformed the Computer World
+
+- [ref](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software) [May 2024]
 
 1. Dynamo - Amazon’s Highly Available Key Value Store  [ref](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
 2. Google File System: Insights into a highly scalable file system [ref](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
@@ -164,7 +232,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ## Data Science (ML/NN)
 
-- src: [#1](https://www.kdnuggets.com/10-github-repositories-to-master-machine-learning?utm_source=rss&utm_medium=rss&utm_campaign=10-github-repositories-to-master-machine-learning) 30 free e-books, [#2](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books) Github repository
+### 30 free e-books
 
 1. [Deep Learning](http://www.deeplearningbook.org/) - Ian Goodfellow, Yoshua Bengio, and Aaron Courville
 2. [Mathematics for Machine Learning](https://mml-book.github.io/) - Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
@@ -197,7 +265,9 @@ This mindmap created by `https://app.mindmapmaker.org/`
 29. [Information Theory, Inference and Learning Algorithms](http://www.inference.org.uk/mackay/itila/) - David J. C. MacKay
 30. [Machine Learning For Dummies](https://www.ibm.com/downloads/cas/GB8ZMQZ3) - Judith Hurwitz and Daniel Kirsch
 
----
+- [ref](https://www.kdnuggets.com/10-github-repositories-to-master-machine-learning?utm_source=rss&utm_medium=rss&utm_campaign=10-github-repositories-to-master-machine-learning)
+
+### github
 
 1. [Machine Learning for Beginners](https://github.com/microsoft/ML-For-Beginners)
 1. [Machine Learning YouTube Videos](https://github.com/ujjwalkarn/Machine-Learning-Videos)
@@ -211,13 +281,15 @@ This mindmap created by `https://app.mindmapmaker.org/`
 1. [Awesome Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning)
 1. [365 Data Science Flashcards](https://365datascience.com/flashcards/)
 
+- [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
+
 ## Terminology and Comparisons
 
-- [Gartner's PACE Layered Application Strategy](https://cio-wiki.org/wiki/Gartner%27s_PACE_Layered_Application_Strategy): A methodology for categorizing, selecting, managing and governing applications based on their characteristics and the speed of change they require1.
-- [JIT vs AOT](https://stackoverflow.com/questions/32653951/when-does-ahead-of-time-aot-compilation-happen): JIT and AOT are two types of compilers that differ in when they convert a program from one language to another, either at run-time or build-time.
-- [SSG: Static site generator list](https://jamstack.org/generators/): A tool that generates a full static HTML website based on raw data and a set of templates.
-- [Popular Enterprise Architecture Frameworks](https://dzone.com/articles/popular-enterprise-architecture-frameworks): TOGAF, Zachman, Federal Enterprise Architecture (FEA), Gartner Enterprise Architecture Framework, Business Architecture Guild’s BIZBOK, Department of Defense Architecture Framework (DoDAF), ArchiMate, and Sherwood Applied Business Security Architecture (SABSA).
-- [Are Architecture Styles, Patterns, and Design Patterns Different?](https://x.com/milan_milanovic/status/1747683090598711725?s=20)
+1. [Gartner's PACE Layered Application Strategy](https://cio-wiki.org/wiki/Gartner%27s_PACE_Layered_Application_Strategy): A methodology for categorizing, selecting, managing and governing applications based on their characteristics and the speed of change they require1.
+1. [JIT vs AOT](https://stackoverflow.com/questions/32653951/when-does-ahead-of-time-aot-compilation-happen): JIT and AOT are two types of compilers that differ in when they convert a program from one language to another, either at run-time or build-time.
+1. [SSG: Static site generator list](https://jamstack.org/generators/): A tool that generates a full static HTML website based on raw data and a set of templates.
+1. [Popular Enterprise Architecture Frameworks](https://dzone.com/articles/popular-enterprise-architecture-frameworks): TOGAF, Zachman, Federal Enterprise Architecture (FEA), Gartner Enterprise Architecture Framework, Business Architecture Guild’s BIZBOK, Department of Defense Architecture Framework (DoDAF), ArchiMate, and Sherwood Applied Business Security Architecture (SABSA).
+1. [Are Architecture Styles, Patterns, and Design Patterns Different?](https://x.com/milan_milanovic/status/1747683090598711725?s=20)
 
     <details>
 
@@ -254,7 +326,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
         
     </details>
 
-- Memory consistency model: [A Primer on Memory Consistency and Cache Coherence](https://link.springer.com/book/10.1007/978-3-031-01764-3)
+1. Memory consistency model: [A Primer on Memory Consistency and Cache Coherence](https://link.springer.com/book/10.1007/978-3-031-01764-3)
 
     <details>
 
@@ -273,11 +345,18 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     </details>
 
-- API Gateway vs Load Balancer
-  - API Gateway: Manages access to backend services, handles tasks like rate-limiting, authentication, logging, and security policies.
-  - Load Balancer: Distributes network traffic across multiple servers for high availability and even load distribution.
+1. API Gateway vs Load Balancer
+    <details>
 
-- Data engineering & Data Scientists Vocab 101 [ref](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20)
+    <summary>Expand</summary>
+
+    🔹 API Gateway: Manages access to backend services, handles tasks like rate-limiting, authentication, logging, and security policies.
+
+    🔹 Load Balancer: Distributes network traffic across multiple servers for high availability and even load distribution.
+
+    </details>
+
+1. Data engineering & Data Scientists Vocab 101 [ref](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20)
 
     <details>
 
@@ -322,11 +401,21 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     [ref](https://blog.dailydoseofds.com/p/25-most-important-mathematical-definitions)
 
-    <img src="files/de06.png" alt="Data engineering 06" width="400"/>
+    <details>
 
     </details>
 
-- DevOps, Platform engineering and SRE (site reliability engineering) [ref](https://www.splunk.com/en_us/blog/learn/sre-vs-devops-vs-platform-engineering.html)
+1. Transfer Learning, Fine-tuning, Multitask Learning and Federated Learning [ref](https://blog.dailydoseofds.com/p/transfer-learning-fine-tuning-multitask)
+
+    <details>
+
+    <summary>Expand</summary>
+
+    <img src="files/ml-learning-types.png" alt="-" width="400"/>
+
+    </details>
+
+1. DevOps, Platform engineering and SRE (site reliability engineering) [ref](https://www.splunk.com/en_us/blog/learn/sre-vs-devops-vs-platform-engineering.html)
 
     <details>
 
@@ -344,7 +433,16 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     </details>
 
-- Web services and APIs (SOAP, RestAPI, GraphQL, gRPC and Kafka) [ref](https://www.redhat.com/architect/apis-soap-rest-graphql-grpc)
+1. API Protocols (ref. ByteByteGo)
+
+    <details>
+
+    <summary>Expand</summary>
+    <img src="files/api_protocols.png" alt="api" width="400"/>
+
+    </details>
+
+1. Web services and APIs (SOAP, RestAPI, GraphQL, gRPC and Kafka) [ref](https://www.redhat.com/architect/apis-soap-rest-graphql-grpc)
 
     <details>
 
@@ -361,7 +459,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹Kafka: Distributed streaming platform, uses publish-subscribe model for message queueing. real-time consistency. "at-least-once" delivery.
     </details>
 
-- Real-time communication and messaging (MQTT, AMQP and WebSocket) [ref](https://www.cloudamqp.com/blog/amqp-vs-mqtt.html)
+1. Real-time communication and messaging (MQTT, AMQP and WebSocket) [ref](https://www.cloudamqp.com/blog/amqp-vs-mqtt.html)
 
     <details>
 
@@ -374,13 +472,14 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹WebSocket: Enables full-duplex communication channels over a single TCP connection
     </details>
 
-- Reactive programming vs event-driven architecture [ref](https://reactiveweb.org/reactive-programming-vs-event-driven-key-differences/)
-  - Event-Driven: Handles user actions or system events. More general and can be used in any context where an event occurs
-  - Reactive: Data-driven approach. managing data streams and propagating changes, like in a spreadsheet model.
+1. Reactive programming vs event-driven architecture [ref](https://reactiveweb.org/reactive-programming-vs-event-driven-key-differences/)
+   
+     - Event-Driven: Handles user actions or system events. More general and can be used in any context where an event occurs
+     - Reactive: Data-driven approach. managing data streams and propagating changes, like in a spreadsheet model.
 
-- RABC vs ReABC: RBAC (Role-Based Access Control) is an authorization model that assigns permissions based on predefined roles. On the other hand, ReBAC (Relationship-Based Access Control) extends RBAC’s capabilities by considering relationships between entities.
-- Conway's law: Software engineering principle that states that the structure of a system reflects the structure of the organization that designs it.
-- Data Management in Distributed systems (Partitioning, Shuffling and Bucketing)
+1.  RABC vs ReABC: RBAC (Role-Based Access Control) is an authorization model that assigns permissions based on predefined roles. On the other hand, ReBAC (Relationship-Based Access Control) extends RBAC’s capabilities by considering relationships between entities.
+1. Conway's law: Software engineering principle that states that the structure of a system reflects the structure of the organization that designs it.
+1.  Data Management in Distributed systems (Partitioning, Shuffling and Bucketing)
 
     <details>
 
@@ -390,10 +489,10 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     🔹Shuffling: Shuffling is the process of redistributing data across different partitions. The overhead of operations can be ranked as follows: `orderby` > `join` > `groupby`.
 
-    🔹Bucketing: This is the process of decomposing data into manageable parts based on a certain column, thereby improving query performance and storage efficiency. It is best used when there are very few repeating values in a column (for example - a primary key column). For instance, Bucket0: `../hive/warehouse/sales_table/product_id=P1/000000_0`, Bucket1: `../hive/warehouse/sales_table/product_id=P1/000001_0`, and so on.
+    🔹Bucketing: This is the process of decomposing data into manageable parts based on a certain column, thereby improving query performance and storage efficiency. It is best used when there are very few repeating values in a column (for example 1. a primary key column). For instance, Bucket0: `../hive/warehouse/sales_table/product_id=P1/000000_0`, Bucket1: `../hive/warehouse/sales_table/product_id=P1/000001_0`, and so on.
     </details>
 
-- SSO (Single Sign-On) is an authentication scheme that allows a user to log in with a single ID and password to any of several related, yet independent, software systems.
+1. SSO (Single Sign-On) is an authentication scheme that allows a user to log in with a single ID and password to any of several related, yet independent, software systems.
 
     <details>
 
@@ -420,7 +519,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     </details>
 
-- Deployment Styles: Blue/Green, Canary, and A/B
+1. Deployment Styles: Blue/Green, Canary, and A/B
 
     <details>
 
@@ -434,9 +533,9 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     </details>
 
-- Flaky Test: A Flaky Test is a test that sometimes passes and sometimes fails, despite no changes in the code. Causes can include poorly written tests, async waits, test order dependency, and concurrency issues. They can slow down CI/CD pipelines and cause issues for end users. [ref](https://github.com/jmicco/JaSST_tutorial)
+1. Flaky Test: A Flaky Test is a test that sometimes passes and sometimes fails, despite no changes in the code. Causes can include poorly written tests, async waits, test order dependency, and concurrency issues. They can slow down CI/CD pipelines and cause issues for end users. [ref](https://github.com/jmicco/JaSST_tutorial)
 
-- Hadoop Ecosystem
+1. Hadoop Ecosystem
     <details>
     <summary>Hadoop vs Azure, AWS, GCP</summary>
 
@@ -461,7 +560,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹10. **Oozie (Job Scheduling)**: Azure Data Factory, AWS Step Functions, Google Cloud Composer
     </details>
     
-- Software defined Networking(SDN) Northbound vs Southbound
+1. Software defined Networking(SDN) Northbound vs Southbound
     <details>
     <summary>Expand</summary>
 
@@ -493,7 +592,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
     ```
     </details>
 
-- Cracking coding interviews
+1. Cracking coding interviews
     <details>
     <summary>Expand</summary>
 
@@ -530,11 +629,33 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹Monotonic Stack: A stack keeping elements in an ordered manner. [ref](https://leetcode.com/problems/sum-of-subarray-minimums/solutions/178876/stack-solution-with-very-detailed-explanation-step-by-step/)
     </details>
 
-- Medallion architecture: A data design pattern for lakehouses. It enhances data quality across three layers: bronze (raw), silver (curated), and gold (presentation). This “multi-hop” architecture allows data to transition between layers as required. [ref](https://www.databricks.com/glossary/medallion-architecture)
+1. Medallion architecture: A data design pattern for lakehouses. It enhances data quality across three layers: bronze (raw), silver (curated), and gold (presentation). This “multi-hop” architecture allows data to transition between layers as required. [ref](https://www.databricks.com/glossary/medallion-architecture)
 
-- Slowly changing dimensions (SCD): Slowly Changing Dimensions change over time, but at a slow pace and unpredictably. For example, a customer’s address in a retail business.
+1. Slowly changing dimensions (SCD): Slowly Changing Dimensions change over time, but at a slow pace and unpredictably. For example, a customer’s address in a retail business.
 
-- Star schema: The Star Schema is a data model for data warehouses. It has a central fact table for measurable data and surrounding dimension tables for descriptive data. [ref](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema)
+1. Star schema: The Star Schema is a data model for data warehouses. It has a central fact table for measurable data and surrounding dimension tables for descriptive data. [ref](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema)
 
-- OLAP vs OLTP: `OLAP`: Used for complex data analysis and business reporting, such as financial analysis and sales forecasting. `OLTP`: Used for real-time processing of online transactions, including everyday transactions like ATM withdrawals and in-store purchases.
+1. OLAP vs OLTP: `OLAP`: Used for complex data analysis and business reporting, such as financial analysis and sales forecasting. `OLTP`: Used for real-time processing of online transactions, including everyday transactions like ATM withdrawals and in-store purchases.
 
+1. Test-Driven Development
+
+    <details>
+    <summary>Expand</summary>
+
+    🔹F.I.R.S.T: A testing principle where tests are Fast, Isolated, Repeatable, Self-validating, and Timely/Thorough.
+
+    🔹DAMP: Stands for "Descriptive And Meaningful Phrases" in testing.
+
+    🔹BDD: Behavior Driven Development uses "Given-When-Then" format.
+
+    🔹DRY: "Don’t Repeat Yourself" principle avoids redundancy.
+
+    🔹TDD: Test-Driven Development focuses on tests first.
+
+    🔹Exploratory Testing: Simultaneous learning, test design, and test execution. It is about exploring the application and finding defects that were not anticipated.
+
+    🔹Smoke Testing: A preliminary test to check the basic functionality of an application to ensure that the most crucial functions work.
+
+    🔹Alpha/Beta Testing: 🔹Alpha: Initial testing performed by internal staff / 🔹Beta: Testing performed by actual users
+
+    </details>
