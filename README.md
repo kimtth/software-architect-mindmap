@@ -1,4 +1,22 @@
-# Software Architecture Mindmap
+# Table of Contents
+
+- **Section 1**: [Software Architecture Mindmap](#software-architecture-mindmap)
+- **Section 2**: [Software Architecture Reference](#software-architecture-reference)
+  - [Cloud Architecture](#cloud-architecture)
+  - [Computer Science courses](#computer-science-courses)
+  - [Industry Trends](#industry-trends)
+  - [Newsletter](#newsletter) / [Tools](#tools)
+  - [Engineering blog](#engineering-blog)
+  - [Computer Science Books](#computer-science-books)
+- **Section 3**: [Computer Science Papers](#computer-science-papers)
+  - [Computer Science Papers Every Developers Should Read](#computer-science-papers-every-developers-should-read)
+  - [Distributed Systems!](#distributed-systems)
+  - [25 Papers That Completely Transformed the Computer World](#25-papers-that-completely-transformed-the-computer-world)
+- **Section 4**: [Data Science (ML/NN)](#data-science-mlnn)
+  - [Free e-books](#30-free-e-books) / [GitHub](#github)
+- **Section 5**: [Terminology and Comparisons](#terminology-and-comparisons)
+
+## Software Architecture Mindmap
 
 Software terminologies and concepts, software architecture overview
 
@@ -65,9 +83,9 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹 `Saturation` is the ability of your application to use the available CPU and Memory
 
     </details>
-- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf)
+- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf) / [Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
 
-## Cloud Architecture
+### Cloud Architecture
 
 - [AWS to Azure services comparison](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/services)
 - [Google Cloud to Azure services comparison](https://learn.microsoft.com/en-us/azure/architecture/gcp-professional/services)
@@ -79,20 +97,21 @@ This mindmap created by `https://app.mindmapmaker.org/`
   - [Best practices in cloud applications](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices)
   - [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
   - [Landing zone](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-virtual-desktop/design-guide?tabs=baseline)
+  - [Resources for architects and developers of multitenant solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/related-resources)
+  - [Data partitioning strategies](https://learn.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning-strategies)
 
-    <details>
+<details>
     <summary>Expand</summary>
 
     🔹 Abstractly speaking, a landing zone helps you plan for and design an Azure deployment, by conceptualizing a designated area for placement and integration of resources. 
-    
+
     There are two types of landing zones:
-    
+
     1. `platform landing zone`: provides centralized enterprise-scale foundational services for workloads and applications.
     2. `application landing zone`: provides services specific to an application or workload.
+</details>
 
-    </details>
-
-## Computer Science courses
+### Computer Science courses
 
 - [Kaggle Solutions and Ideas](https://github.com/faridrashidi/kaggle-solutions): Collection of Kaggle Solutions and Ideas
 - [Best-of Machine Learning with Python](https://github.com/ml-tooling/best-of-ml-python): A ranked list of awesome machine learning Python libraries. Updated weekly.
@@ -100,17 +119,17 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Ultimate Collection of 60 YouTube Courses for 21 Programming Languages](https://dev.to/arjuncodess/ultimate-collection-of-60-youtube-courses-for-21-programming-languages-mega-list-47b5)
 - [Computer Science courses with video lectures](https://github.com/Developer-Y/cs-video-courses)
 
-## Industry Trends
+### Industry Trends
 
 - [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista Industry Insight
 - [Gartner Top Strategic Technology Trends 2024](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)
 - [MAD (ML/AI/Data) Landscape](https://mad.firstmark.com/)
 
-## Newsletter
+### Newsletter
 
 - [Substack Leaderboard](https://substack.com/browse/technology): Newsletter
 
-## Tools
+### Tools
 
 - [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): Interactive Online Platform that Visualizes Algorithms from Code
 - [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Bluelight Consulting
@@ -118,7 +137,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [OOP Design Patterns](https://refactoring.guru/design-patterns)
 - [Data Engineering Wiki](https://dataengineering.wiki/Index)
 
-## Engineering blog
+### Engineering blog
 
 - [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
 - [Azure Architecture Blog](https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog)
@@ -133,8 +152,13 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Slack Engineering](https://slack.engineering/)
 - [79 Engineering Blogs To Level Up Your System Design Skills](https://blog.bytebytego.com/p/79-engineering-blogs-to-level-up)
 
+### Other Topics
 
-## Computer Science Books
+- [How to Architect Software for a Greener Future](https://www.infoq.com/articles/architect-software-for-greener-future)
+- [Generative Search: Practical Advice for Retrieval Augmented Generation (RAG)](https://www.infoq.com/presentations/vector-embedding-llm/)
+- [What are the Greenest Programing Languages?](https://datasciencelearningcenter.substack.com/p/what-are-the-greenest-software-programming)
+
+### Computer Science Books
 
 1. General
     - The Pragmatic Programmer by David Thomas and Andrew Hunt
@@ -280,6 +304,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 1. [Machine Learning Interview Guide](https://github.com/Sroy20/machine-learning-interview-guide)
 1. [Awesome Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning)
 1. [365 Data Science Flashcards](https://365datascience.com/flashcards/)
+1. [Virgilio](https://github.com/virgili0/Virgilio) / [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook) / [Microsoft: 10 Weeks, 20 Lessons, Data Science](https://github.com/microsoft/Data-Science-For-Beginners) / [Data science Python notebooks](https://github.com/donnemartin/data-science-ipython-notebooks) / [📚 Papers & tech blog](https://github.com/eugeneyan/applied-ml) / [Open Source Data Science Masters](https://github.com/datasciencemasters/go) / [Awesome Data Science](https://github.com/academic/awesome-datascience) / [Data science interview questions and answers](https://github.com/alexeygrigorev/data-science-interviews) / [free self-taught education in Data Science!](https://github.com/ossu/data-science) / [data science project template](https://github.com/drivendataorg/cookiecutter-data-science) 
 
 - [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
 
@@ -657,5 +682,77 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹Smoke Testing: A preliminary test to check the basic functionality of an application to ensure that the most crucial functions work.
 
     🔹Alpha/Beta Testing: 🔹Alpha: Initial testing performed by internal staff / 🔹Beta: Testing performed by actual users
+
+    </details>
+
+1. SLA, SLO, and SLI
+
+    <details>
+    <summary>Expand</summary>
+
+    🔹SLA (Service Level Agreement): A contract defining the expected level of service. `99.9% uptime`
+
+    🔹SLO (Service Level Objective): A measure of service performance agreed upon in an SLA. `200ms response`
+
+    🔹SLI (Service Level Indicator): A quantitative measure of a specific aspect of the level of service. `Query latency`
+
+    </details>
+
+1. Space-Based Architecture (SBA) vs Cell-based architecture
+    - Space-Based Architecture (SBA): Removing the database and instead using a shared memory (memory grids) model
+    - Cell-based architecture: multiple isolated workload instances (cells) for fault isolation and handling subsets of workload requests
+
+1. Azure vs AWS vs GCP in Cloud Netwrok
+
+    <details>
+    <summary>Expand</summary>
+
+    🔹**Cloud Network Structures:**
+
+    - **AWS:** region → VPC → availability zone → subnet (public, private)
+    - **Azure:** region → VNet → availability zone → subnet
+    - **GCP:** global → VPC → subnet (region-specific)
+
+    🔹**Traffic Between VNet or VPC:**
+
+    - Set up a VNet or VPC gateway and configure the routing table.
+    - **Azure:** One VPN gateway per virtual network, supporting external and on-premise connectivity.
+    - **Azure:** Routing tables can be assigned at the subnet level.
+    - **AWS:** Routing tables are associated at the VPC level, determining traffic between subnets.
+    - **GCP:** Routing tables are associated with the VPC, not the subnet. Routes are determined by subnet CIDR ranges.
+
+    🔹**Regional Traffic:**
+    - Use peering for traffic between VNets or VPCs in the same region.
+    - Peering provides lower latency, higher bandwidth, and reduced costs compared to gateways
+
+    🔹**Hybrid Connectivity:**
+    - Required for on-premise networks to connect to cloud networks.
+    - Services used: Azure ExpressRoute, AWS Direct Connect, GCP Cloud Interconnect.
+
+    🔹**Connectivity Scenario**
+
+    | Connectivity Scenario     | AWS                                                  | Azure                                              | GCP                                               |
+    |---------------------------|------------------------------------------------------|----------------------------------------------------|---------------------------------------------------|
+    | VPC (VNet) <-> VPC (VNet) | VPC Peering, AWS Transit Gateway                     | VNet Peering, Azure Virtual WAN, VNet Gateway  | VPC Network Peering, Cloud VPN                     |
+    | On-Premise <-> VPC (VNet) | Virtual Private Gateway, AWS Direct Connect, AWS Transit Gateway | VPN Gateway, Azure ExpressRoute, Azure Virtual WAN | Cloud VPN, Cloud Interconnect                      |
+    | VNet (VPC) <-> Internet   | Internet Gateway (public subnet), NAT Gateway (private subnet) | Internet Gateway, NAT Gateway                      | Cloud Router, Cloud NAT                           |
+    | Subnet Traffic Control    | Network Access Control Lists (ACLs) | Network Security Groups (NSGs) | 1. Shared VPC (XPN) subnets and set permissions at project or subnet level 2. Firewall Rules (VM level). |
+
+    - In Azure, the equivalent of AWS Transit Gateway is Azure Virtual WAN
+    - Azure and GCP don’t have a direct concept of public and private subnets like AWS.
+    - An Azure Virtual Network (VNet) Gateway can serve as a VPN gateway or an ExpressRoute gateway. Site-to-Site, Point-to-Site, and VNet-to-VNet connections all use a VPN gateway.
+        - Point-to-site: Individual device to network.
+        - Site-to-site: Network to network.
+    - Private IP vs Public IP: `192.168.1.4` (not routable on the internet) vs `34.207.152.137`
+
+    🔹**Resource hierarchy**
+
+    | Level                  | AWS                  | Azure               | GCP         |
+    |------------------------|----------------------|---------------------|-------------|
+    | 1                      | Organization         | Management Group    | Organization|
+    | 2                      | Organizational Unit (OU) | Subscription    | Folder      |
+    | 3                      | Account              | Resource Group      | Project     |
+    | 4                      | Resources            | Resources           | Resources   |
+
 
     </details>
