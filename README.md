@@ -659,3 +659,20 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹Alpha/Beta Testing: 🔹Alpha: Initial testing performed by internal staff / 🔹Beta: Testing performed by actual users
 
     </details>
+
+1. SLA, SLO, and SLI
+
+    <details>
+    <summary>Expand</summary>
+
+    🔹SLA (Service Level Agreement): A contract defining the expected level of service. `99.9% uptime`
+
+    🔹SLO (Service Level Objective): A measure of service performance agreed upon in an SLA. `200ms response`
+
+    🔹SLI (Service Level Indicator): A quantitative measure of a specific aspect of the level of service. `Query latency`
+
+    </details>
+
+1. Space-Based Architecture (SBA) vs Cell-based architecture
+    - Space-Based Architecture (SBA): Removing the database and instead using a shared memory (memory grids) model
+    - Cell-based architecture: multiple isolated workload instances (cells) for fault isolation and handling subsets of workload requests
