@@ -426,6 +426,14 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     [ref](https://blog.dailydoseofds.com/p/25-most-important-mathematical-definitions)
 
+    <img src="files/de06.png" alt="Data engineering 06" width="400"/>
+
+    🔹 10 Regression and Classification Loss Functions
+
+    [ref](https://blog.dailydoseofds.com/p/10-regression-and-classification)
+
+    <img src="files/de07.png" alt="Data engineering 07" width="400"/>
+
     <details>
 
     </details>
