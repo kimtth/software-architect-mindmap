@@ -66,6 +66,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Dzone](https://dzone.com/): RefCards and Trend Reports
 - [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar
 - [Microsoft Learn](https://learn.microsoft.com/en-us/): Documentation and Code samples
+- [Trendshift](https://trendshift.io/): GitHub Trending repositories
 
 ---
 
@@ -85,6 +86,11 @@ This mindmap created by `https://app.mindmapmaker.org/`
     </details>
 - [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf) / [Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
 
+---
+
+- [Curated list of project-based tutorials](https://github.com/practical-tutorials/project-based-learning)
+- [Master programming by recreating your favorite technologies from scratch](https://github.com/codecrafters-io/build-your-own-x)
+
 ### Cloud Architecture
 
 - [AWS to Azure services comparison](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/services)
@@ -99,6 +105,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
   - [Landing zone](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-virtual-desktop/design-guide?tabs=baseline)
   - [Resources for architects and developers of multitenant solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/related-resources)
   - [Data partitioning strategies](https://learn.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning-strategies)
+  - [Azure FinOps Guide](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/the-azure-finops-guide/bc-p/4237205#M1023)
 
 <details>
     <summary>Expand</summary>
@@ -124,6 +131,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista Industry Insight
 - [Gartner Top Strategic Technology Trends 2024](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)
 - [MAD (ML/AI/Data) Landscape](https://mad.firstmark.com/)
+- [Hype Cycle for Emerging Technologies 2024](https://www.gartner.com/en/newsroom/press-releases/2024-08-21-gartner-2024-hype-cycle-for-emerging-technologies-highlights-developer-productivity-total-experience-ai-and-security)
 
 ### Newsletter
 
@@ -136,6 +144,8 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Power BI DAX Patterns](https://www.daxpatterns.com/patterns/)
 - [OOP Design Patterns](https://refactoring.guru/design-patterns)
 - [Data Engineering Wiki](https://dataengineering.wiki/Index)
+- [Semantic Scholar > Semantic Reader](https://www.semanticscholar.org)
+- [AI by Hand](https://by-hand.ai)
 
 ### Engineering blog
 
@@ -290,6 +300,9 @@ This mindmap created by `https://app.mindmapmaker.org/`
 30. [Machine Learning For Dummies](https://www.ibm.com/downloads/cas/GB8ZMQZ3) - Judith Hurwitz and Daniel Kirsch
 
 - [ref](https://www.kdnuggets.com/10-github-repositories-to-master-machine-learning?utm_source=rss&utm_medium=rss&utm_campaign=10-github-repositories-to-master-machine-learning)
+
+31. [Algebra, Topology, Differential Calculus, and
+Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/gbooks/geomath.html)
 
 ### github
 
@@ -762,5 +775,62 @@ This mindmap created by `https://app.mindmapmaker.org/`
     | 3                      | Account              | Resource Group      | Project     |
     | 4                      | Resources            | Resources           | Resources   |
 
+    </details>
+
+1. Security Words 101
+
+    <details>
+    <summary>Expand</summary>
+
+    - ### Identity and Access Management
+
+        - **MIM/PAM**: Microsoft Identity Manager / Privileged Access Management
+        - **PAW**: Privileged Account Workstations
+        - **AADIS**: Azure Active Directory Implementation Services
+        - **DIAD**: Design and Implementation for Azure Active Directory
+        - **LAPS/SLAM**: Local Administrator Password Solution / Security Lifecycle Automation & Management
+        - **IAM**: Identity and Access Management
+        - **SSO**: Single Sign-On
+        - **MFA**: Multi-Factor Authentication
+
+    - ### Threat Detection and Response
+
+        - **ATA**: Advanced Threat Analytics
+        - **PADS**: Persistent Advisory Detection Service
+        - **IR&R**: Incident Response & Recovery
+        - **ATP**: Advanced Threat Protection
+        - **OMS**: Operations Management Suite
+        - **ETD**: Enterprise Threat Detection
+        - **SIEM**: Security Information and Event Management
+        - **EDR**: Endpoint Detection and Response
+        - **XDR**: Extended Detection and Response
+        - **SCEP**: System Center Endpoint Protection (Microsoft Defender for Endpoint)
+
+    - ### Information Protection
+
+        - **AIP**: Azure Information Protection (=AD RMS+On-premise files)
+        - **AD RMS**: Active Directory Rights Management Services
+        - **WIP**: Windows Information Protection
+        - **DLP**: Data Loss Prevention
+        - **IRM**: Information Rights Management
+
+    - ### Security Development and Assessment
+
+        - **SDL**: Security Development Lifecycle
+        - **MSRA**: Microsoft Security Risk Assessment
+        - **DIF**: Dynamic Identity Framework
+        - **OAWSS**: Offline Assessment for Windows Server Security
+        - **OAADS**: Offline Assessment for Active Directory Security
+        - **SAST**: Static Application Security Testing
+        - **DAST**: Dynamic Application Security Testing
+
+    - ### Security Management
+
+        - **ESAE**: Enhanced Security Administrative Environment
+        - **SCCM**: System Center Configuration Manager
+        - **EMS**: Enterprise Mobility Suite
+        - **SCOM/ACS**: System Center Operations Manager / Audit Collection Services
+        - **GRC**: Governance, Risk, and Compliance
+        - **SOC**: Security Operations Center
 
     </details>
