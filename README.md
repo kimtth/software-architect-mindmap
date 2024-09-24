@@ -67,6 +67,8 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar
 - [Microsoft Learn](https://learn.microsoft.com/en-us/): Documentation and Code samples
 - [Trendshift](https://trendshift.io/): GitHub Trending repositories
+- [Design Gurus](https://www.designgurus.io/): Portal For Tech Interviews
+- [System Design Blueprint: The Ultimate Guide](https://blog.bytebytego.com/p/ep56-system-design-blueprint-the)
 
 ---
 
@@ -146,6 +148,9 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Data Engineering Wiki](https://dataengineering.wiki/Index)
 - [Semantic Scholar > Semantic Reader](https://www.semanticscholar.org)
 - [AI by Hand](https://by-hand.ai)
+- Visualizing relationships between research: [Litmaps](https://www.litmaps.com):  / [Connected Papers](https://www.connectedpapers.com/)
+- Finding Papers: [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery) / [scite_](https://scite.ai/)
+- Visualizer for neural network: [netron](https://github.com/lutzroeder/netron)
 
 ### Engineering blog
 
@@ -167,6 +172,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [How to Architect Software for a Greener Future](https://www.infoq.com/articles/architect-software-for-greener-future)
 - [Generative Search: Practical Advice for Retrieval Augmented Generation (RAG)](https://www.infoq.com/presentations/vector-embedding-llm/)
 - [What are the Greenest Programing Languages?](https://datasciencelearningcenter.substack.com/p/what-are-the-greenest-software-programming)
+- [Frugal Architect Handbook](http://thefrugalarchitect.com/)
 
 ### Computer Science Books
 
@@ -317,7 +323,11 @@ Optimization Theory for Computer Science and Machine Learning](https://www.cis.u
 1. [Machine Learning Interview Guide](https://github.com/Sroy20/machine-learning-interview-guide)
 1. [Awesome Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning)
 1. [365 Data Science Flashcards](https://365datascience.com/flashcards/)
-1. [Virgilio](https://github.com/virgili0/Virgilio) / [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook) / [Microsoft: 10 Weeks, 20 Lessons, Data Science](https://github.com/microsoft/Data-Science-For-Beginners) / [Data science Python notebooks](https://github.com/donnemartin/data-science-ipython-notebooks) / [📚 Papers & tech blog](https://github.com/eugeneyan/applied-ml) / [Open Source Data Science Masters](https://github.com/datasciencemasters/go) / [Awesome Data Science](https://github.com/academic/awesome-datascience) / [Data science interview questions and answers](https://github.com/alexeygrigorev/data-science-interviews) / [free self-taught education in Data Science!](https://github.com/ossu/data-science) / [data science project template](https://github.com/drivendataorg/cookiecutter-data-science) 
+1. [Virgilio](https://github.com/virgili0/Virgilio) / [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook) / [Microsoft: 10 Weeks, 20 Lessons, Data Science](https://github.com/microsoft/Data-Science-For-Beginners) / [Data science Python notebooks](https://github.com/donnemartin/data-science-ipython-notebooks) / [📚 Papers & tech blog](https://github.com/eugeneyan/applied-ml) / [Open Source Data Science Masters](https://github.com/datasciencemasters/go) / [Awesome Data Science](https://github.com/academic/awesome-datascience) / [Data science interview questions and answers](https://github.com/alexeygrigorev/data-science-interviews) / [free self-taught education in Data Science!](https://github.com/ossu/data-science)
+1. [data science project template](https://github.com/drivendataorg/cookiecutter-data-science)
+1. [labml.ai Deep Learning Paper Implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations): 60+ Implementations/tutorials of deep learning papers with side-by-side notes
+1. [Deep Learning Models](https://github.com/rasbt/deeplearning-models): A collection of various deep learning architectures, models, and tips
+1. [fastai book](https://github.com/fastai/fastbook): The fastai book, published as Jupyter Notebooks
 
 - [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
 
@@ -394,7 +404,7 @@ Optimization Theory for Computer Science and Machine Learning](https://www.cis.u
 
     </details>
 
-1. Data engineering & Data Scientists Vocab 101 [ref](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20)
+1. Data engineering & Data Scientists Vocab 101 [ref](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20) / [15 DS/ML Cheat Sheets](https://blog.dailydoseofds.com/p/15-dsml-cheat-sheets)
 
     <details>
 
@@ -833,4 +843,52 @@ Optimization Theory for Computer Science and Machine Learning](https://www.cis.u
         - **GRC**: Governance, Risk, and Compliance
         - **SOC**: Security Operations Center
 
+    </details>
+
+1. Cloud Design Patterns. [ref](https://newsletter.techworld-with-milan.com/p/what-are-the-main-cloud-design-patterns)
+
+    <details>
+    <summary>Expand</summary>
+
+    ### Cloud Design Patterns Summary
+
+    ### 1. **Data Management** 📊
+
+    - **Cache-Aside**: Cache frequently used data for performance.  
+    - **CQRS**: Separate reads/writes for scalability.  
+    - **Event Sourcing**: Record full data change history.  
+    - **Materialized View**: Precompute query results for speed.  
+    - **Sharding**: Partition data to scale storage.
+
+    ### 2. **Design and Implementation** 🛠️
+
+    - **Strangler Fig**: Gradually migrate legacy systems.  
+    - **Anti-Corruption Layer**: Isolate new systems from old ones.  
+    - **Bulkhead**: Prevent failure spread across components.  
+    - **Sidecar**: Add functionality without changing the core.  
+    - **BFF**: Tailor backend for different clients.
+
+    ### 3. **Messaging** 📨
+
+    - **Queue-Based Load Leveling**: Buffer requests for smooth load handling.  
+    - **Publisher-Subscriber**: Broadcast messages to multiple consumers.  
+    - **Competing Consumers**: Process messages in parallel for scalability.  
+    - **Message Broker**: Route messages via intermediary.  
+    - **Pipes and Filters**: Sequentially process data through components.
+
+    ### 4. **Security** 🔒
+
+    - **Valet Key**: Provide secure temporary access.  
+    - **Gatekeeper**: Filter requests to protect backends.  
+    - **Federated Identity**: Use third-party login credentials.  
+    - **Secret Store**: Secure sensitive data.  
+    - **Validation**: Ensure data input is sanitized.
+
+    ### 5. **Reliability** ⚙️
+
+    - **Retry**: Retry failed operations automatically.  
+    - **Circuit Breaker**: Stop repeated failing operations.  
+    - **Throttling**: Limit resource usage via request control.  
+    - **Health Endpoint Monitoring**: Expose health checks for monitoring.
+    
     </details>
