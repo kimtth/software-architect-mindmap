@@ -683,6 +683,8 @@ Optimization Theory for Computer Science and Machine Learning](https://www.cis.u
     🔹Sum: Adding numbers together. [ref](https://leetcode.com/problems/two-sum/solutions/737092/Sum-MegaPost-Python3-Solution-with-a-detailed-explanation/)
 
     🔹Monotonic Stack: A stack keeping elements in an ordered manner. [ref](https://leetcode.com/problems/sum-of-subarray-minimums/solutions/178876/stack-solution-with-very-detailed-explanation-step-by-step/)
+
+    🔹Big-O-Notation: [ref](https://blog.bytebytego.com/p/ep132-big-o-notation-101-the-secret)
     </details>
 
 1. Medallion architecture: A data design pattern for lakehouses. It enhances data quality across three layers: bronze (raw), silver (curated), and gold (presentation). This “multi-hop” architecture allows data to transition between layers as required. [ref](https://www.databricks.com/glossary/medallion-architecture)
@@ -891,4 +893,19 @@ Optimization Theory for Computer Science and Machine Learning](https://www.cis.u
     - **Throttling**: Limit resource usage via request control.  
     - **Health Endpoint Monitoring**: Expose health checks for monitoring.
     
+    </details>
+
+1. Principles & Concepts: YAGNI, KISS, DRY, CAP Theorem, PACELC, ACID, BASE
+
+    <details>
+    <summary>Expand</summary>
+
+    - **YAGNI (You Aren't Gonna Need It)**: Don’t add features until necessary.
+    - **KISS (Keep It Simple, Stupid)**: Keep designs simple.
+    - **DRY (Don't Repeat Yourself)**: Avoid code duplication.
+    - **CAP Theorem (Consistency, Availability, Partition Tolerance)**: Choose between consistency, availability, and partition tolerance.
+    - **PACELC (Partition Tolerance, Availability, Consistency, Else Latency/Consistency)**: Trade-offs exist in availability/consistency and latency/consistency.
+    - **ACID (Atomicity, Consistency, Isolation, Durability)**: Properties ensuring reliable database transactions.
+    - **BASE (Basically Available, Soft State, Eventually Consistent)**: Prioritizes availability and eventual consistency in distributed systems.
+
     </details>
