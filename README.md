@@ -134,6 +134,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Gartner Top Strategic Technology Trends 2024](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)
 - [MAD (ML/AI/Data) Landscape](https://mad.firstmark.com/)
 - [Hype Cycle for Emerging Technologies 2024](https://www.gartner.com/en/newsroom/press-releases/2024-08-21-gartner-2024-hype-cycle-for-emerging-technologies-highlights-developer-productivity-total-experience-ai-and-security)
+- [Microsoft Digital Defense Report](https://aka.ms/MDDR)
 
 ### Newsletter
 
@@ -177,45 +178,53 @@ This mindmap created by `https://app.mindmapmaker.org/`
 ### Computer Science Books
 
 1. General
-    - The Pragmatic Programmer by David Thomas and Andrew Hunt
-    - Modern Software Engineering by David Farley
-    - Code Complete by Steve McConnell
-    - Software Engineering at Google by Titus Winters, Tom Manshreck, and Hyrum Wright
-1. Good Practices
-    - Clean Code by Uncle Bob Martin
-    - Head First Design Patterns by Eric Freeman
-    - Refactoring by Martin Fowler
-    - Design Patterns by Eric Gamma and Others
-1. Data Structures and Algorithms
-    - Grokking Algorithms by Aditya Bhargava
-    - Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein
-    - Cracking the Coding Interview by Gayle Laakmann McDowell
-1. Data
-    - Designing Data-Intensive Applications by Martin Kleppman
-    - Learning SQL by Alan Beaulieu
-1. Testing
-    - Growing Object-Oriented Software by Tests by Steve Freeman
-    Unit Testing Principles, Practices, and Patterns by Vladimir Khorikov
-    - The Art of Unit Testing by Roy Osherove
-    - TDD by Example by Kent Beck
-1. Software Architecture
-    - Fundamentals Of Software Architecture by Mark Richards and Neil Ford
-    - Clean Architecture by Uncle Bob Martin
-    - Software Architecture The Hard Parts by Neal Ford, Mark Richards, Pramod Sadalage, and Zhamak Dehghani
-    - Domain Driven Design Quickly by Abel Avram and Floyd Marinescu
-    - A Philosophy of Software Design by John Ousterhout
-    - System Design Interview by Alex Xu
-    - Domain-Driven Design by Eric Evans
-1. Distributed Systems
-    - Understanding Distributed Systems by Roberto Vitillo
-    - Designing Distributed Systems by Brendan Burns
-1. DevOps
-    - DevOps Handbook by Gene Kim, Patrick Debois, John Willis, and Jez Humble
-    - Continuous Delivery by Jez Humble and David Farley
-    - Accelerate by Nicole Forsgren, Jez Humble, and Gene Kim
-1. Machine Learning
-    - The Hundred-Page Machine Learning Book by Andriy Burkov
-    - Designing Machine Learning Systems by Chip Huyen
+    - [The Pragmatic Programmer](https://www.amazon.com/dp/020161622X) by David Thomas and Andrew Hunt
+    - [Modern Software Engineering](https://www.amazon.com/dp/0137314914) by David Farley
+    - [Code Complete](https://www.amazon.com/dp/0735619670) by Steve McConnell
+    - [Software Engineering at Google](https://www.amazon.com/dp/1492082791) by Titus Winters, Tom Manshreck, and Hyrum Wright
+
+2. Good Practices
+    - [Clean Code](https://www.amazon.com/dp/0132350882) by Uncle Bob Martin
+    - [Head First Design Patterns](https://www.amazon.com/dp/0596007124) by Eric Freeman
+    - [Refactoring](https://www.amazon.com/dp/0201485672) by Martin Fowler
+    - [Design Patterns](https://www.amazon.com/dp/0201633612) by Eric Gamma and Others
+
+3. Data Structures and Algorithms
+    - [Grokking Algorithms](https://www.amazon.com/dp/1617292230) by Aditya Bhargava
+    - [Introduction to Algorithms](https://www.amazon.com/dp/0262033844) by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein
+    - [Cracking the Coding Interview](https://www.amazon.com/dp/0984782850) by Gayle Laakmann McDowell
+
+4. Data
+    - [Designing Data-Intensive Applications](https://www.amazon.com/dp/1449373321) by Martin Kleppman
+    - [Learning SQL](https://www.amazon.com/dp/0596520832) by Alan Beaulieu
+
+5. Testing
+    - [Growing Object-Oriented Software, Guided by Tests](https://www.amazon.com/dp/0321503627) by Steve Freeman
+    - [Unit Testing Principles, Practices, and Patterns](https://www.amazon.com/dp/1617296279) by Vladimir Khorikov
+    - [The Art of Unit Testing](https://www.amazon.com/dp/1617290890) by Roy Osherove
+    - [TDD by Example](https://www.amazon.com/dp/0321146530) by Kent Beck
+
+6. Software Architecture
+    - [Fundamentals Of Software Architecture](https://www.amazon.com/dp/1492043451) by Mark Richards and Neil Ford
+    - [Clean Architecture](https://www.amazon.com/dp/0134494164) by Uncle Bob Martin
+    - [Software Architecture: The Hard Parts](https://www.amazon.com/dp/1492086894) by Neal Ford, Mark Richards, Pramod Sadalage, and Zhamak Dehghani
+    - [Domain-Driven Design Quickly](https://www.amazon.com/dp/1411609255) by Abel Avram and Floyd Marinescu
+    - [A Philosophy of Software Design](https://www.amazon.com/dp/1732102201) by John Ousterhout
+    - [System Design Interview](https://www.amazon.com/dp/1736049119) by Alex Xu
+    - [Domain-Driven Design](https://www.amazon.com/dp/0321125215) by Eric Evans
+
+7. Distributed Systems
+    - [Understanding Distributed Systems](https://www.amazon.com/dp/1838430210) by Roberto Vitillo
+    - [Designing Distributed Systems](https://www.amazon.com/dp/1491983647) by Brendan Burns
+
+8. DevOps
+    - [DevOps Handbook](https://www.amazon.com/dp/1942788002) by Gene Kim, Patrick Debois, John Willis, and Jez Humble
+    - [Continuous Delivery](https://www.amazon.com/dp/0321601912) by Jez Humble and David Farley
+    - [Accelerate](https://www.amazon.com/dp/1942788339) by Nicole Forsgren, Jez Humble, and Gene Kim
+
+9. Machine Learning
+    - [The Hundred-Page Machine Learning Book](https://www.amazon.com/dp/199957950X) by Andriy Burkov
+    - [Designing Machine Learning Systems](https://www.amazon.com/dp/1098107969) by Chip Huyen
 
 - [ref](https://newsletter.techworld-with-milan.com/p/learn-things-that-dont-change) / [ref](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software)
 
@@ -223,18 +232,18 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ### Computer Science Papers Every Developers Should Read
 
-- [ref](https://x.com/milan_milanovic/status/1747167493553062398?s=20) 
+- [ref](https://x.com/milan_milanovic/status/1747167493553062398?s=20)
 
-1. On the Criteria To Be Used in Decomposing Systems into Modules (1972), D.L. Parnas: [ref](https://win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
-2. An Axiomatic Basis for Computer Programming (1969), C.A.R. Hoare: [ref](http://sunnyday.mit.edu/16.355/Hoare-CACM-69.pdf)
-3. Time, Clocks, and the Ordering of Events in a Distributed System (1978), L. Lamport: [ref](https://microsoft.com/en-us/research/publication/time-clocks-ordering-events-distributed-system/)
-4. Out of the Tar Pit (2006), B. Moseley, P. Marks: [ref](https://curtclifton.net/papers/MoseleyMarks06a.pdf)
-5. Dynamo: Amazon’s Highly Available Key-value Store (2007), G. DeCandia et al.: [ref](https://allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
-6. MapReduce: Simplified Data Processing on Large Clusters (2004), J. Dean, S. Ghemawat: [ref](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf)
-7. A Note On Distributed Computing (1994), J. Waldo, G. Wyant, A. Wollrath, S. Kendall: [ref](https://scholar.harvard.edu/files/waldo/files/waldo-94.pdf)
-8. A Metrics Suite for Object-Oriented Design (1994), S.R. Chidamber: [ref](https://sites.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf)
-9. A Relational Model of Data for Large Shared Data Banks (1969), E.F. Codd: [ref](https://dl.acm.org/doi/10.1145/362384.362685)
-10. Why Functional Programming Matters (1990), J. Hughes: [ref](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf)
+1. [On the Criteria To Be Used in Decomposing Systems into Modules (1972)](https://win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf): D.L. Parnas  
+2. [An Axiomatic Basis for Computer Programming (1969)](http://sunnyday.mit.edu/16.355/Hoare-CACM-69.pdf): C.A.R. Hoare  
+3. [Time, Clocks, and the Ordering of Events in a Distributed System (1978)](https://microsoft.com/en-us/research/publication/time-clocks-ordering-events-distributed-system/): L. Lamport  
+4. [Out of the Tar Pit (2006)](https://curtclifton.net/papers/MoseleyMarks06a.pdf): B. Moseley, P. Marks  
+5. [Dynamo: Amazon’s Highly Available Key-value Store (2007)](https://allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf): G. DeCandia et al.  
+6. [MapReduce: Simplified Data Processing on Large Clusters (2004)](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf): J. Dean, S. Ghemawat  
+7. [A Note On Distributed Computing (1994)](https://scholar.harvard.edu/files/waldo/files/waldo-94.pdf): J. Waldo, G. Wyant, A. Wollrath, S. Kendall  
+8. [A Metrics Suite for Object-Oriented Design (1994)](https://sites.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf): S.R. Chidamber  
+9. [A Relational Model of Data for Large Shared Data Banks (1969)](https://dl.acm.org/doi/10.1145/362384.362685): E.F. Codd  
+10. [Why Functional Programming Matters (1990)](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf): J. Hughes  
 
 ### Distributed Systems!
 
@@ -244,31 +253,31 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 - [ref](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software) [May 2024]
 
-1. Dynamo - Amazon’s Highly Available Key Value Store  [ref](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
-2. Google File System: Insights into a highly scalable file system [ref](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
-3. Scaling Memcached at Facebook: A look at the complexities of Caching [ref](https://research.facebook.com/file/839620310074473/scaling-memcache-at-facebook.pdf)
-4. BigTable: The design principles behind a distributed storage system [ref](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf)
-5. Borg - Large Scale Cluster Management at Google [ref](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43438.pdf)
-6. Cassandra: A look at the design and architecture of a distributed NoSQL database [ref](https://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf)
-7. Attention Is All You Need: Into a new deep learning architecture known as the transformer [ref](https://arxiv.org/abs/1706.03762)
-8. Kafka: Internals of the distributed messaging platform [ref](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/09/Kafka.pdf)
-9. FoundationDB: A look at how a distributed database [ref](https://www.foundationdb.org/files/fdb-paper.pdf)
-10. Amazon Aurora: To learn how Amazon provides high-availability and performance [ref](https://web.stanford.edu/class/cs245/readings/aurora.pdf)
-11. Spanner: Design and architecture of Google’s globally distributed databas [ref](https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf)
-12. MapReduce: A detailed look at how MapReduce enables parallel processing of massive volumes of data [ref](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/16cb30b4b92fd4989b8619a61752a2387c6dd474.pdf)
-13. Shard Manager: Understanding the generic shard management framework [ref](https://dl.acm.org/doi/pdf/10.1145/3477132.3483546)
-14. Dapper: Insights into Google’s distributed systems tracing infrastructure [ref](https://static.googleusercontent.com/media/research.google.com/en//archive/papers/dapper-2010-1.pdf)
-15. Flink: A detailed look at the uniﬁed architecture of stream and batch processing [ref](https://www.researchgate.net/publication/308993790_Apache_Flink_Stream_and_Batch_Processing_in_a_Single_Engine)
-16. A Comprehensive Survey on Vector Databases [ref](https://arxiv.org/pdf/2310.11703.pdf)
-17. Zanzibar: A look at the design, implementation and deployment of a global system for managing access control lists at Google [ref](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/d84ab6c93881af998de877d0070a706de7bec6d8.pdf)
-18. Monarch: Architecture of Google’s in-memory time series database [ref](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/d84ab6c93881af998de877d0070a706de7bec6d8.pdf)
-19. Thrift: Explore the design choices behind Facebook’s code-generation tool [ref](https://thrift.apache.org/static/files/thrift-20070401.pdf)
-20. Bitcoin: The ground-breaking introduction to the peer-to-peer electronic cash system [ref](https://bitcoin.org/bitcoin.pdf)
-21. WTF - Who to Follow Service at Twitter: Twitter’s (now X) user recommendation system [ref](https://web.stanford.edu/~ashishg/papers/wtf_overview.pdf)
-22. MyRocks: LSM-Tree Database Storage Engine [ref](https://www.vldb.org/pvldb/vol13/p3217-matsunobu.pdf)
-23. GoTo Considered Harmful [ref](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf)
-24. Raft Consensus Algorithm: To learn about the more understandable consensus algorithm [ref](https://raft.github.io/raft.pdf)
-25. Time Clocks and Ordering of Events: The extremely important paper that explains the concept of time and event ordering in a distributed system [ref](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)
+1. [Dynamo](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf): Amazon’s Highly Available Key Value Store  
+2. [Google File System](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf): Insights into a highly scalable file system  
+3. [Scaling Memcached at Facebook](https://research.facebook.com/file/839620310074473/scaling-memcache-at-facebook.pdf): A look at the complexities of caching  
+4. [BigTable](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf): The design principles behind a distributed storage system  
+5. [Borg](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43438.pdf): Large Scale Cluster Management at Google  
+6. [Cassandra](https://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf): A look at the design and architecture of a distributed NoSQL database  
+7. [Attention Is All You Need](https://arxiv.org/abs/1706.03762): Into a new deep learning architecture known as the transformer  
+8. [Kafka](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/09/Kafka.pdf): Internals of the distributed messaging platform  
+9. [FoundationDB](https://www.foundationdb.org/files/fdb-paper.pdf): A look at how a distributed database works  
+10. [Amazon Aurora](https://web.stanford.edu/class/cs245/readings/aurora.pdf): How Amazon provides high availability and performance  
+11. [Spanner](https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf): Design and architecture of Google’s globally distributed database  
+12. [MapReduce](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/16cb30b4b92fd4989b8619a61752a2387c6dd474.pdf): A detailed look at how MapReduce enables parallel processing of massive volumes of data  
+13. [Shard Manager](https://dl.acm.org/doi/pdf/10.1145/3477132.3483546): Understanding the generic shard management framework  
+14. [Dapper](https://static.googleusercontent.com/media/research.google.com/en//archive/papers/dapper-2010-1.pdf): Insights into Google’s distributed systems tracing infrastructure  
+15. [Flink](https://www.researchgate.net/publication/308993790_Apache_Flink_Stream_and_Batch_Processing_in_a_Single_Engine): A detailed look at the unified architecture of stream and batch processing  
+16. [A Comprehensive Survey on Vector Databases](https://arxiv.org/pdf/2310.11703.pdf)  
+17. [Zanzibar](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/d84ab6c93881af998de877d0070a706de7bec6d8.pdf): A look at the design, implementation, and deployment of a global system for managing access control lists at Google  
+18. [Monarch](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/d84ab6c93881af998de877d0070a706de7bec6d8.pdf): Architecture of Google’s in-memory time series database  
+19. [Thrift](https://thrift.apache.org/static/files/thrift-20070401.pdf): Explore the design choices behind Facebook’s code-generation tool  
+20. [Bitcoin](https://bitcoin.org/bitcoin.pdf): The ground-breaking introduction to the peer-to-peer electronic cash system  
+21. [WTF - Who to Follow Service at Twitter](https://web.stanford.edu/~ashishg/papers/wtf_overview.pdf): Twitter’s (now X) user recommendation system  
+22. [MyRocks](https://www.vldb.org/pvldb/vol13/p3217-matsunobu.pdf): LSM-Tree Database Storage Engine  
+23. [GoTo Considered Harmful](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf)  
+24. [Raft Consensus Algorithm](https://raft.github.io/raft.pdf): Learn about the more understandable consensus algorithm  
+25. [Time Clocks and Ordering of Events](https://lamport.azurewebsites.net/pubs/time-clocks.pdf): The extremely important paper that explains the concept of time and event ordering in a distributed system  
 
 ## Data Science (ML/NN)
 
@@ -282,31 +291,28 @@ This mindmap created by `https://app.mindmapmaker.org/`
 6. [Probabilistic Machine Learning: Advanced Topics](https://probml.github.io/pml-book/) - Kevin Patrick Murphy
 7. [Understanding Machine Learning](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/) - Shai Shalev-Shwartz and Shai Ben-David
 8. [Automated Machine Learning](https://www.automl.org/book/) - Frank Hutter, Lars Kotthoff, Joaquin Vanschoren
-9. [Applied Causal Inference](https://www.appliedcausalinference.org/) - Uday Kamath, Kenneth Graham, Mitchell Naylor
+9. [Applied Causal Inference](https://appliedcausalinference.github.io/aci_book/index.html) - Uday Kamath, Kenneth Graham, Mitchell Naylor
 10. [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html) - Richard S. Sutton and Andrew G. Barto
 11. [The Hundred-Page Machine Learning Book](http://themlbook.com/) - Andriy Burkov
 12. [Machine Learning Engineering](http://www.mlebook.com/wiki/doku.php) - Andriy Burkov
 13. [Natural Language Processing with Python](https://www.nltk.org/book/) - Steven Bird, Ewan Klein, and Edward Loper
 14. [Dive into Deep Learning](https://d2l.ai/) - Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola
-15. [Machine Learning Yearning](https://www.deeplearning.ai/machine-learning-yearning/) - Andrew NG
+15. [Machine Learning Yearning](https://github.com/ajaymache/machine-learning-yearning) - Andrew NG
 16. [Machine Learning for Humans](https://vas3k.com/blog/machine_learning/) - Vishal Maini, Samer Sabri
 17. [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book) - Christopher M. Bishop
-18. [Deep Learning on Graphs](https://www.deeplearningongraphs.com/) - Yao Ma and Jiliang Tang
+18. [Deep Learning on Graphs](https://yaoma24.github.io/dlg_book/index.html) - Yao Ma and Jiliang Tang
 19. [Approaching (Almost) Any Machine Learning Problem](https://github.com/abhishekkrthakur/approachingalmost) - Abhishek Thakur
 20. [Feature Engineering and Selection](https://bookdown.org/max/FES/) - Max Kuhn and Kjell Johnson
 21. [Hands-On Machine Learning with R](https://bradleyboehmke.github.io/HOML/) - Bradley Boehmke & Brandon Greenwell
-22. [Deep Learning Interviews](https://www.amazon.com/Deep-Learning-Interviews-Solved-Questions/dp/1087810791) - Shlomo Kashani and Amir Ivry
-23. [Machine Learning Interpretability](https://learning.oreilly.com/library/view/an-introduction-to/9781098101425/) - Patrick Hall and Navdeep Gill
+22. [Deep Learning Interviews](https://arxiv.org/abs/2201.00650) - Shlomo Kashani and Amir Ivry
+23. [Machine Learning Interpretability](https://www.oreilly.com/library/view/an-introduction-to/9781492033158/) - Patrick Hall and Navdeep Gill
 24. [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) - Christoph Molnar
-25. [Boosting: Foundations and Algorithms](https://mitpress.mit.edu/books/boosting) - Robert E. Schapire, Yoav Freund
-26. [A Brief Introduction to Machine Learning for Engineers](https://www.springer.com/gp/book/9783030219417) - Osvaldo Simeone
+25. [Boosting: Foundations and Algorithms](https://direct.mit.edu/books/oa-monograph/5342/BoostingFoundations-and-Algorithms) - Robert E. Schapire, Yoav Freund
+26. [A Brief Introduction to Machine Learning for Engineers](https://arxiv.org/abs/1709.02840) - Osvaldo Simeone
 27. [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) - Daniel Jurafsky & James Martin
-28. [Computer Vision: Models, Learning, and Inference](http://www.computervisionmodels.com/) - Simon J.D. Prince
+28. [Computer Vision: Models, Learning, and Inference](https://udlbook.github.io/cvbook/) - Simon J.D. Prince
 29. [Information Theory, Inference and Learning Algorithms](http://www.inference.org.uk/mackay/itila/) - David J. C. MacKay
 30. [Machine Learning For Dummies](https://www.ibm.com/downloads/cas/GB8ZMQZ3) - Judith Hurwitz and Daniel Kirsch
-
-- [ref](https://www.kdnuggets.com/10-github-repositories-to-master-machine-learning?utm_source=rss&utm_medium=rss&utm_campaign=10-github-repositories-to-master-machine-learning)
-
 31. [Algebra, Topology, Differential Calculus, and
 Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/gbooks/geomath.html)
 
@@ -323,7 +329,7 @@ Optimization Theory for Computer Science and Machine Learning](https://www.cis.u
 1. [Machine Learning Interview Guide](https://github.com/Sroy20/machine-learning-interview-guide)
 1. [Awesome Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning)
 1. [365 Data Science Flashcards](https://365datascience.com/flashcards/)
-1. [Virgilio](https://github.com/virgili0/Virgilio) / [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook) / [Microsoft: 10 Weeks, 20 Lessons, Data Science](https://github.com/microsoft/Data-Science-For-Beginners) / [Data science Python notebooks](https://github.com/donnemartin/data-science-ipython-notebooks) / [📚 Papers & tech blog](https://github.com/eugeneyan/applied-ml) / [Open Source Data Science Masters](https://github.com/datasciencemasters/go) / [Awesome Data Science](https://github.com/academic/awesome-datascience) / [Data science interview questions and answers](https://github.com/alexeygrigorev/data-science-interviews) / [free self-taught education in Data Science!](https://github.com/ossu/data-science)
+1. [ref](https://www.kdnuggets.com/10-github-repositories-to-master-machine-learning?utm_source=rss&utm_medium=rss&utm_campaign=10-github-repositories-to-master-machine-learning) > [Virgilio](https://github.com/virgili0/Virgilio) | [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook) | [Microsoft: 10 Weeks, 20 Lessons, Data Science](https://github.com/microsoft/Data-Science-For-Beginners) | [Data science Python notebooks](https://github.com/donnemartin/data-science-ipython-notebooks) | [📚 Papers & tech blog](https://github.com/eugeneyan/applied-ml) | [Open Source Data Science Masters](https://github.com/datasciencemasters/go) | [Awesome Data Science](https://github.com/academic/awesome-datascience) | [Data science interview questions and answers](https://github.com/alexeygrigorev/data-science-interviews) | [free self-taught education in Data Science!](https://github.com/ossu/data-science)
 1. [data science project template](https://github.com/drivendataorg/cookiecutter-data-science)
 1. [labml.ai Deep Learning Paper Implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations): 60+ Implementations/tutorials of deep learning papers with side-by-side notes
 1. [Deep Learning Models](https://github.com/rasbt/deeplearning-models): A collection of various deep learning architectures, models, and tips
@@ -907,5 +913,63 @@ Optimization Theory for Computer Science and Machine Learning](https://www.cis.u
     - **PACELC (Partition Tolerance, Availability, Consistency, Else Latency/Consistency)**: Trade-offs exist in availability/consistency and latency/consistency.
     - **ACID (Atomicity, Consistency, Isolation, Durability)**: Properties ensuring reliable database transactions.
     - **BASE (Basically Available, Soft State, Eventually Consistent)**: Prioritizes availability and eventual consistency in distributed systems.
+
+    </details>
+
+1. Windows UI Development Frameworks: WinUI3, Windows Form, WPF, UWP, Win32, .NET MAUI, Uno
+
+    <details>
+    <summary>Expand</summary>
+
+    - For new Windows apps, use the Windows App SDK and WinUI instead of UWP, which is no longer actively developed.
+    - .NET MAUI is backed by Microsoft, whereas the Uno Platform is supported by nventive.
+
+    ```mermaid
+    graph TD
+        A[WinUI 3 <br/>'Windows UI Library 3 <br/>Supports only Windows'] -->|Builds on| B[UWP <br/>'Universal Windows Platform <br/>Supports only Windows']
+        A -->|Supports| E[.NET MAUI <br/>'Multi-platform App UI <br/>Cross-platform support: not support Linux']
+        B -->|Shares components with| E
+        C[WPF <br/>'Windows Presentation Foundation <br/>Supports only Windows'] -->|Integrates with| E
+        D[Windows Forms <br/>'Older framework <br/>Supports only Windows'] -->|Legacy framework| C
+        F[Uno Platform <br/>'Cross-platform apps <br/>Cross-platform support incl. WebAssembly'] -->|Uses| A
+        F -->|Leverages| B
+        G[Win32 MFC <br/>'Microsoft Foundation Classes <br/>Supports only Windows'] -->|Legacy framework| C
+        H[PWA <br/>'Progressive Web Apps <br/>Cross-platform support'] -->|Builds on| B
+        I[React Native for Windows <br/>'Cross-platform mobile framework <br/>Cross-platform support'] -->|Supports| A
+        J[Blazor Hybrid <br/>'Web UI with native capabilities <br/>Cross-platform support'] -->|Integrates with| E
+
+        %% Set styles for the backgrounds
+        style A fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px;  %% WinUI 3 as Windows-only
+        style B fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px;  %% UWP as Windows-only
+        style E fill:#e0f7fa,stroke:#4d94ff,stroke-width:2px;  %% Cross-platform
+        style F fill:#e0f7fa,stroke:#4d94ff,stroke-width:2px;  %% Cross-platform
+        
+        style C fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px;  %% WPF as Windows-only
+        style D fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px;  %% Windows Forms as Windows-only
+        style G fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px;  %% Win32 MFC as Windows-only
+
+        %% Set styles for web app frameworks
+        style H fill:#c8e6c9,stroke:#388e3c,stroke-width:2px;  %% PWA as Cross-platform
+        style I fill:#c8e6c9,stroke:#388e3c,stroke-width:2px;  %% React Native for Windows
+        style J fill:#c8e6c9,stroke:#388e3c,stroke-width:2px;  %% Blazor Hybrid
+        
+        %% Add color legend
+        K[Legend: <br/> <span style='color:#4d94ff'>Blue Background:</span> Cross-platform support <br/> <span style='color:#6a1b9a'>Purple Background:</span> Supports only Windows <br/> <span style='color:#388e3c'>Green Background:</span> Web app frameworks] 
+        
+        %% Set styles for the legend background
+        style K fill:#fff9c4,stroke:#f57f17,stroke-width:2px;
+
+        %% Comments
+        click A "https://docs.microsoft.com/en-us/windows/apps/winui/winui3/" "WinUI 3: Modern UI framework for Windows apps."
+        click B "https://docs.microsoft.com/en-us/windows/uwp/" "UWP: Build universal apps for all Windows devices."
+        click C "https://docs.microsoft.com/en-us/dotnet/desktop/wpf/" "WPF: Rich desktop applications with advanced graphics."
+        click D "https://docs.microsoft.com/en-us/dotnet/desktop/winforms/" "Windows Forms: Simplified desktop app development."
+        click E "https://docs.microsoft.com/en-us/dotnet/maui/" ".NET MAUI: Cross-platform UI framework for mobile and desktop."
+        click F "https://platform.uno/" "Uno Platform: Build cross-platform apps using WinUI."
+        click G "https://learn.microsoft.com/en-us/cpp/mfc/overview-of-mfc?view=msvc-160" "Win32 MFC: C++ framework for Windows desktop applications."
+        click H "https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/" "PWA: Build web apps that behave like native apps."
+        click I "https://microsoft.github.io/react-native-windows/" "React Native for Windows: Build cross-platform apps using React Native."
+        click J "https://docs.microsoft.com/en-us/aspnet/core/client-side/blazor/hybrid?view=aspnetcore-7.0" "Blazor Hybrid: Build web UIs with native capabilities."
+    ```
 
     </details>
