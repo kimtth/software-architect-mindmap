@@ -88,10 +88,12 @@ This mindmap created by `https://app.mindmapmaker.org/`
     </details>
 - [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf) / [Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
 
----
+### Building from scratch
 
+- [Web Browser Engineering](https://browser.engineering/): Building a basic but complete web browser from scratch
 - [Curated list of project-based tutorials](https://github.com/practical-tutorials/project-based-learning)
 - [Master programming by recreating your favorite technologies from scratch](https://github.com/codecrafters-io/build-your-own-x)
+- [Build frontend applications at scale](https://frontendatscale.com/courses/frontend-architecture/)
 
 ### Cloud Architecture
 
@@ -140,7 +142,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 - [Substack Leaderboard](https://substack.com/browse/technology): Newsletter
 
-### Tools
+### Tools & Research
 
 - [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): Interactive Online Platform that Visualizes Algorithms from Code
 - [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Bluelight Consulting
@@ -152,6 +154,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - Visualizing relationships between research: [Litmaps](https://www.litmaps.com):  / [Connected Papers](https://www.connectedpapers.com/)
 - Finding Papers: [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery) / [scite_](https://scite.ai/)
 - Visualizer for neural network: [netron](https://github.com/lutzroeder/netron)
+- [Dev Encyclopedia](https://devpedia.dev/): Encyclopedia for developers / [git](https://github.com/Buzzpy/Dev-Encyclopedia)
 
 ### Engineering blog
 
@@ -691,6 +694,16 @@ Optimization Theory for Computer Science and Machine Learning](https://www.cis.u
     🔹Monotonic Stack: A stack keeping elements in an ordered manner. [ref](https://leetcode.com/problems/sum-of-subarray-minimums/solutions/178876/stack-solution-with-very-detailed-explanation-step-by-step/)
 
     🔹Big-O-Notation: [ref](https://blog.bytebytego.com/p/ep132-big-o-notation-101-the-secret)
+
+    🔹**src**: [ref](https://blog.algomaster.io)
+
+    🔹[Master Graph Algorithms for Coding Interviews](https://blog.algomaster.io/p/master-graph-algorithms-for-coding)
+
+    🔹[20 Patterns to Master Dynamic Programming](https://blog.algomaster.io/p/20-patterns-to-master-dynamic-programming)
+
+    🔹[LeetCode was HARD until I Learned these 15 Patterns](https://blog.algomaster.io/p/15-leetcode-patterns)
+
+    🔹[How I Mastered Data Structures and Algorithms](https://blog.algomaster.io/p/how-i-mastered-data-structures-and-algorithms)
     </details>
 
 1. Medallion architecture: A data design pattern for lakehouses. It enhances data quality across three layers: bronze (raw), silver (curated), and gold (presentation). This “multi-hop” architecture allows data to transition between layers as required. [ref](https://www.databricks.com/glossary/medallion-architecture)
