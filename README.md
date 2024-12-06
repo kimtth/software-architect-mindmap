@@ -5,7 +5,8 @@
   - [Cloud Architecture](#cloud-architecture)
   - [Computer Science courses](#computer-science-courses)
   - [Industry Trends](#industry-trends)
-  - [Newsletter](#newsletter) / [Tools](#tools)
+  - [Newsletter](#newsletter)
+  - [Tools](#tools--research)
   - [Engineering blog](#engineering-blog)
   - [Computer Science Books](#computer-science-books)
 - **Section 3**: [Computer Science Papers](#computer-science-papers)
@@ -13,7 +14,8 @@
   - [Distributed Systems!](#distributed-systems)
   - [25 Papers That Completely Transformed the Computer World](#25-papers-that-completely-transformed-the-computer-world)
 - **Section 4**: [Data Science (ML/NN)](#data-science-mlnn)
-  - [Free e-books](#30-free-e-books) / [GitHub](#github)
+  - [Free e-books](#free-e-books)
+  - [GitHub](#github)
 - **Section 5**: [Terminology and Comparisons](#terminology-and-comparisons)
 
 ## Software Architecture Mindmap
@@ -142,11 +144,13 @@ This mindmap created by `https://app.mindmapmaker.org/`
 ### Newsletter
 
 - [Substack Leaderboard](https://substack.com/browse/technology): Newsletter
+- [daily.dev](https://app.daily.dev): Personalized news feed
 
 ### Tools & Research
 
 - [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): Interactive Online Platform that Visualizes Algorithms from Code
 - [Hello Algo](https://www.hello-algo.com/en/)
+- [Wikipedia: List of algorithms](https://www.wikiwand.com/en/articles/List_of_algorithms)
 - [OOP Design Patterns](https://refactoring.guru/design-patterns)
 - [Dev Encyclopedia](https://devpedia.dev/): Encyclopedia for developers / [git](https://github.com/Buzzpy/Dev-Encyclopedia)
 - [Data Engineering Wiki](https://dataengineering.wiki/Index)
@@ -159,6 +163,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - Finding Papers: [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery) / [scite_](https://scite.ai/)
 - Visualizer for neural network: [netron](https://github.com/lutzroeder/netron)
 - [Excalidraw](https://excalidraw.com/)
+- [eraser.io](https://www.eraser.io/): Diagram as Code
 
 ### Engineering blog
 
@@ -288,7 +293,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ## Data Science (ML/NN)
 
-### 30 free e-books
+### Free e-books
 
 1. [Deep Learning](http://www.deeplearningbook.org/) - Ian Goodfellow, Yoshua Bengio, and Aaron Courville
 2. [Mathematics for Machine Learning](https://mml-book.github.io/) - Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
@@ -320,8 +325,8 @@ This mindmap created by `https://app.mindmapmaker.org/`
 28. [Computer Vision: Models, Learning, and Inference](https://udlbook.github.io/cvbook/) - Simon J.D. Prince
 29. [Information Theory, Inference and Learning Algorithms](http://www.inference.org.uk/mackay/itila/) - David J. C. MacKay
 30. [Machine Learning For Dummies](https://www.ibm.com/downloads/cas/GB8ZMQZ3) - Judith Hurwitz and Daniel Kirsch
-31. [Algebra, Topology, Differential Calculus, and
-Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/gbooks/geomath.html)
+31. [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/gbooks/geomath.html)
+32. [@mathtalent Lecture Notes](https://skim.math.msstate.edu/LectureNotes/)
 
 ### github
 
