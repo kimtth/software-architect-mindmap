@@ -327,6 +327,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 30. [Machine Learning For Dummies](https://www.ibm.com/downloads/cas/GB8ZMQZ3) - Judith Hurwitz and Daniel Kirsch
 31. [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/gbooks/geomath.html)
 32. [@mathtalent Lecture Notes](https://skim.math.msstate.edu/LectureNotes/)
+33. [Mathematical Methods for Computer Vision, Robotics, and Graphics](http://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf)
 
 ### github
 
