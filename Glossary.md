@@ -74,7 +74,7 @@
 
     🔹 Load Balancer: Distributes network traffic across multiple servers for high availability and even load distribution.
 
-1. **Data engineering & Data Scientists Vocab 101** [ref](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20) / [15 DS/ML Cheat Sheets](https://blog.dailydoseofds.com/p/15-dsml-cheat-sheets)
+1. **Data engineering & Data Scientists Vocab 101** [ref](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20) | [15 DS/ML Cheat Sheets](https://blog.dailydoseofds.com/p/15-dsml-cheat-sheets) | [git](https://github.com/ChawlaAvi/Daily-Dose-of-Data-Science)
 
     🔹 Data engineering Vocab 101
 
@@ -176,7 +176,7 @@
     - Event-Driven: Handles user actions or system events. More general and can be used in any context where an event occurs
     - Reactive: Data-driven approach. managing data streams and propagating changes, like in a spreadsheet model.
 
-1.  **RABC vs ReABC**: RBAC (Role-Based Access Control) is an authorization model that assigns permissions based on predefined roles. On the other hand, ReBAC (Relationship-Based Access Control) extends RBAC’s capabilities by considering relationships between entities.
+1. **RABC vs ReABC**: RBAC (Role-Based Access Control) is an authorization model that assigns permissions based on predefined roles. On the other hand, ReBAC (Relationship-Based Access Control) extends RBAC’s capabilities by considering relationships between entities.
 1. **Conway's law**: Software engineering principle that states that the structure of a system reflects the structure of the organization that designs it.
 1.  Data Management in Distributed systems (Partitioning, Shuffling and Bucketing)
 
@@ -575,3 +575,34 @@
     🔹**LLVM (Low-Level Virtual Machine)**: First released in 2003, LLVM uses an Intermediate Representation (IR) and a modular design, translating code to machine code via various backends. It supports a variety of languages, such as C, C++, Swift, Rust, and others. LLVM is Apache 2.0 licensed and is recognized for its flexibility, extensibility, and modern features, including Just-In-Time (JIT) compilation.
 
     🔹Key Differences: LLVM's modularity and permissive licensing foster broader tool integration and extensibility, while GCC is renowned for its mature optimization capabilities.
+
+1. A CIO’s framework for measuring engineering productivity
+
+    🔹**DORA (DevOps Research and Assessment)**: Measures software delivery performance using metrics like deployment frequency, lead time, MTTR, and change failure rate.  [ref](https://dora.dev/guides/dora-metrics-four-keys/)
+
+    🔹**SPACE**: S atisfaction & Wellbeing, P erformance, A ctivity, C ommunication & Collaboration, and E fficiency & Flow. Developed by Microsoft researchers to measure Developer Productivity. [ref](https://queue.acm.org/detail.cfm?id=3454124)
+
+    🔹**DX Core 4**: Combines DORA, SPACE, and DevEx. DX Core 4 dimensions: Speed, Effectiveness, Quality, Impact.  [ref](https://getdx.com/research/measuring-developer-productivity-with-the-dx-core-4/)
+
+    🔹**DevEx (Developer Experience)**: Enhances developer productivity by improving tools, workflows, and environments, prioritizing satisfaction and efficiency. [ref](https://queue.acm.org/detail.cfm?id=3595878)
+
+1. Generic: PECS: Producer Extends, Consumer Super
+
+   🔹Producer Extends → Covariance → Only Read (you can only read from the collection). `subtype (? extends T)`: **Pepper Cola**: <b>P</b>roducer <b>E</b>xtend <b>CO</b>variance <b>R</b>ead
+
+   🔹Consumer Super → Contravariance → Only Add (reading is restricted). `supertype (? super T)`: **Corn Salsa**: <b>CON</b>(travariance|sumer) <b>S</b>uper <b>A</b>dd
+
+   ```java
+    // Producer: Extends (covariant), meaning we provide data of a more specific type
+    public static void produce(List<? extends Shape> shapes) {
+        for (Shape shape : shapes) {
+            shape.draw();
+        }
+    }
+
+    // Consumer: Super (contravariant), meaning we accept data of a more general type
+    public static void consume(List<? super Shape> shapes) {
+        shapes.add(new Circle());   // We can add a Circle, because Shape is the supertype
+        shapes.add(new Rectangle()); // We can add a Rectangle, same reason
+    }
+   ```
