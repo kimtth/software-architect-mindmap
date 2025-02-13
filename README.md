@@ -61,9 +61,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [System Design Fight Club](https://github.com/systemdesignfightclub/SDFC)
 - [System Design - Neo Kim](https://github.com/systemdesign42/system-design)
 - [Awesome System Design Resources](https://github.com/ashishps1/awesome-system-design-resources)
-
 ---
-
 - [InfoQ](https://www.infoq.com): News and Articles
 - [Dzone](https://dzone.com/): RefCards and Trend Reports
 - [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar
@@ -71,9 +69,12 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Trendshift](https://trendshift.io/): GitHub Trending repositories
 - [Design Gurus](https://www.designgurus.io/): Portal For Tech Interviews
 - [System Design Blueprint: The Ultimate Guide](https://blog.bytebytego.com/p/ep56-system-design-blueprint-the)
-
 ---
-
+- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf) / [Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
+- [Building a scalable authorization system](./files/minibooks/Building%20a%20scalable%20authorization%20system_%20a%20step-by-step%20blueprint.pdf)
+- [Mastering RAG](./files/minibooks/Mastering%20RAG-compressed.pdf)
+- [Mastering AI Agents](./files/minibooks/Mastering%20AI%20Agents-compressed.pdf)
+---
 - [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals)
 
     <details>
@@ -88,7 +89,6 @@ This mindmap created by `https://app.mindmapmaker.org/`
     🔹 `Saturation` is the ability of your application to use the available CPU and Memory
 
     </details>
-- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf) / [Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
 
 ### Building from scratch
 
@@ -329,7 +329,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 32. [@mathtalent Lecture Notes](https://skim.math.msstate.edu/LectureNotes/)
 33. [Mathematical Methods for Computer Vision, Robotics, and Graphics](http://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf)
 
-### github
+### Github
 
 1. [The Data Engineering Handbook](https://github.com/DataExpert-io/data-engineer-handbook)
 1. [Machine Learning for Beginners](https://github.com/microsoft/ML-For-Beginners)
