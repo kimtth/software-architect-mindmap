@@ -96,6 +96,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Curated list of project-based tutorials](https://github.com/practical-tutorials/project-based-learning)
 - [Master programming by recreating your favorite technologies from scratch](https://github.com/codecrafters-io/build-your-own-x)
 - [Build frontend applications at scale](https://frontendatscale.com/courses/frontend-architecture/)
+- [Writing an Operating System in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines) [ref](https://operating-system-in-1000-lines.vercel.app)
 
 ### Cloud Architecture
 
@@ -348,6 +349,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 1. [labml.ai Deep Learning Paper Implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations): 60+ Implementations/tutorials of deep learning papers with side-by-side notes
 1. [Deep Learning Models](https://github.com/rasbt/deeplearning-models): A collection of various deep learning architectures, models, and tips
 1. [fastai book](https://github.com/fastai/fastbook): The fastai book, published as Jupyter Notebooks
+1. [openpilot](https://github.com/commaai/openpilot): an open source driver assistance system
 
 - [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
 
