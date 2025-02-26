@@ -61,6 +61,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [System Design Fight Club](https://github.com/systemdesignfightclub/SDFC)
 - [System Design - Neo Kim](https://github.com/systemdesign42/system-design)
 - [Awesome System Design Resources](https://github.com/ashishps1/awesome-system-design-resources)
+- [Awesome Low Level Design (LLD) / Object Oriented Design (OOD)](https://github.com/ashishps1/awesome-low-level-design)
 ---
 - [InfoQ](https://www.infoq.com): News and Articles
 - [Dzone](https://dzone.com/): RefCards and Trend Reports
@@ -96,7 +97,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Curated list of project-based tutorials](https://github.com/practical-tutorials/project-based-learning)
 - [Master programming by recreating your favorite technologies from scratch](https://github.com/codecrafters-io/build-your-own-x)
 - [Build frontend applications at scale](https://frontendatscale.com/courses/frontend-architecture/)
-- [Writing an Operating System in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines) [ref](https://operating-system-in-1000-lines.vercel.app)
+- [Writing an Operating System in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines): [ref](https://operating-system-in-1000-lines.vercel.app)
 
 ### Cloud Architecture
 
@@ -133,6 +134,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [freeCodeCamp](https://www.freecodecamp.org): Learn to code for free. [youtube](https://www.youtube.com/freecodecamp)
 - [Ultimate Collection of 60 YouTube Courses for 21 Programming Languages](https://dev.to/arjuncodess/ultimate-collection-of-60-youtube-courses-for-21-programming-languages-mega-list-47b5)
 - [Computer Science courses with video lectures](https://github.com/Developer-Y/cs-video-courses)
+- [Introduction to CUDA Programming for Python Developers](https://www.pyspur.dev/blog/introduction_cuda_programming)
 
 ### Industry Trends
 
@@ -187,6 +189,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Generative Search: Practical Advice for Retrieval Augmented Generation (RAG)](https://www.infoq.com/presentations/vector-embedding-llm/)
 - [What are the Greenest Programing Languages?](https://datasciencelearningcenter.substack.com/p/what-are-the-greenest-software-programming)
 - [Frugal Architect Handbook](http://thefrugalarchitect.com/)
+- [.NET Developer Roadmap](https://github.com/milanm/DotNet-Developer-Roadmap)
 
 ### Computer Science Books
 
