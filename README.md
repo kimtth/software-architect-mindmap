@@ -75,6 +75,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Building a scalable authorization system](./files/minibooks/Building%20a%20scalable%20authorization%20system_%20a%20step-by-step%20blueprint.pdf)
 - [Mastering RAG](./files/minibooks/Mastering%20RAG-compressed.pdf)
 - [Mastering AI Agents](./files/minibooks/Mastering%20AI%20Agents-compressed.pdf)
+- [Agentic Architectures for Retrieval-intensive Applications](./files/minibooks/Weaviate%20Agentic%20Architectures-ebook.pdf)
 ---
 - [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals)
 
@@ -93,6 +94,8 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ### Building from scratch
 
+- [Let’s Build A Simple Interpreter](https://ruslanspivak.com/lsbasi-part1/)
+- [Let’s Build A Web Server](https://ruslanspivak.com/lsbaws-part1/)
 - [Web Browser Engineering](https://browser.engineering/): Building a basic but complete web browser from scratch
 - [Curated list of project-based tutorials](https://github.com/practical-tutorials/project-based-learning)
 - [Master programming by recreating your favorite technologies from scratch](https://github.com/codecrafters-io/build-your-own-x)
