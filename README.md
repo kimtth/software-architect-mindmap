@@ -170,6 +170,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - Visualizer for neural network: [netron](https://github.com/lutzroeder/netron)
 - [Excalidraw](https://excalidraw.com/)
 - [eraser.io](https://www.eraser.io/): Diagram as Code
+- [Robin Wieruch blog](https://www.robinwieruch.de/blog/): React.js, Next.js in TypeScript and JavaScript libraies and Trends
 
 ### Engineering blog
 
