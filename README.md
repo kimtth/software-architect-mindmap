@@ -101,6 +101,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Master programming by recreating your favorite technologies from scratch](https://github.com/codecrafters-io/build-your-own-x)
 - [Build frontend applications at scale](https://frontendatscale.com/courses/frontend-architecture/)
 - [Writing an Operating System in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines): [ref](https://operating-system-in-1000-lines.vercel.app)
+- [minimal GPT](https://www.k-a.in/minimalGPT.html)
 
 ### Cloud Architecture
 
@@ -194,6 +195,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [What are the Greenest Programing Languages?](https://datasciencelearningcenter.substack.com/p/what-are-the-greenest-software-programming)
 - [Frugal Architect Handbook](http://thefrugalarchitect.com/)
 - [.NET Developer Roadmap](https://github.com/milanm/DotNet-Developer-Roadmap)
+- [Celebrate 50 years of Microsoft with the company's original source code: Altair Basic](https://www.gatesnotes.com/microsoft-original-source-code)
 
 ### Computer Science Books
 
@@ -263,7 +265,8 @@ This mindmap created by `https://app.mindmapmaker.org/`
 7. [A Note On Distributed Computing (1994)](https://scholar.harvard.edu/files/waldo/files/waldo-94.pdf): J. Waldo, G. Wyant, A. Wollrath, S. Kendall  
 8. [A Metrics Suite for Object-Oriented Design (1994)](https://sites.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf): S.R. Chidamber  
 9. [A Relational Model of Data for Large Shared Data Banks (1969)](https://dl.acm.org/doi/10.1145/362384.362685): E.F. Codd  
-10. [Why Functional Programming Matters (1990)](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf): J. Hughes  
+10. [Why Functional Programming Matters (1990)](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf): J. Hughes 
+11. [Transmission Control Protocol (1981)](https://archive.org/details/rfc793): J. Postel | [A TCP/IP Tutorial (1991)](https://archive.org/details/rfc1180): a tutorial on the TCP/IP protocol 
 
 ### Distributed Systems!
 
@@ -336,6 +339,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 31. [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/gbooks/geomath.html)
 32. [@mathtalent Lecture Notes](https://skim.math.msstate.edu/LectureNotes/)
 33. [Mathematical Methods for Computer Vision, Robotics, and Graphics](http://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf)
+34. [Math Foundations for Computer Science](https://web.stanford.edu/class/archive/cs/cs103/cs103.1184/notes/Mathematical%20Foundations%20of%20Computing.pdf)
 
 ### Github
 
