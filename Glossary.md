@@ -48,6 +48,10 @@
             
             🔹 Behavioral: here we have Command, Iterator, State, Strategy, ...
 
+1. Top 20 System Design Concepts
+
+    <img src="files/top20-system-design-concepts.png" alt="top-20-sys-design" width="400"/>
+
 1. Memory consistency model: [A Primer on Memory Consistency and Cache Coherence](https://link.springer.com/book/10.1007/978-3-031-01764-3)
 
     - **SC vs TSO vs Relaxed Memory Consistency**
