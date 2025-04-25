@@ -139,6 +139,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Ultimate Collection of 60 YouTube Courses for 21 Programming Languages](https://dev.to/arjuncodess/ultimate-collection-of-60-youtube-courses-for-21-programming-languages-mega-list-47b5)
 - [Computer Science courses with video lectures](https://github.com/Developer-Y/cs-video-courses)
 - [Introduction to CUDA Programming for Python Developers](https://www.pyspur.dev/blog/introduction_cuda_programming)
+- [AI by Hand](https://by-hand.ai)
 
 ### Industry Trends
 
@@ -155,23 +156,37 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ### Tools & Research
 
-- [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): Interactive Online Platform that Visualizes Algorithms from Code
-- [Hello Algo](https://www.hello-algo.com/en/)
-- [Wikipedia: List of algorithms](https://www.wikiwand.com/en/articles/List_of_algorithms)
-- [OOP Design Patterns](https://refactoring.guru/design-patterns)
-- [Dev Encyclopedia](https://devpedia.dev/): Encyclopedia for developers / [git](https://github.com/Buzzpy/Dev-Encyclopedia)
-- [Data Engineering Wiki](https://dataengineering.wiki/Index)
-- [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Bluelight Consulting
-- [PostgreSQL Wiki: Don't Do This](https://wiki.postgresql.org/wiki/Don%27t_Do_This)
-- [Power BI DAX Patterns](https://www.daxpatterns.com/patterns/)
-- [Semantic Scholar > Semantic Reader](https://www.semanticscholar.org)
-- [AI by Hand](https://by-hand.ai)
-- Visualizing relationships between research: [Litmaps](https://www.litmaps.com):  / [Connected Papers](https://www.connectedpapers.com/)
-- Finding Papers: [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery) / [scite_](https://scite.ai/)
-- Visualizer for neural network: [netron](https://github.com/lutzroeder/netron)
-- [Excalidraw](https://excalidraw.com/)
-- [eraser.io](https://www.eraser.io/): Diagram as Code
-- [Robin Wieruch blog](https://www.robinwieruch.de/blog/): React.js, Next.js in TypeScript and JavaScript libraies and Trends
+##### Algorithm & Visualization
+- [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): Interactive algorithm visualization
+- [Netron](https://github.com/lutzroeder/netron): Neural network visualizer
+- [Hello Algo](https://www.hello-algo.com/en/): Algorithm tutorials
+- [Wikipedia: List of Algorithms](https://www.wikiwand.com/en/articles/List_of_algorithms): Comprehensive algorithm reference
+
+##### Design Patterns & Development
+- [OOP Design Patterns](https://refactoring.guru/design-patterns): Object-oriented design patterns explained
+- [Dev Encyclopedia](https://devpedia.dev/): Encyclopedia for developers ([GitHub](https://github.com/Buzzpy/Dev-Encyclopedia))
+- [Data Engineering Wiki](https://dataengineering.wiki/Index): Data engineering resources and guides
+
+##### Research & Academic Tools
+- [Semantic Scholar](https://www.semanticscholar.org): AI-powered academic search engine
+- [Liner](https://getliner.com/): AI research tool for highlighting and annotating
+- [Litmaps](https://www.litmaps.com): Visualize relationships between research papers
+- [Connected Papers](https://www.connectedpapers.com/): Explore connected academic papers
+- [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery): AI-powered paper discovery tool
+- [scite_](https://scite.ai/): Smart citation analysis and discovery
+
+##### Diagramming & Visualization Tools
+- [Excalidraw](https://excalidraw.com/): Hand-drawn style diagrams
+- [Eraser.io](https://www.eraser.io/): Diagramming as code
+- [PlantUML](https://plantuml.com/): UML diagrams
+- [GraphViz](https://graphviz.org/): Graph visualization
+- [Mermaid Diagram](https://mermaid.live): Diagramming and charting tool
+
+##### Best Practices
+- [Robin Wieruch Blog](https://www.robinwieruch.de/blog/): React.js, Next.js, TypeScript, JavaScript libraries, and trends
+- [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Curated Kubernetes tools by Bluelight Consulting
+- [PostgreSQL Wiki: Don't Do This](https://wiki.postgresql.org/wiki/Don%27t_Do_This): Common PostgreSQL pitfalls
+- [Power BI DAX Patterns](https://www.daxpatterns.com/patterns/): Patterns and best practices for Power BI DAX
 
 ### Engineering blog
 
@@ -196,6 +211,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Frugal Architect Handbook](http://thefrugalarchitect.com/)
 - [.NET Developer Roadmap](https://github.com/milanm/DotNet-Developer-Roadmap)
 - [Celebrate 50 years of Microsoft with the company's original source code: Altair Basic](https://www.gatesnotes.com/microsoft-original-source-code)
+- [A periodic table for machine learning](https://www.microsoft.com/en-us/research/articles/a-periodic-table-for-machine-learning/)
 
 ### Computer Science Books
 
