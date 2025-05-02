@@ -71,7 +71,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Design Gurus](https://www.designgurus.io/): Portal For Tech Interviews
 - [System Design Blueprint: The Ultimate Guide](https://blog.bytebytego.com/p/ep56-system-design-blueprint-the)
 ---
-- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf) / [Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
+- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You’ve Always Wondered About .. [2021](./files/minibooks/AYAWA-2021-1635782607730.pdf) / [2023](./files/minibooks/AYAWA-2023-1685636455618.pdf) / [2024](./files/minibooks/AYAWA-2024-1712241257109.pdf) /[2025](./files/minibooks/AYAWA-2025-1745910098236.pdf) / [Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
 - [Building a scalable authorization system](./files/minibooks/Building%20a%20scalable%20authorization%20system_%20a%20step-by-step%20blueprint.pdf)
 - [Mastering RAG](./files/minibooks/Mastering%20RAG-compressed.pdf)
 - [Mastering AI Agents](./files/minibooks/Mastering%20AI%20Agents-compressed.pdf)
@@ -102,6 +102,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Build frontend applications at scale](https://frontendatscale.com/courses/frontend-architecture/)
 - [Writing an Operating System in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines): [ref](https://operating-system-in-1000-lines.vercel.app)
 - [minimal GPT](https://www.k-a.in/minimalGPT.html)
+- [PyTorch internals](https://blog.ezyang.com/2019/05/pytorch-internals/)
 
 ### Cloud Architecture
 
@@ -320,65 +321,88 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ## Data Science (ML/NN)
 
-### Free e-books
+### Free eBooks for ML, Data Science & AI > [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
 
-1. [Deep Learning](http://www.deeplearningbook.org/) - Ian Goodfellow, Yoshua Bengio, and Aaron Courville
-2. [Mathematics for Machine Learning](https://mml-book.github.io/) - Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
-3. [An Introduction to Statistical Learning](https://www.statlearning.com/) - Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, Jonathan Taylor
-4. [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) - Jerome H. Friedman, Robert Tibshirani, and Trevor Hastie
-5. [Probabilistic Machine Learning: An Introduction](https://probml.github.io/pml-book/) - Kevin Patrick Murphy
-6. [Probabilistic Machine Learning: Advanced Topics](https://probml.github.io/pml-book/) - Kevin Patrick Murphy
-7. [Understanding Machine Learning](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/) - Shai Shalev-Shwartz and Shai Ben-David
-8. [Automated Machine Learning](https://www.automl.org/book/) - Frank Hutter, Lars Kotthoff, Joaquin Vanschoren
-9. [Applied Causal Inference](https://appliedcausalinference.github.io/aci_book/index.html) - Uday Kamath, Kenneth Graham, Mitchell Naylor
-10. [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html) - Richard S. Sutton and Andrew G. Barto
-11. [The Hundred-Page Machine Learning Book](http://themlbook.com/) - Andriy Burkov
-12. [Machine Learning Engineering](http://www.mlebook.com/wiki/doku.php) - Andriy Burkov
-13. [Natural Language Processing with Python](https://www.nltk.org/book/) - Steven Bird, Ewan Klein, and Edward Loper
-14. [Dive into Deep Learning](https://d2l.ai/) - Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola
-15. [Machine Learning Yearning](https://github.com/ajaymache/machine-learning-yearning) - Andrew NG
-16. [Machine Learning for Humans](https://vas3k.com/blog/machine_learning/) - Vishal Maini, Samer Sabri
-17. [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book) - Christopher M. Bishop
-18. [Deep Learning on Graphs](https://yaoma24.github.io/dlg_book/index.html) - Yao Ma and Jiliang Tang
-19. [Approaching (Almost) Any Machine Learning Problem](https://github.com/abhishekkrthakur/approachingalmost) - Abhishek Thakur
-20. [Feature Engineering and Selection](https://bookdown.org/max/FES/) - Max Kuhn and Kjell Johnson
-21. [Hands-On Machine Learning with R](https://bradleyboehmke.github.io/HOML/) - Bradley Boehmke & Brandon Greenwell
-22. [Deep Learning Interviews](https://arxiv.org/abs/2201.00650) - Shlomo Kashani and Amir Ivry
-23. [Machine Learning Interpretability](https://www.oreilly.com/library/view/an-introduction-to/9781492033158/) - Patrick Hall and Navdeep Gill
-24. [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) - Christoph Molnar
-25. [Boosting: Foundations and Algorithms](https://direct.mit.edu/books/oa-monograph/5342/BoostingFoundations-and-Algorithms) - Robert E. Schapire, Yoav Freund
-26. [A Brief Introduction to Machine Learning for Engineers](https://arxiv.org/abs/1709.02840) - Osvaldo Simeone
-27. [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) - Daniel Jurafsky & James Martin
-28. [Computer Vision: Models, Learning, and Inference](https://udlbook.github.io/cvbook/) - Simon J.D. Prince
-29. [Information Theory, Inference and Learning Algorithms](http://www.inference.org.uk/mackay/itila/) - David J. C. MacKay
-30. [Machine Learning For Dummies](https://www.ibm.com/downloads/cas/GB8ZMQZ3) - Judith Hurwitz and Daniel Kirsch
-31. [Algebra, Topology, Differential Calculus, and Optimization Theory for Computer Science and Machine Learning](https://www.cis.upenn.edu/~jean/gbooks/geomath.html)
-32. [@mathtalent Lecture Notes](https://skim.math.msstate.edu/LectureNotes/)
-33. [Mathematical Methods for Computer Vision, Robotics, and Graphics](http://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf)
-34. [Math Foundations for Computer Science](https://web.stanford.edu/class/archive/cs/cs103/cs103.1184/notes/Mathematical%20Foundations%20of%20Computing.pdf)
+##### Machine Learning & Deep Learning
 
-### Github
+1. [Deep Learning](http://www.deeplearningbook.org/) – Ian Goodfellow, Yoshua Bengio, Aaron Courville
+1. [Dive into Deep Learning](https://d2l.ai/) – Aston Zhang et al.
+1. [The Hundred-Page Machine Learning Book](http://themlbook.com/) – Andriy Burkov
+1. [Machine Learning Yearning](https://github.com/ajaymache/machine-learning-yearning) – Andrew Ng
+1. [Understanding Machine Learning](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/) – Shai Shalev-Shwartz, Shai Ben-David
+1. [Machine Learning for Humans](https://vas3k.com/blog/machine_learning/) – Vishal Maini, Samer Sabri
+1. [Approaching (Almost) Any ML Problem](https://github.com/abhishekkrthakur/approachingalmost) – Abhishek Thakur
+1. [Machine Learning For Dummies](https://www.ibm.com/downloads/cas/GB8ZMQZ3) – Judith Hurwitz, Daniel Kirsch
+1. [Hands-On Machine Learning with R](https://bradleyboehmke.github.io/HOML/) – Boehmke & Greenwell
+1. [Machine Learning Engineering](http://www.mlebook.com/wiki/doku.php) – Andriy Burkov
 
+##### Mathematics & Statistical Foundations
+
+1. [Mathematics for Machine Learning](https://mml-book.github.io/) – Deisenroth, Faisal, Ong
+1. [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) – Friedman, Tibshirani, Hastie
+1. [An Introduction to Statistical Learning](https://www.statlearning.com/) – James et al.
+1. [Pattern Recognition and ML](https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book) – Christopher Bishop
+1. [Information Theory, Inference, and Learning Algorithms](http://www.inference.org.uk/mackay/itila/) – David J. C. MacKay
+1. [Algebra, Topology, Calculus & Optimization for CS/ML](https://www.cis.upenn.edu/~jean/gbooks/geomath.html) – Jean Gallier
+1. [Mathematical Methods for CV, Robotics, Graphics](http://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf) – Stanford
+1. [Math Foundations for Computer Science](https://web.stanford.edu/class/archive/cs/cs103/cs103.1184/notes/Mathematical%20Foundations%20of%20Computing.pdf) – Stanford CS103
+1. [@mathtalent Lecture Notes](https://skim.math.msstate.edu/LectureNotes/) – Math-focused CS notes
+1. [Algorithms for Artificial Intelligence](https://web.stanford.edu/~mossr/pdf/alg4ai.pdf) – Moss
+
+##### Probabilistic, Special Topics
+
+1. [Probabilistic ML: An Introduction](https://probml.github.io/pml-book/) – Kevin P. Murphy
+1. [Probabilistic ML: Advanced Topics](https://probml.github.io/pml-book/) – Kevin P. Murphy
+1. [Applied Causal Inference](https://appliedcausalinference.github.io/aci_book/index.html) – Uday Kamath et al.
+1. [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html) – Sutton & Barto
+1. [Deep Learning on Graphs](https://yaoma24.github.io/dlg_book/index.html) – Yao Ma & Jiliang Tang
+1. [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) – Jurafsky & Martin
+1. [Natural Language Processing with Python](https://www.nltk.org/book/) – Bird, Klein, Loper
+1. [Computer Vision: Models, Learning, and Inference](https://udlbook.github.io/cvbook/) – Simon J.D. Prince
+1. [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) – Christoph Molnar
+1. [ML Interpretability](https://www.oreilly.com/library/view/an-introduction-to/9781492033158/) – Patrick Hall & Navdeep Gill
+1. [Automated Machine Learning](https://www.automl.org/book/) – Frank Hutter et al.
+1. [Feature Engineering and Selection](https://bookdown.org/max/FES/) – Max Kuhn & Kjell Johnson
+1. [Deep Learning Interviews](https://arxiv.org/abs/2201.00650) – Shlomo Kashani, Amir Ivry
+1. [Boosting: Foundations and Algorithms](https://direct.mit.edu/books/oa-monograph/5342/BoostingFoundations-and-Algorithms) – Schapire & Freund
+1. [A Brief Introduction to ML for Engineers](https://arxiv.org/abs/1709.02840) – Osvaldo Simeone
+
+### Github: 
+
+##### Foundational Learning
+
+1. [Machine Learning for Beginners – Microsoft](https://github.com/microsoft/ML-For-Beginners)
 1. [The Data Engineering Handbook](https://github.com/DataExpert-io/data-engineer-handbook)
-1. [Machine Learning for Beginners](https://github.com/microsoft/ML-For-Beginners)
-1. [Machine Learning YouTube Videos](https://github.com/ujjwalkarn/Machine-Learning-Videos)
-1. [Mathematics for Machine Learning](https://github.com/mml-book/mml-book.github.io)
-1. [Deep Learning Book](https://github.com/janishar/mit-deep-learning-book-pdf)
-1. [Machine Learning ZoomCamp](https://github.com/alexeygrigorev/mlbookcamp-code)
-1. [Machine Learning Tutorials](https://github.com/ujjwalkarn/Machine-Learning-Tutorials)
+1. [Virgilio – Data Science Curriculum](https://github.com/virgili0/Virgilio)
+1. [Open Source Data Science Masters](https://github.com/datasciencemasters/go)
+1. [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
+1. [Data Science Python Notebooks](https://github.com/donnemartin/data-science-ipython-notebooks)
+1. [Awesome Data Science](https://github.com/academic/awesome-datascience)
 1. [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
-1. [CS 229 Machine Learning Cheatsheets](https://github.com/afshinea/stanford-cs-229-machine-learning)
-1. [Machine Learning Interview Guide](https://github.com/Sroy20/machine-learning-interview-guide)
-1. [Awesome Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning)
-1. [365 Data Science Flashcards](https://365datascience.com/flashcards/)
-1. [ref](https://www.kdnuggets.com/10-github-repositories-to-master-machine-learning?utm_source=rss&utm_medium=rss&utm_campaign=10-github-repositories-to-master-machine-learning) > [Virgilio](https://github.com/virgili0/Virgilio) | [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook) | [Microsoft: 10 Weeks, 20 Lessons, Data Science](https://github.com/microsoft/Data-Science-For-Beginners) | [Data science Python notebooks](https://github.com/donnemartin/data-science-ipython-notebooks) | [📚 Papers & tech blog](https://github.com/eugeneyan/applied-ml) | [Open Source Data Science Masters](https://github.com/datasciencemasters/go) | [Awesome Data Science](https://github.com/academic/awesome-datascience) | [Data science interview questions and answers](https://github.com/alexeygrigorev/data-science-interviews) | [free self-taught education in Data Science!](https://github.com/ossu/data-science)
-1. [data science project template](https://github.com/drivendataorg/cookiecutter-data-science)
-1. [labml.ai Deep Learning Paper Implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations): 60+ Implementations/tutorials of deep learning papers with side-by-side notes
-1. [Deep Learning Models](https://github.com/rasbt/deeplearning-models): A collection of various deep learning architectures, models, and tips
-1. [fastai book](https://github.com/fastai/fastbook): The fastai book, published as Jupyter Notebooks
-1. [openpilot](https://github.com/commaai/openpilot): an open source driver assistance system
 
-- [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
+##### Deep Learning & Math
+
+1. [Deep Learning Book (MIT)](https://github.com/janishar/mit-deep-learning-book-pdf)
+1. [fastai Book (fastbook)](https://github.com/fastai/fastbook)
+1. [Mathematics for Machine Learning](https://github.com/mml-book/mml-book.github.io)
+1. [labml.ai – Deep Learning Paper Implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations)
+1. [Deep Learning Models by Rasbt](https://github.com/rasbt/deeplearning-models)
+
+##### Practical Skills & Production
+
+1. [Machine Learning Tutorials](https://github.com/ujjwalkarn/Machine-Learning-Tutorials)
+1. [Machine Learning ZoomCamp](https://github.com/alexeygrigorev/mlbookcamp-code)
+1. [Applied ML – Papers & Blogs](https://github.com/eugeneyan/applied-ml)
+1. [Awesome Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning)
+1. [Data Science Project Template (Cookiecutter)](https://github.com/drivendataorg/cookiecutter-data-science)
+1. [365 Data Science Flashcards](https://365datascience.com/flashcards/)
+1. [openpilot – Driver Assistance System](https://github.com/commaai/openpilot)
+
+##### Interviews & Cheatsheets
+
+1. [CS 229 ML Cheatsheets](https://github.com/afshinea/stanford-cs-229-machine-learning)
+1. [ML Interview Guide](https://github.com/Sroy20/machine-learning-interview-guide)
+1. [Data Science Interview Q\&A](https://github.com/alexeygrigorev/data-science-interviews)
 
 ## Terminology and Comparisons
 
