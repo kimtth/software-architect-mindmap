@@ -76,6 +76,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Mastering RAG](./files/minibooks/Mastering%20RAG-compressed.pdf)
 - [Mastering AI Agents](./files/minibooks/Mastering%20AI%20Agents-compressed.pdf)
 - [Agentic Architectures for Retrieval-intensive Applications](./files/minibooks/Weaviate%20Agentic%20Architectures-ebook.pdf)
+- [Programming Notes for Professionals books](https://goalkicker.com/)
 ---
 - [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals)
 
@@ -141,6 +142,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Computer Science courses with video lectures](https://github.com/Developer-Y/cs-video-courses)
 - [Introduction to CUDA Programming for Python Developers](https://www.pyspur.dev/blog/introduction_cuda_programming)
 - [AI by Hand](https://by-hand.ai)
+- [Computer Networking Fundamentals For Developers, DevOps, and Platform Engineers](https://labs.iximiuz.com/courses/computer-networking-fundamentals)
 
 ### Industry Trends
 
