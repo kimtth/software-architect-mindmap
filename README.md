@@ -10,11 +10,11 @@
   - [Engineering blog](#engineering-blog)
   - [Computer Science Books](#computer-science-books)
 - **Section 3**: [Computer Science Papers](#computer-science-papers)
-  - [Computer Science Papers Every Developers Should Read](#computer-science-papers-every-developers-should-read)
+  - [Computer Science Papers Every Developers Should Read](#computer-science-papers-every-developers-should-read-ref)
   - [Distributed Systems!](#distributed-systems)
-  - [25 Papers That Completely Transformed the Computer World](#25-papers-that-completely-transformed-the-computer-world)
+  - [25 Papers That Completely Transformed the Computer World](#25-papers-that-completely-transformed-the-computer-world-ref)
 - **Section 4**: [Data Science (ML/NN)](#data-science-mlnn)
-  - [Free e-books](#free-e-books)
+  - [Free e-books](#free-ebooks-for-ml-data-science--ai-ref)
   - [GitHub](#github)
 - **Section 5**: [Terminology and Comparisons](#terminology-and-comparisons)
 
@@ -76,6 +76,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Mastering RAG](./files/minibooks/Mastering%20RAG-compressed.pdf)
 - [Mastering AI Agents](./files/minibooks/Mastering%20AI%20Agents-compressed.pdf)
 - [Agentic Architectures for Retrieval-intensive Applications](./files/minibooks/Weaviate%20Agentic%20Architectures-ebook.pdf)
+- [Programming Notes for Professionals books](https://goalkicker.com/)
 ---
 - [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals)
 
@@ -141,6 +142,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Computer Science courses with video lectures](https://github.com/Developer-Y/cs-video-courses)
 - [Introduction to CUDA Programming for Python Developers](https://www.pyspur.dev/blog/introduction_cuda_programming)
 - [AI by Hand](https://by-hand.ai)
+- [Computer Networking Fundamentals For Developers, DevOps, and Platform Engineers](https://labs.iximiuz.com/courses/computer-networking-fundamentals)
 
 ### Industry Trends
 
@@ -269,9 +271,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ## Computer Science Papers
 
-### Computer Science Papers Every Developers Should Read
-
-- [ref](https://x.com/milan_milanovic/status/1747167493553062398?s=20)
+### Computer Science Papers Every Developers Should Read: [ref](https://x.com/milan_milanovic/status/1747167493553062398?s=20)
 
 1. [On the Criteria To Be Used in Decomposing Systems into Modules (1972)](https://win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf): D.L. Parnas  
 2. [An Axiomatic Basis for Computer Programming (1969)](http://sunnyday.mit.edu/16.355/Hoare-CACM-69.pdf): C.A.R. Hoare  
@@ -289,9 +289,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 - Here's a reading list of 70+ Distributed Systems papers *mostly from conferences in just last 2 years*! [70+ Distributed Systems papers](https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit) [Jan 2024]
 
-### 25 Papers That Completely Transformed the Computer World
-
-- [ref](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software) [May 2024]
+### 25 Papers That Completely Transformed the Computer World: [ref](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software)
 
 1. [Dynamo](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf): Amazon’s Highly Available Key Value Store  
 2. [Google File System](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf): Insights into a highly scalable file system  
@@ -321,7 +319,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ## Data Science (ML/NN)
 
-### Free eBooks for ML, Data Science & AI > [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
+### Free eBooks for ML, Data Science & AI: [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
 
 ##### Machine Learning & Deep Learning
 
