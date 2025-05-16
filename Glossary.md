@@ -610,3 +610,26 @@
         shapes.add(new Rectangle()); // We can add a Rectangle, same reason
     }
    ```
+
+1. 9 Clean Code Principles To Keep In Mind: [ref](https://blog.bytebytego.com/p/ep162-9-clean-code-principles-to)
+
+    🔹 **Meaningful Names:** Use clear, descriptive names.  
+    🔹 **Small Functions:** Functions should do one thing well.  
+    🔹 **Avoid Duplicates:** **DRY** (Don’t Repeat Yourself).   
+    🔹 **Readable Code:** Code should be easy to read and understand.  
+    🔹 **Single Responsibility Principle:** One class or function should have only one reason to change.  
+    🔹 **Consistent Formatting:** Use a uniform style for indentation, spacing, etc.  
+    🔹 **Error Handling:** Handle errors gracefully and explicitly.  
+    🔹 **Write Tests:** Tests improve code reliability.  
+    🔹 **Refactor Regularly:** Keep improving code to avoid decay.  
+
+1. Domain-Driven Design (DDD): [ref](https://blog.bytebytego.com/p/domain-driven-design-ddd-demystified)
+
+    🔹 **Focus on the Core Domain:** Identify and model the essential part of the business.  
+    🔹 **Ubiquitous Language:** Create a shared language between developers and domain experts.  
+    🔹 **Bounded Contexts:** Divide the system into explicit boundaries where a model applies.  
+    🔹 **Entities and Value Objects:** Entities have identity; value objects are immutable.  
+    🔹 **Aggregates:** Group related entities to maintain consistency.  
+    🔹 **Domain Events:** Capture important business events explicitly.  
+    🔹 **Repositories:** Provide a way to retrieve and persist domain objects.  
+    🔹 **Continuous Collaboration:** Domain experts and developers work closely.  
