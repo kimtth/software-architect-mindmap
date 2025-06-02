@@ -381,7 +381,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 ##### Deep Learning & Math
 
 1. [Deep Learning Book (MIT)](https://github.com/janishar/mit-deep-learning-book-pdf)
-1. [fastai Book (fastbook)](https://github.com/fastai/fastbook)
+1. [fastai Book (fastbook)](https://github.com/fastai/fastbook) | [Fast.ai courses](https://course.fast.ai/)
 1. [Mathematics for Machine Learning](https://github.com/mml-book/mml-book.github.io)
 1. [labml.ai – Deep Learning Paper Implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations)
 1. [Deep Learning Models by Rasbt](https://github.com/rasbt/deeplearning-models)
@@ -402,6 +402,14 @@ This mindmap created by `https://app.mindmapmaker.org/`
 1. [ML Interview Guide](https://github.com/Sroy20/machine-learning-interview-guide)
 1. [Data Science Interview Q\&A](https://github.com/alexeygrigorev/data-science-interviews)
 
+#### Machine Learning Essentials
+
+1. [StatQuest by Josh Starmer](https://www.youtube.com/user/joshstarmer)
+1. [Machine Learning Mastery by Jason Brownlee](https://machinelearningmastery.com/)
+1. [Papers With Code](https://paperswithcode.com/)
+
 ## Terminology and Comparisons
 
 - See [Glossary.md](Glossary.md): an overview of key terminology, definitions, and comparisons between related concepts.
+
+**[`^        back to top        ^`](#table-of-contents)**

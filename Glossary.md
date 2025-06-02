@@ -580,3 +580,5 @@
     🔹 **Domain Events:** Capture important business events explicitly.  
     🔹 **Repositories:** Provide a way to retrieve and persist domain objects.  
     🔹 **Continuous Collaboration:** Domain experts and developers work closely.  
+
+**[`^        back to top        ^`](#terminology-and-comparisons)**
