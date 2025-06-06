@@ -12,28 +12,20 @@
 
             This is the highest level of abstraction, where architectural designs instruct us on structuring our code. The highest level of granularity describes the application's layers and high-level modules and how they relate to and interact with one another. Examples of architectural styles include:
             
-            🔹 Monolith
-
-            🔹 Layered
-
-            🔹 Event-driven
-
-            🔹 Self-contained Systems
-
-            🔹 Microservices
-
+            🔹 Monolith  
+            🔹 Layered  
+            🔹 Event-driven  
+            🔹 Self-contained Systems  
+            🔹 Microservices  
             🔹 Space-Based
 
         2. **Architectural patterns**
 
             These patterns represent a way to implement an architectural style, so we can do this regularly. Some examples are how to separate the user interface (UI) and data, how internal modules interact, and what layers we will use. Patterns answer these types of questions. They usually impact the code base and how to structure the code inside. Examples of architectural patterns include:
 
-            🔹 Model-View-Presenter (MVP): 1:1 Relationship between View and Presenter. e.g., Windows forms
-            
-            🔹 Model-View-Controller (MVC): e.g., Smalltalk, ASP.Net MVC
-            
-            🔹 Model–View–Viewmodel (MVVM): One to Many relationship between View and ViewModel. e.g., Silverlight, WPF, AngularJs: 
-            
+            🔹 Model-View-Presenter (MVP): 1:1 Relationship between View and Presenter. e.g., Windows forms  
+            🔹 Model-View-Controller (MVC): e.g., Smalltalk, ASP.Net MVC  
+            🔹 Model–View–Viewmodel (MVVM): One to Many relationship between View and ViewModel. e.g., Silverlight, WPF, AngularJs:  
             🔹 Domain-Driven Design
 
         3. **Design patterns**
@@ -42,11 +34,9 @@
 
             We have three groups of Design Patterns:
 
-            🔹 Creational: here we have Factory Method, Builder, Singleton, ...
-            
-            🔹 Structural: here we have an Adapter, Bridge, and Decorator, ...
-            
-            🔹 Behavioral: here we have Command, Iterator, State, Strategy, ...
+            🔹 Creational: here we have Factory Method, Builder, Singleton, ...  
+            🔹 Structural: here we have an Adapter, Bridge, and Decorator, ...  
+            🔹 Behavioral: here we have Command, Iterator, State, Strategy, ...  
 
 1. Top 20 System Design Concepts
 
@@ -58,14 +48,12 @@
 
         1. Sequential Consistency (SC): Operations execute in order as per the program.
         
-            🔹 SC preserves order for two memory operations from the same thread for all four combinations of loads and stores (Load → Load, Load → Store, Store → Store, and Store → Load). 
-            
+            🔹 SC preserves order for two memory operations from the same thread for all four combinations of loads and stores (Load → Load, Load → Store, Store → Store, and Store → Load).  
             🔹 MIPS R10000
 
         2. Total Store Order (TSO): Reads can happen before preceding writes complete. 
         
-            🔹 TSO preserves the first three orders (Load → Load, Load → Store, Store → Store) but not Store → Load order.
-            
+            🔹 TSO preserves the first three orders (Load → Load, Load → Store, Store → Store) but not Store → Load order.  
             🔹 x86 CPU.
     
         3. Relaxed Memory Consistency: Allows more reordering of operations for performance. 
@@ -231,24 +219,15 @@
     
     - **Hadoop vs Azure, AWS, GCP**
 
-        🔹1. **HDFS (File Storage)**: Azure Data Lake Storage, Amazon S3, Google Cloud Storage
-
-        🔹2. **YARN (Resource Management)**: No direct equivalent in Azure, AWS, GCP
-
-        🔹3. **MapReduce (Data Processing)**: HDInsight, Amazon EMR, Google Cloud Dataproc
-
-        🔹4. **Spark (Fast Data Processing)**: Databricks, Spark in HDInsight, Azure Synapse Analytics, Amazon EMR, Google Cloud Dataproc
-
-        🔹5. **PIG, HIVE (Query Data)**: HDInsight, Azure Synapse Analytics, Amazon EMR, Google Cloud Dataproc
-
-        🔹6. **HBase (NoSQL DB)**: Azure Cosmos DB, HBase on a virtual machine (VM), HBase in Azure HDInsight, Amazon DynamoDB, Google Cloud Bigtable
-
-        🔹7. **Mahout, Spark MLLib (ML Libraries)**: Databricks, Amazon SageMaker, No direct equivalent in GCP
-
-        🔹8. **Solar, Lucene (Search/Index)**: Azure Cognitive Search, Amazon CloudSearch, Google Cloud Search
-
-        🔹9. **Zookeeper (Cluster Management)**: No direct equivalent in Azure, Amazon Managed Apache ZooKeeper, No direct equivalent in GCP
-
+        🔹1. **HDFS (File Storage)**: Azure Data Lake Storage, Amazon S3, Google Cloud Storage  
+        🔹2. **YARN (Resource Management)**: No direct equivalent in Azure, AWS, GCP  
+        🔹3. **MapReduce (Data Processing)**: HDInsight, Amazon EMR, Google Cloud Dataproc  
+        🔹4. **Spark (Fast Data Processing)**: Databricks, Spark in HDInsight, Azure Synapse Analytics, Amazon EMR, Google Cloud Dataproc  
+        🔹5. **PIG, HIVE (Query Data)**: HDInsight, Azure Synapse Analytics, Amazon EMR, Google Cloud Dataproc  
+        🔹6. **HBase (NoSQL DB)**: Azure Cosmos DB, HBase on a virtual machine (VM), HBase in Azure HDInsight, Amazon DynamoDB, Google Cloud Bigtable  
+        🔹7. **Mahout, Spark MLLib (ML Libraries)**: Databricks, Amazon SageMaker, No direct equivalent in GCP  
+        🔹8. **Solar, Lucene (Search/Index)**: Azure Cognitive Search, Amazon CloudSearch, Google Cloud Search  
+        🔹9. **Zookeeper (Cluster Management)**: No direct equivalent in Azure, Amazon Managed Apache ZooKeeper, No direct equivalent in GCP  
         🔹10. **Oozie (Job Scheduling)**: Azure Data Factory, AWS Step Functions, Google Cloud Composer
     
 1. **Software defined Networking (SDN)** Northbound vs Southbound
@@ -259,16 +238,11 @@
         B -->|Southbound APIs| C[Infrastructure layer - physical switches, data plane]
     ```
 
-    🔹The **Controller** is the SDN network's brain, directing traffic flows.
-
-    🔹 The **Southbound Interface** communicates the controller's decisions to the switches using protocols like OpenFlow.
-
-    🔹**SDN Switches** direct traffic based on the controller's instructions.
-
-    🔹**Network Devices** (servers, routers, etc.) send and receive data flows as directed by the SDN switches.
-
-    🔹The **Northbound Interface** uses APIs to exchange data between the controller and applications.
-
+    🔹The **Controller** is the SDN network's brain, directing traffic flows.  
+    🔹 The **Southbound Interface** communicates the controller's decisions to the switches using protocols like OpenFlow.  
+    🔹**SDN Switches** direct traffic based on the controller's instructions.  
+    🔹**Network Devices** (servers, routers, etc.) send and receive data flows as directed by the SDN switches.  
+    🔹The **Northbound Interface** uses APIs to exchange data between the controller and applications.  
     🔹**SDN Applications** use network data to perform tasks, communicating their needs to the controller.
 
     ```mermaid
@@ -284,46 +258,28 @@
 
     🔹**src**: [ref](https://x.com/systemdesign42/status/1776590986837160427)
 
-    🔹Two Pointers: Navigating arrays with two indices. [ref](https://www.pluralsight.com/resources/blog/guides/algorithm-templates-two-pointers-part-2)
-
-    🔹Intervals: Working with ranges of values. [ref](https://medium.com/@timpark0807/leetcode-is-easy-the-interval-pattern-d68a7c1c841) / [ref](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solutions/93735/a-concise-template-for-overlapping-interval-problem/) / [ref](https://leetcode.com/discuss/general-discussion/794725/General-Pattern-for-greedy-approach-for-Interval-based-problems)
-
-    🔹Dynamic Programming: Solving complex problems by breaking them down into simpler subproblems. [ref](https://www.youtube.com/watch?v=ZwDDLAeeBM0&t=294s) / [ref](https://leetcode.com/discuss/general-discussion/651719/how-to-solve-dp-string-template-and-4-steps-to-be-followed)
-
-    🔹Tree Traversal: Visiting all nodes in a tree. [ref](https://medium.com/leetcode-patterns/leetcode-pattern-0-iterative-traversals-on-trees-d373568eb0ec) / [ref](https://leetcode.com/problems/binary-tree-postorder-traversal/solutions/45551/Preorder-Inorder-and-Postorder-Iteratively-Summarization/)
-
-    🔹DFS-BFS: Depth-first and breadth-first search algorithms. [ref](https://leetcode.com/problems/pacific-atlantic-water-flow/solutions/438276/Python-beats-98.-DFS-template-for-Matrix/) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-2-dfs-bfs-25-of-the-problems-part-2-a5b269597f52) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-1-bfs-dfs-25-of-the-problems-part-1-519450a84353) / [ref](https://www.youtube.com/watch?v=TIbUeeksXcI)
-
-    🔹Binary Search: Finding an element in a sorted array. [ref](https://leetcode.com/problems/binary-search/solutions/423162/Binary-Search-101-The-Ultimate-Binary-Search-Handbook/)
-
-    🔹Array: A data structure holding elements. [ref](https://leetcode.com/problems/reverse-pairs/solutions/97268/General-principles-behind-problems-similar-to-%22Reverse-Pairs%22/)
-
-    🔹Sliding Window: A subset of data that moves. [ref](https://www.pluralsight.com/resources/blog/guides/algorithm-templates-two-pointers-part-3) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-2-sliding-windows-for-strings-e19af105316b) / [ref](https://leetcode.com/problems/minimum-window-substring/solutions/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems/) / [ref](https://leetcode.com/problems/find-all-anagrams-in-a-string/solutions/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem./) / [ref](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/108870/Most-consistent-ways-of-dealing-with-the-series-of-stock-problems/)
-
-    🔹Backtracking: Trying out all possibilities to find a solution. [ref](https://leetcode.com/problems/permutations/solutions/18284/Backtrack-Summary:-General-Solution-for-10-Questionsh/) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-3-backtracking-5d9e5a03dc26) / [ref](https://leetcode.com/problems/combination-sum/solutions/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)/)
-
-    🔹Combination: Finding all possible arrangements of elements. [ref](https://leetcode.com/problems/combination-sum-iv/solutions/85120/C++-template-for-ALL-Combination-Problem-Set/)
-
-    🔹Trie: A tree-like data structure for storing strings. [ref](https://leetcode.com/discuss/general-discussion/931977/beginner-friendly-guide-to-trie-tutorial-practice-problems)
-
-    🔹Word Break: Dividing a string into words. [ref](https://leetcode.com/problems/concatenated-words/solutions/836924/Python-Template-Word-Break-I-Word-Break-II-Concatenated-Words/)
-
-    🔹Bit Manipulation: Performing operations on binary numbers. [ref](https://leetcode.com/problems/sum-of-two-integers/solutions/84278/A-summary:-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently/) / [ref](https://leetcode.com/problems/single-number-ii/solutions/43295/Detailed-explanation-and-generalization-of-the-bitwise-operation-method-for-single-numbers/)
-
-    🔹Sum: Adding numbers together. [ref](https://leetcode.com/problems/two-sum/solutions/737092/Sum-MegaPost-Python3-Solution-with-a-detailed-explanation/)
-
-    🔹Monotonic Stack: A stack keeping elements in an ordered manner. [ref](https://leetcode.com/problems/sum-of-subarray-minimums/solutions/178876/stack-solution-with-very-detailed-explanation-step-by-step/)
-
+    🔹Two Pointers: Navigating arrays with two indices. [ref](https://www.pluralsight.com/resources/blog/guides/algorithm-templates-two-pointers-part-2)  
+    🔹Intervals: Working with ranges of values. [ref](https://medium.com/@timpark0807/leetcode-is-easy-the-interval-pattern-d68a7c1c841) / [ref](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solutions/93735/a-concise-template-for-overlapping-interval-problem/) / [ref](https://leetcode.com/discuss/general-discussion/794725/General-Pattern-for-greedy-approach-for-Interval-based-problems)  
+    🔹Dynamic Programming: Solving complex problems by breaking them down into simpler subproblems. [ref](https://www.youtube.com/watch?v=ZwDDLAeeBM0&t=294s) / [ref](https://leetcode.com/discuss/general-discussion/651719/how-to-solve-dp-string-template-and-4-steps-to-be-followed)  
+    🔹Tree Traversal: Visiting all nodes in a tree. [ref](https://medium.com/leetcode-patterns/leetcode-pattern-0-iterative-traversals-on-trees-d373568eb0ec) / [ref](https://leetcode.com/problems/binary-tree-postorder-traversal/solutions/45551/Preorder-Inorder-and-Postorder-Iteratively-Summarization/)  
+    🔹DFS-BFS: Depth-first and breadth-first search algorithms. [ref](https://leetcode.com/problems/pacific-atlantic-water-flow/solutions/438276/Python-beats-98.-DFS-template-for-Matrix/) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-2-dfs-bfs-25-of-the-problems-part-2-a5b269597f52) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-1-bfs-dfs-25-of-the-problems-part-1-519450a84353) / [ref](https://www.youtube.com/watch?v=TIbUeeksXcI)  
+    🔹Binary Search: Finding an element in a sorted array. [ref](https://leetcode.com/problems/binary-search/solutions/423162/Binary-Search-101-The-Ultimate-Binary-Search-Handbook/)  
+    🔹Array: A data structure holding elements. [ref](https://leetcode.com/problems/reverse-pairs/solutions/97268/General-principles-behind-problems-similar-to-%22Reverse-Pairs%22/)  
+    🔹Sliding Window: A subset of data that moves. [ref](https://www.pluralsight.com/resources/blog/guides/algorithm-templates-two-pointers-part-3) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-2-sliding-windows-for-strings-e19af105316b) / [ref](https://leetcode.com/problems/minimum-window-substring/solutions/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems/) / [ref](https://leetcode.com/problems/find-all-anagrams-in-a-string/solutions/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem./) / [ref](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/108870/Most-consistent-ways-of-dealing-with-the-series-of-stock-problems/)  
+    🔹Backtracking: Trying out all possibilities to find a solution. [ref](https://leetcode.com/problems/permutations/solutions/18284/Backtrack-Summary:-General-Solution-for-10-Questionsh/) / [ref](https://medium.com/leetcode-patterns/leetcode-pattern-3-backtracking-5d9e5a03dc26) / [ref](https://leetcode.com/problems/combination-sum/solutions/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)/)  
+    🔹Combination: Finding all possible arrangements of elements. [ref](https://leetcode.com/problems/combination-sum-iv/solutions/85120/C++-template-for-ALL-Combination-Problem-Set/)  
+    🔹Trie: A tree-like data structure for storing strings. [ref](https://leetcode.com/discuss/general-discussion/931977/beginner-friendly-guide-to-trie-tutorial-practice-problems)  
+    🔹Word Break: Dividing a string into words. [ref](https://leetcode.com/problems/concatenated-words/solutions/836924/Python-Template-Word-Break-I-Word-Break-II-Concatenated-Words/)  
+    🔹Bit Manipulation: Performing operations on binary numbers. [ref](https://leetcode.com/problems/sum-of-two-integers/solutions/84278/A-summary:-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently/) / [ref](https://leetcode.com/problems/single-number-ii/solutions/43295/Detailed-explanation-and-generalization-of-the-bitwise-operation-method-for-single-numbers/)  
+    🔹Sum: Adding numbers together. [ref](https://leetcode.com/problems/two-sum/solutions/737092/Sum-MegaPost-Python3-Solution-with-a-detailed-explanation/)  
+    🔹Monotonic Stack: A stack keeping elements in an ordered manner. [ref](https://leetcode.com/problems/sum-of-subarray-minimums/solutions/178876/stack-solution-with-very-detailed-explanation-step-by-step/)  
     🔹Big-O-Notation: [ref](https://blog.bytebytego.com/p/ep132-big-o-notation-101-the-secret)
 
     🔹**src**: [ref](https://blog.algomaster.io)
 
-    🔹[Master Graph Algorithms for Coding Interviews](https://blog.algomaster.io/p/master-graph-algorithms-for-coding)
-
-    🔹[20 Patterns to Master Dynamic Programming](https://blog.algomaster.io/p/20-patterns-to-master-dynamic-programming)
-
-    🔹[LeetCode was HARD until I Learned these 15 Patterns](https://blog.algomaster.io/p/15-leetcode-patterns)
-
+    🔹[Master Graph Algorithms for Coding Interviews](https://blog.algomaster.io/p/master-graph-algorithms-for-coding)  
+    🔹[20 Patterns to Master Dynamic Programming](https://blog.algomaster.io/p/20-patterns-to-master-dynamic-programming)  
+    🔹[LeetCode was HARD until I Learned these 15 Patterns](https://blog.algomaster.io/p/15-leetcode-patterns)  
     🔹[How I Mastered Data Structures and Algorithms](https://blog.algomaster.io/p/how-i-mastered-data-structures-and-algorithms)
 
 1. **Medallion architecture**: A data design pattern for lakehouses. It enhances data quality across three layers: bronze (raw), silver (curated), and gold (presentation). This “multi-hop” architecture allows data to transition between layers as required. [ref](https://www.databricks.com/glossary/medallion-architecture)
@@ -336,28 +292,19 @@
 
 1. **Test-Driven Development**
 
-    🔹F.I.R.S.T: A testing principle where tests are Fast, Isolated, Repeatable, Self-validating, and Timely/Thorough.
-
-    🔹DAMP: Stands for "Descriptive And Meaningful Phrases" in testing.
-
-    🔹BDD: Behavior Driven Development uses "Given-When-Then" format.
-
-    🔹DRY: "Don’t Repeat Yourself" principle avoids redundancy.
-
-    🔹TDD: Test-Driven Development focuses on tests first.
-
-    🔹Exploratory Testing: Simultaneous learning, test design, and test execution. It is about exploring the application and finding defects that were not anticipated.
-
-    🔹Smoke Testing: A preliminary test to check the basic functionality of an application to ensure that the most crucial functions work.
-
+    🔹F.I.R.S.T: A testing principle where tests are Fast, Isolated, Repeatable, Self-validating, and Timely/Thorough.  
+    🔹DAMP: Stands for "Descriptive And Meaningful Phrases" in testing.  
+    🔹BDD: Behavior Driven Development uses "Given-When-Then" format.  
+    🔹DRY: "Don’t Repeat Yourself" principle avoids redundancy.  
+    🔹TDD: Test-Driven Development focuses on tests first.  
+    🔹Exploratory Testing: Simultaneous learning, test design, and test execution. It is about exploring the application and finding defects that were not anticipated.  
+    🔹Smoke Testing: A preliminary test to check the basic functionality of an application to ensure that the most crucial functions work.  
     🔹Alpha/Beta Testing: 🔹Alpha: Initial testing performed by internal staff / 🔹Beta: Testing performed by actual users
 
 1. **SLA, SLO, and SLI**
 
-    🔹SLA (Service Level Agreement): A contract defining the expected level of service. `99.9% uptime`
-
-    🔹SLO (Service Level Objective): A measure of service performance agreed upon in an SLA. `200ms response`
-
+    🔹SLA (Service Level Agreement): A contract defining the expected level of service. `99.9% uptime`  
+    🔹SLO (Service Level Objective): A measure of service performance agreed upon in an SLA. `200ms response`  
     🔹SLI (Service Level Indicator): A quantitative measure of a specific aspect of the level of service. `Query latency`
 
 1. **Space-Based Architecture (SBA) vs Cell-based architecture**
@@ -633,3 +580,5 @@
     🔹 **Domain Events:** Capture important business events explicitly.  
     🔹 **Repositories:** Provide a way to retrieve and persist domain objects.  
     🔹 **Continuous Collaboration:** Domain experts and developers work closely.  
+
+**[`^        back to top        ^`](#terminology-and-comparisons)**
