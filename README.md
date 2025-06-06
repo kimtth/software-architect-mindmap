@@ -144,6 +144,23 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [AI by Hand](https://by-hand.ai)
 - [Computer Networking Fundamentals For Developers, DevOps, and Platform Engineers](https://labs.iximiuz.com/courses/computer-networking-fundamentals)
 
+#### Beginner Series by Microsoft
+
+- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [ML for Beginners](https://github.com/microsoft/ML-For-Beginners?WT.mc_id=academic-105485-koreyst)
+- [Web Dev for Beginners](https://github.com/microsoft/Web-Dev-For-Beginners?WT.mc_id=academic-0000-abartolo)
+- [AI for Beginners](https://github.com/microsoft/ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Data Science for Beginners](https://github.com/microsoft/Data-Science-For-Beginners?WT.mc_id=academic-105485-koreyst)
+- [IoT for Beginners](https://github.com/microsoft/IoT-For-Beginners?WT.mc_id=academic-105485-koreyst)
+- [AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners)
+- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101?WT.mc_id=academic-96948-sayoung)
+- [Model Context Protocol (MCP) For Beginners](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Generative AI for Beginners using .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
+- [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
+- [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Mastering GitHub Copilot for AI Paired Programming](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming?WT.mc_id=academic-113596-abartolo)
+
 ### Industry Trends
 
 - [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista Industry Insight
@@ -177,6 +194,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Connected Papers](https://www.connectedpapers.com/): Explore connected academic papers
 - [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery): AI-powered paper discovery tool
 - [scite_](https://scite.ai/): Smart citation analysis and discovery
+- [Moonlight](https://www.themoonlight.io/en)
 
 ##### Diagramming & Visualization Tools
 - [Excalidraw](https://excalidraw.com/): Hand-drawn style diagrams
