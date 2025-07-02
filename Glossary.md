@@ -581,4 +581,28 @@
     🔹 **Repositories:** Provide a way to retrieve and persist domain objects.  
     🔹 **Continuous Collaboration:** Domain experts and developers work closely.  
 
+1. B-Tree vs LSM Tree vs Bloom filter
+
+    🔹 **B-Tree:** Balanced tree for fast reads and range queries; used in RDBMS and file systems.  
+    🔹 **LSM Tree:** Write-optimized structure with batched disk writes; used in NoSQL databases.  
+    🔹 **A Bloom Filter:** is a probabilistic data structure used to quickly check whether an element might be in a set. It's extremely space-efficient and fast but allows `false positives` (wrongly saying an item exists) while guaranteeing no `false negatives` (never says an existing item is missing).
+
+1. Public cloud security services mapped to the TCP/IP model
+
+    | **TCP/IP Layer**                            | **Azure**                                                                                                                                     | **AWS**                                                                                                                               | **GCP**                                                                                                                                                 |
+    | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | **1. Network Interface (Link)**             | - **VNet/Subnets** <br> - Private Endpoints <br> - NIC configurations                                                                         | - **VPC/Subnets** <br> - PrivateLink <br> - ENI (Elastic Network Interfaces)                                                          | - **VPC/Subnets** <br> - Private Service Connect <br> - VPC Network Interfaces                                                                          |
+    | **2. Internet Layer (IP & Routing)**        | - NSG (Network Security Groups) <br> - Azure Firewall <br> - Route Tables <br> - VPN Gateway / ExpressRoute                                   | - Security Groups (Inbound/Outbound IP filtering) <br> - AWS Network Firewall <br> - Route Tables <br> - VPN / Direct Connect         | - VPC Firewall Rules <br> - Cloud Armor (IP-based) <br> - Routes <br> - VPN / Interconnect                                                              |
+    | **3. Transport Layer (Ports, Sessions)**    | - NSG Port-level control <br> - Load Balancer Probes <br> - Azure Firewall Port Rules                                                         | - Security Groups Port filtering <br> - Network Load Balancer Health Checks <br> - Firewall Rules                                     | - Firewall Rules (Port/Protocol) <br> - Load Balancer Health Checks <br> - Cloud Armor (some transport-layer protections)                               |
+    | **4. Application Layer (Identity, Access)** | - Azure AD <br> - RBAC (Role-Based Access Control) <br> - Conditional Access <br> - Key Vault <br> - API Management <br> - Defender for Cloud | - AWS IAM <br> - Resource Policies <br> - Cognito (Identity) <br> - KMS (Key Management) <br> - API Gateway security <br> - GuardDuty | - Cloud IAM <br> - Resource Policies <br> - Identity-Aware Proxy <br> - Secret Manager / KMS <br> - API Gateway Security <br> - Security Command Center |
+
+1. Database Normalization
+
+    | **Normalization Stage** | **What It Means**                                 |
+    |-------------------------|---------------------------------------------------|
+    | **1st Normal Form (1NF)** | Don't put multiple values in one cell!            |
+    | **2nd Normal Form (2NF)** | Don't define other values using part of the primary key! |
+    | **3rd Normal Form (3NF)** | Don't let non-key values depend on each other!   |
+    | **BCNF**                 | Even if it looks normal, make sure every determinant is a candidate key! |
+
 **[`^        back to top        ^`](#terminology-and-comparisons)**
