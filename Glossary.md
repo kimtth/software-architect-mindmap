@@ -598,11 +598,24 @@
 
 1. Database Normalization
 
-    | **Normalization Stage** | **What It Means**                                 |
-    |-------------------------|---------------------------------------------------|
-    | **1st Normal Form (1NF)** | Don't put multiple values in one cell!            |
-    | **2nd Normal Form (2NF)** | Don't define other values using part of the primary key! |
-    | **3rd Normal Form (3NF)** | Don't let non-key values depend on each other!   |
-    | **BCNF**                 | Even if it looks normal, make sure every determinant is a candidate key! |
+    | **Normalization Stage**   | **What It Means**                                                        | **Simple Example (with More Detail)**                                                                                                                                                                                                                                     |
+    | ------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | **1st Normal Form (1NF)** | Don't put multiple values in one cell!                                   | 📛 **Bad Example:** <br> `Name: John` , `Phone: 123-4567, 987-6543` <br> ✔️ **Good Example:** <br> Row 1: `Name: John`, `Phone: 123-4567` <br> Row 2: `Name: John`, `Phone: 987-6543`                                                                                     |
+    | **2nd Normal Form (2NF)** | Don't define other values using part of the primary key!                 | Suppose the **Primary Key** is `(StudentID, Course)` <br> 📛 **Bad Example:** <br> `StudentID → Major` included in same table <br> ✔️ **Good Example:** <br> Move `StudentID → Major` to a separate `Student` table, only `(StudentID, Course)` stays in enrollment table |
+    | **3rd Normal Form (3NF)** | Don't let non-key values depend on each other!                           | 📛 **Bad Example:** <br> In `Student` table: <br> `DepartmentCode → DepartmentName` <br> Both stored together <br> ✔️ **Good Example:** <br> `Department` info in separate table <br> Student table only keeps `DepartmentCode`                                           |
+    | **BCNF**                  | Even if it looks normal, make sure every determinant is a candidate key! | 📛 **Bad Example:** <br> `Course → Instructor` <br> But `Course` is not a candidate key (multiple sections exist) <br> ✔️ **Good Example:** <br> Have a table: `(Course, Section)` as key, with Instructor info based on full key only                                    |
+
+
+1. Push & Pull model in Azure
+
+    | Service                 | Push Model                                      | Pull Model                             |
+    | ----------------------- | ----------------------------------------------- | -------------------------------------- |
+    | **Cosmos DB**           | Change Feed → Azure Function/Event Grid         | SDK Queries / SQL-like polling         |
+    | **Azure Blob Storage**  | Event Grid notifications → Function, Logic Apps | Manual polling or listing blobs        |
+    | **Azure Event Hubs**    | Downstream consumers get real-time events       | Some apps read older offsets on demand |
+    | **Azure Queue Storage** | Function triggers when new messages arrive      | App polls queue for messages           |
+    | **Azure Table Storage** | Change detection via Event Grid (limited)       | Query with filters for updates         |
+    | **SQL Database**        | Change Tracking / CDC with Event Grid triggers  | App polls with timestamp-based queries |
+    | **Azure Data Lake**     | Event Grid for file events                      | Manual folder scanning via SDK/API     |
 
 **[`^        back to top        ^`](#terminology-and-comparisons)**
