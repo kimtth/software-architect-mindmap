@@ -605,4 +605,16 @@
     | **3rd Normal Form (3NF)** | Don't let non-key values depend on each other!   |
     | **BCNF**                 | Even if it looks normal, make sure every determinant is a candidate key! |
 
+1. Push & Pull model in Azure
+
+    | Service                 | Push Model                                      | Pull Model                             |
+    | ----------------------- | ----------------------------------------------- | -------------------------------------- |
+    | **Cosmos DB**           | Change Feed → Azure Function/Event Grid         | SDK Queries / SQL-like polling         |
+    | **Azure Blob Storage**  | Event Grid notifications → Function, Logic Apps | Manual polling or listing blobs        |
+    | **Azure Event Hubs**    | Downstream consumers get real-time events       | Some apps read older offsets on demand |
+    | **Azure Queue Storage** | Function triggers when new messages arrive      | App polls queue for messages           |
+    | **Azure Table Storage** | Change detection via Event Grid (limited)       | Query with filters for updates         |
+    | **SQL Database**        | Change Tracking / CDC with Event Grid triggers  | App polls with timestamp-based queries |
+    | **Azure Data Lake**     | Event Grid for file events                      | Manual folder scanning via SDK/API     |
+
 **[`^        back to top        ^`](#terminology-and-comparisons)**
