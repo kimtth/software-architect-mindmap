@@ -315,50 +315,74 @@
 
     🔹**Cloud Network Structures:**
 
-    - **AWS:** region → VPC → availability zone → subnet (public, private)
-    - **Azure:** region → VNet → availability zone → subnet
-    - **GCP:** global → VPC → subnet (region-specific)
+    - **AWS:** Region → VPC → Availability Zone → Subnet (public, private)
+    - **Azure:** Region → Virtual Network (VNet) → Availability Zone → Subnet
+    - **GCP:** Global → VPC → Subnet (Region-specific)
 
     🔹**Traffic Between VNet or VPC:**
 
-    - Set up a VNet or VPC gateway and configure the routing table.
-    - **Azure:** One VPN gateway per virtual network, supporting external and on-premise connectivity.
-    - **Azure:** Routing tables can be assigned at the subnet level.
-    - **AWS:** Routing tables are associated at the VPC level, determining traffic between subnets.
-    - **GCP:** Routing tables are associated with the VPC, not the subnet. Routes are determined by subnet CIDR ranges.
+    * Requires setup of a VNet/VPC gateway or peering, and appropriate route configuration.
+    - **Azure**: One VPN Gateway per Virtual Network (used for site-to-site, point-to-site, ExpressRoute). Route tables can be assigned at the **subnet level**.
+    - **AWS**: Route tables are associated with **subnets**, not just the VPC. Controls intra-VPC and external traffic via routes per subnet.
+    - **GCP**: Routing is defined at the **VPC level**. Routes apply globally within the VPC and are evaluated based on subnet CIDR.
 
     🔹**Regional Traffic:**
-    - Use peering for traffic between VNets or VPCs in the same region.
-    - Peering provides lower latency, higher bandwidth, and reduced costs compared to gateways
+
+    * Use **peering** to enable traffic between VNets/VPCs in the same or different regions.
+    * Benefits of peering: Lower latency, Higher bandwidth, Reduced cost compared to VPN gateways
 
     🔹**Hybrid Connectivity:**
-    - Required for on-premise networks to connect to cloud networks.
-    - Services used: Azure ExpressRoute, AWS Direct Connect, GCP Cloud Interconnect.
 
-    🔹**Connectivity Scenario**
+    * Enables on-premises networks to connect securely to cloud networks.
+    - **AWS:** Direct Connect, VPN Gateway, Transit Gateway
+    - **Azure:** ExpressRoute, VPN Gateway, Virtual WAN
+    - **GCP:** Cloud Interconnect, Cloud VPN
 
-    | Connectivity Scenario     | AWS                                                  | Azure                                              | GCP                                               |
-    |---------------------------|------------------------------------------------------|----------------------------------------------------|---------------------------------------------------|
-    | VPC (VNet) <-> VPC (VNet) | VPC Peering, AWS Transit Gateway                     | VNet Peering, Azure Virtual WAN, VNet Gateway  | VPC Network Peering, Cloud VPN                     |
-    | On-Premise <-> VPC (VNet) | Virtual Private Gateway, AWS Direct Connect, AWS Transit Gateway | VPN Gateway, Azure ExpressRoute, Azure Virtual WAN | Cloud VPN, Cloud Interconnect                      |
-    | VNet (VPC) <-> Internet   | Internet Gateway (public subnet), NAT Gateway (private subnet) | Internet Gateway, NAT Gateway                      | Cloud Router, Cloud NAT                           |
-    | Subnet Traffic Control    | Network Access Control Lists (ACLs) | Network Security Groups (NSGs) | 1. Shared VPC (XPN) subnets and set permissions at project or subnet level 2. Firewall Rules (VM level). |
+    🔹**Connectivity Scenarios**
 
-    - In Azure, the equivalent of AWS Transit Gateway is Azure Virtual WAN
-    - Azure and GCP don’t have a direct concept of public and private subnets like AWS.
-    - An Azure Virtual Network (VNet) Gateway can serve as a VPN gateway or an ExpressRoute gateway. Site-to-Site, Point-to-Site, and VNet-to-VNet connections all use a VPN gateway.
-        - Point-to-site: Individual device to network.
-        - Site-to-site: Network to network.
-    - Private IP vs Public IP: `192.168.1.4` (not routable on the internet) vs `34.207.152.137`
+    | **Scenario**            | **AWS**                                                        | **Azure**                               | **GCP**                                                                            |
+    | ----------------------- | -------------------------------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
+    | VNet ↔ VNet / VPC ↔ VPC | VPC Peering, AWS Transit Gateway                               | VNet Peering, Virtual WAN, VNet Gateway | VPC Network Peering, Cloud VPN                                                     |
+    | On-Prem ↔ VNet/VPC      | Direct Connect, VPN Gateway, Transit Gateway                   | ExpressRoute, VPN Gateway, Virtual WAN  | Cloud Interconnect, Cloud VPN                                                      |
+    | VNet/VPC ↔ Internet     | Internet Gateway (public subnet), NAT Gateway (private subnet) | Internet Gateway, NAT Gateway           | Cloud Router, Cloud NAT                                                            |
+    | Subnet Traffic Control  | Network ACLs + Security Groups                                 | Network Security Groups (NSGs)          | 1. Shared VPC with IAM on subnets  <br> 2. Firewall rules at VPC or instance level |
 
-    🔹**Resource hierarchy**
+    - Azure’s **Virtual WAN** is conceptually similar to **AWS Transit Gateway**.  
+    - Azure and GCP do **not** have a strict public/private subnet designation—this is controlled through IP assignment, routes, and firewall/NSG configurations.
 
-    | Level                  | AWS                  | Azure               | GCP         |
-    |------------------------|----------------------|---------------------|-------------|
-    | 1                      | Organization         | Management Group    | Organization|
-    | 2                      | Organizational Unit (OU) | Subscription    | Folder      |
-    | 3                      | Account              | Resource Group      | Project     |
-    | 4                      | Resources            | Resources           | Resources   |
+    🔹**Gateway Types in Azure:**
+
+    - **VNet Gateway** types: 
+        - **VPN Gateway:** For site-to-site and point-to-site connections
+        - **ExpressRoute Gateway:** For private MPLS-style connections to Azure
+    * Connection modes:
+        - **Point-to-site:** Device-to-cloud
+        - **Site-to-site:** Network-to-network
+        - **VNet-to-VNet:** Secure private communication between VNets
+
+    🔹**Public IP vs Private IP**
+
+    - **Private IP:** `192.168.1.4` – Not routable on the internet
+    - **Public IP:** `34.207.152.137` – Routable on the public internet
+
+    🔹**Cloud Resource Hierarchy**
+
+    | **Level**             | **AWS**                  | **Azure**        | **GCP**      |
+    | --------------------- | ------------------------ | ---------------- | ------------ |
+    | 1. Organization Level | Organization             | Management Group | Organization |
+    | 2. Grouping Level     | Organizational Unit (OU) | Subscription     | Folder       |
+    | 3. IAM/Billing Unit   | Account                  | Resource Group   | Project      |
+    | 4. Resource Level     | Resources                | Resources        | Resources    |
+
+    🔹**Subnet Comparison**
+
+    | **Feature**              | **AWS**                                | **Azure**                           | **GCP**                                |
+    | ------------------------ | -------------------------------------- | ----------------------------------- | -------------------------------------- |
+    | **Subnet Scope**         | AZ-scoped                              | Region-scoped                       | Region-scoped                          |
+    | **Public/Private Setup** | Via route table + Internet Gateway     | Via route + NSG                     | Via route + firewall + external IP     |
+    | **Firewall Controls**    | Security Groups + NACLs (subnet-level) | NSGs (subnet or NIC level)          | Firewall rules (VPC or instance level) |
+    | **Secondary IP Ranges**  | ❌ Not supported                        | ❌ Not supported                     | ✅ Alias IPs supported                  |
+    | **HA / Kubernetes Fit**  | Multi-AZ subnet design required        | Simplified with region-wide subnets | Best for GKE (regional + alias IPs)    |
 
 1. **Security Words 101**
 
