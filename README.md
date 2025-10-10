@@ -1,4 +1,6 @@
-# Table of Contents
+# Software Architecture Mindmap
+
+## Contents
 
 - **Section 1**: [Software Architecture Mindmap](#software-architecture-mindmap)
 - **Section 2**: [Software Architecture Reference](#software-architecture-reference)
@@ -17,8 +19,6 @@
   - [Free e-books](#free-ebooks-for-ml-data-science--ai-ref)
   - [GitHub](#github)
 - **Section 5**: [Terminology and Comparisons](#terminology-and-comparisons)
-
-## Software Architecture Mindmap
 
 Software terminologies and concepts, software architecture overview
 
