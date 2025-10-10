@@ -1,5 +1,54 @@
 ## Terminology and Comparisons
 
+#### Alphabetical Index
+
+- 9 Clean Code Principles To Keep In Mind
+- A CIO’s framework for measuring engineering productivity
+- API Gateway vs Load Balancer
+- API Protocols
+- Azure vs AWS vs GCP in Cloud Network
+- Are Architecture Styles, Patterns, and Design Patterns Different?
+- B-Tree vs LSM Tree vs Bloom filter
+- Cloud Design Patterns
+- Common (Conway's law) – *Conway's law*
+- Compiler Framework: LLVM vs GCC
+- Cracking coding interviews
+- Data engineering & Data Scientists Vocab 101
+- Data Management in Distributed systems (Partitioning, Shuffling and Bucketing)
+- Database Normalization
+- Deploy-ment Styles: Blue/Green, Canary, and A/B
+- Essential Algorithms for System Design Interviews
+- Flaky Test
+- Gartner's PACE Layered Application Strategy
+- Generic: PECS: Producer Extends, Consumer Super
+- Hadoop Ecosystem
+- JIT vs AOT
+- Mixin
+- Memory consistency model: A Primer on Memory Consistency and Cache Coherence
+- Medallion architecture
+- OLAP vs OLTP
+- Passkey
+- Principles & Concepts: YAGNI, KISS, DRY, CAP Theorem, PACELC, ACID, BASE
+- Popular Enterprise Architecture Frameworks
+- Push & Pull model in Azure
+- Real-time communication and messaging (MQTT, AMQP and WebSocket)
+- Reactive programming vs event-driven architecture
+- RABC vs ReABC
+- Security Words 101
+- SLA, SLO, and SLI
+- SSO (Single Sign-On)
+- Space-Based Architecture (SBA) vs Cell-based architecture
+- SSG: Static site generator list
+- Star schema
+- Software defined Networking (SDN) Northbound vs Southbound
+- Test-Driven Development
+- Transfer Learning, Fine-tuning, Multitask Learning and Federated Learning
+- Top 20 System Design Concepts
+- Windows UI Development Frameworks
+- Web services and APIs (SOAP, RestAPI, GraphQL, gRPC and Kafka)
+
+---
+
 1. [Gartner's PACE Layered Application Strategy](https://cio-wiki.org/wiki/Gartner%27s_PACE_Layered_Application_Strategy): A methodology for categorizing, selecting, managing and governing applications based on their characteristics and the speed of change they require1.
 1. [JIT vs AOT](https://stackoverflow.com/questions/32653951/when-does-ahead-of-time-aot-compilation-happen): JIT and AOT are two types of compilers that differ in when they convert a program from one language to another, either at run-time or build-time.
 1. [SSG: Static site generator list](https://jamstack.org/generators/): A tool that generates a full static HTML website based on raw data and a set of templates.
@@ -643,6 +692,8 @@
 
 1. Essential Algorithms for System Design Interviews
 
+    - [Top Leader Election Algorithms in Distributed Databases](https://blog.bytebytego.com/p/top-leader-election-algorithms-in)
+
     | Algorithm                                                                  | Category / Approach  | Use Case(s)                                 | Description                                                                                                                | Complexity                                       | Usage in Real Systems                                     |
     | -------------------------------------------------------------------------- | -------------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------- |
     | [**Geohash**](https://en.wikipedia.org/wiki/Geohash)                       | Spatial indexing     | Location-based services                     | Encodes geographic coordinates into short alphanumeric strings, enabling efficient spatial queries and proximity searches. | O(1) encode/decode; O(log n) search              | Elasticsearch, MongoDB, Redis geospatial queries          |
@@ -655,5 +706,6 @@
     | [**Raft**](https://en.wikipedia.org/wiki/Raft_%28algorithm%29)             | Consensus algorithm  | Distributed databases, leader election      | Simplifies consensus with leader-based log replication; easier to understand than Paxos.                                   | O(n) message exchanges per term                  | etcd, Consul, RethinkDB                                   |
     | [**Paxos**](https://en.wikipedia.org/wiki/Paxos_%28computer_science%29)    | Consensus algorithm  | Distributed databases                       | Achieves consensus in unreliable distributed systems; more complex but widely proven.                                      | O(n²) message exchanges                          | Google Chubby, Apache ZooKeeper                        |
 
+1. Passkey
 
 **[`^        back to top        ^`](#terminology-and-comparisons)**
