@@ -1,5 +1,8 @@
 # Software Architecture Mindmap
 
+> [!TIP]  
+> The mindmap can be opened and edited using [mindmap-maker-clean](https://github.com/kimtth/mindmap-maker-clean)
+
 ## Contents
 
 - **Section 1**: [Software Architecture Mindmap](#software-architecture-mindmap)
@@ -17,7 +20,7 @@
         - [Transformer Architecture (LLM Foundations)](#transformer-architecture-llm-foundations)
     - [Computer Science Books](#computer-science-books)
 - **Section 3**: [Computer Science Papers](#computer-science-papers)
-    - [Computer Science Papers Every Developers Should Read](#computer-science-papers-every-developers-should-read-ref)
+    - [Computer Science Papers Every Developer Should Read](#computer-science-papers-every-developer-should-read-ref)
     - [Distributed Systems!](#distributed-systems)
     - [25 Papers That Completely Transformed the Computer World](#25-papers-that-completely-transformed-the-computer-world-ref)
 - **Section 4**: [Data Science (ML/NN)](#data-science-mlnn)
@@ -29,29 +32,21 @@
 
 Software terminologies and concepts, software architecture overview
 
-Summarized the keywords and solutions have faced in my learning and experience.
+A summary of keywords and solutions I have encountered in my learning and experience. Due to the complexity and rapid pace of advancement, we may lose sight of the big picture.
 
 <img src="./Preview.png" width="50%">
 
-- Full Version
-
 `Software_Architecture_Mindmap.png`
 
-Three main pillars upon software architecture
+Three main pillars of software architecture
 
-- Modern Application Development
-
-- Cloud Computing (AWS/Azure/GCP)
-
-- Data Science (ML/NN)
-
-and
-
-Numerous technologies and methodologies.
+- Modern Application Development  
+- Cloud Computing (AWS/Azure/GCP)  
+- Data Science (ML/NN)  
 
 ⓒ 2022. (https://github.com/kimtth) all rights reserved.
 
-This mindmap created by `https://app.mindmapmaker.org/`
+This mindmap was created using [Mindmap Maker](https://app.mindmapmaker.org/)
 
 ---
 
@@ -95,7 +90,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
     🔹 `Throughput` is how many transactions per second or minute your application can handle
 
-    🔹 `Errors` is usually measured in a percent of
+    🔹 `Errors` is usually measured as a percentage of requests
 
     🔹 `Saturation` is the ability of your application to use the available CPU and Memory
 
@@ -181,7 +176,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Microsoft Digital Defense Report](https://aka.ms/MDDR)
 - [Google DORA](https://dora.community/): DevOps Research and Assessment (DORA)
 - [Postman State of the API Report](https://www.postman.com/state-of-api)
-- [Standford AI Index Annual Report](https://hai.stanford.edu/ai-index)
+- [Stanford AI Index Annual Report](https://hai.stanford.edu/ai-index)
 
 ### Newsletter
 
@@ -243,7 +238,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 - [How to Architect Software for a Greener Future](https://www.infoq.com/articles/architect-software-for-greener-future)
 - [Generative Search: Practical Advice for Retrieval Augmented Generation (RAG)](https://www.infoq.com/presentations/vector-embedding-llm/)
-- [What are the Greenest Programing Languages?](https://datasciencelearningcenter.substack.com/p/what-are-the-greenest-software-programming)
+- [What are the Greenest Programming Languages?](https://datasciencelearningcenter.substack.com/p/what-are-the-greenest-software-programming)
 - [Frugal Architect Handbook](http://thefrugalarchitect.com/)
 - [.NET Developer Roadmap](https://github.com/milanm/DotNet-Developer-Roadmap)
 - [Celebrate 50 years of Microsoft with the company's original source code: Altair Basic](https://www.gatesnotes.com/microsoft-original-source-code)
@@ -312,13 +307,13 @@ This mindmap created by `https://app.mindmapmaker.org/`
 9. Machine Learning
     - [The Hundred-Page Machine Learning Book](https://www.amazon.com/dp/199957950X) by Andriy Burkov
     - [Designing Machine Learning Systems](https://www.amazon.com/dp/1098107969) by Chip Huyen
-    - [AI Engineering](https://www.amazon.com/dp/1098166302) by Chp Huyen [git](https://github.com/chiphuyen/aie-book)
+    - [AI Engineering](https://www.amazon.com/dp/1098166302) by Chip Huyen [git](https://github.com/chiphuyen/aie-book)
 
 - [ref](https://newsletter.techworld-with-milan.com/p/learn-things-that-dont-change) | [ref](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software) | [ref](https://github.com/mhadidg/software-architecture-books)
 
 ## Computer Science Papers
 
-### Computer Science Papers Every Developers Should Read: [ref](https://x.com/milan_milanovic/status/1747167493553062398?s=20)
+### Computer Science Papers Every Developer Should Read: [ref](https://x.com/milan_milanovic/status/1747167493553062398?s=20)
 
 1. [On the Criteria To Be Used in Decomposing Systems into Modules (1972)](https://win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf): D.L. Parnas  
 2. [An Axiomatic Basis for Computer Programming (1969)](http://sunnyday.mit.edu/16.355/Hoare-CACM-69.pdf): C.A.R. Hoare  
@@ -463,4 +458,4 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 - See [Glossary.md](Glossary.md): an overview of key terminology, definitions, and comparisons between related concepts.
 
-**[`^        back to top        ^`](#table-of-contents)**
+**[`^        back to top        ^`](#contents)**
