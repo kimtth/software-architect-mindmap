@@ -839,3 +839,4 @@ graph TD
     click J "https://docs.microsoft.com/en-us/aspnet/core/client-side/blazor/hybrid?view=aspnetcore-7.0" "Blazor Hybrid: Build web UIs with native capabilities."
 ```
 
+**[`^        back to top        ^`](#index)**
