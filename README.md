@@ -4,20 +4,27 @@
 
 - **Section 1**: [Software Architecture Mindmap](#software-architecture-mindmap)
 - **Section 2**: [Software Architecture Reference](#software-architecture-reference)
-  - [Cloud Architecture](#cloud-architecture)
-  - [Computer Science courses](#computer-science-courses)
-  - [Industry Trends](#industry-trends)
-  - [Newsletter](#newsletter)
-  - [Tools](#tools--research)
-  - [Engineering blog](#engineering-blog)
-  - [Computer Science Books](#computer-science-books)
+    - [Building from scratch](#building-from-scratch)
+    - [Cloud Architecture](#cloud-architecture)
+    - [Computer Science courses](#computer-science-courses)
+        - [Beginner Series by Microsoft](#beginner-series-by-microsoft)
+    - [Industry Trends](#industry-trends)
+    - [Newsletter](#newsletter)
+    - [Tools & Research](#tools--research)
+    - [Engineering blog](#engineering-blog)
+    - [Other Topics](#other-topics)
+        - [LLM-generated wiki](#llm-generated-wiki)
+        - [Transformer Architecture (LLM Foundations)](#transformer-architecture-llm-foundations)
+    - [Computer Science Books](#computer-science-books)
 - **Section 3**: [Computer Science Papers](#computer-science-papers)
-  - [Computer Science Papers Every Developers Should Read](#computer-science-papers-every-developers-should-read-ref)
-  - [Distributed Systems!](#distributed-systems)
-  - [25 Papers That Completely Transformed the Computer World](#25-papers-that-completely-transformed-the-computer-world-ref)
+    - [Computer Science Papers Every Developers Should Read](#computer-science-papers-every-developers-should-read-ref)
+    - [Distributed Systems!](#distributed-systems)
+    - [25 Papers That Completely Transformed the Computer World](#25-papers-that-completely-transformed-the-computer-world-ref)
 - **Section 4**: [Data Science (ML/NN)](#data-science-mlnn)
-  - [Free e-books](#free-ebooks-for-ml-data-science--ai-ref)
-  - [GitHub](#github)
+    - [Machine Learning & Deep Learning](#machine-learning--deep-learning)
+    - [Mathematics & Statistical Foundations](#mathematics--statistical-foundations)
+    - [Probabilistic, Special Topics](#probabilistic-special-topics)
+    - [Github](#github)
 - **Section 5**: [Terminology and Comparisons](#terminology-and-comparisons)
 
 Software terminologies and concepts, software architecture overview
@@ -52,6 +59,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 - [System Design 101](https://github.com/ByteByteGoHq/system-design-101): ByteByteGo
 - [Awesome Lists](https://github.com/sindresorhus/awesome): 😎 Awesome lists about all kinds of interesting topics / `awesome.re` / [github topic](https://github.com/topics/awesome)
+- [Ecosyste.ms: Awesome](https://awesome.ecosyste.ms/): An open API service indexing awesome lists
 - [Awesome Software Architecture (simskij)](https://github.com/simskij/awesome-software-architecture)
 - [Awesome Software Architecture](https://github.com/mehdihadeli/awesome-software-architecture): A curated list of awesome articles, videos, and other resources to learn and practice software architecture, patterns, and principles
 - [Software Architecture Books](https://github.com/mhadidg/software-architecture-books): A comprehensive list of books on Software Architecture
@@ -98,12 +106,14 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Let’s Build A Simple Interpreter](https://ruslanspivak.com/lsbasi-part1/)
 - [Let’s Build A Web Server](https://ruslanspivak.com/lsbaws-part1/)
 - [Web Browser Engineering](https://browser.engineering/): Building a basic but complete web browser from scratch
+- [Clone Wars](https://github.com/GorvGoyl/Clone-Wars): 100+ open-source clones of popular sites 
 - [Curated list of project-based tutorials](https://github.com/practical-tutorials/project-based-learning)
 - [Master programming by recreating your favorite technologies from scratch](https://github.com/codecrafters-io/build-your-own-x)
 - [Build frontend applications at scale](https://frontendatscale.com/courses/frontend-architecture/)
 - [Writing an Operating System in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines): [ref](https://operating-system-in-1000-lines.vercel.app)
 - [minimal GPT](https://www.k-a.in/minimalGPT.html)
 - [PyTorch internals](https://blog.ezyang.com/2019/05/pytorch-internals/)
+- [JavaScript Runtime from Scratch](https://devlogs.xyz/blog/building-a-javaScript-runtime): C programming
 
 ### Cloud Architecture
 
@@ -169,6 +179,9 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [MAD (ML/AI/Data) Landscape](https://mad.firstmark.com/)
 - [Hype Cycle for Emerging Technologies 2024](https://www.gartner.com/en/newsroom/press-releases/2024-08-21-gartner-2024-hype-cycle-for-emerging-technologies-highlights-developer-productivity-total-experience-ai-and-security)
 - [Microsoft Digital Defense Report](https://aka.ms/MDDR)
+- [Google DORA](https://dora.community/): DevOps Research and Assessment (DORA)
+- [Postman State of the API Report](https://www.postman.com/state-of-api)
+- [Standford AI Index Annual Report](https://hai.stanford.edu/ai-index)
 
 ### Newsletter
 
@@ -195,7 +208,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Connected Papers](https://www.connectedpapers.com/): Explore connected academic papers
 - [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery): AI-powered paper discovery tool
 - [scite_](https://scite.ai/): Smart citation analysis and discovery
-- [Moonlight](https://www.themoonlight.io/en)
+- [Moonlight](https://www.themoonlight.io/en): Browser extension for academic research
 
 ##### Diagramming & Visualization Tools
 - [Excalidraw](https://excalidraw.com/): Hand-drawn style diagrams
@@ -209,6 +222,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Curated Kubernetes tools by Bluelight Consulting
 - [PostgreSQL Wiki: Don't Do This](https://wiki.postgresql.org/wiki/Don%27t_Do_This): Common PostgreSQL pitfalls
 - [Power BI DAX Patterns](https://www.daxpatterns.com/patterns/): Patterns and best practices for Power BI DAX
+- [How To Secure A Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server)
 
 ### Engineering blog
 
@@ -234,6 +248,19 @@ This mindmap created by `https://app.mindmapmaker.org/`
 - [.NET Developer Roadmap](https://github.com/milanm/DotNet-Developer-Roadmap)
 - [Celebrate 50 years of Microsoft with the company's original source code: Altair Basic](https://www.gatesnotes.com/microsoft-original-source-code)
 - [A periodic table for machine learning](https://www.microsoft.com/en-us/research/articles/a-periodic-table-for-machine-learning/)
+
+#### LLM-generated wiki
+
+- [Grokpedia](https://grokipedia.com/) 
+- [DeepWiki](https://deepwiki.org/)
+- [Google Code Wiki](https://codewiki.google/)
+
+#### Transformer Architecture (LLM Foundations)
+
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+- [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
+- [Why Momentum Really Works](https://distill.pub/2017/momentum/)
 
 ### Computer Science Books
 
@@ -285,6 +312,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 9. Machine Learning
     - [The Hundred-Page Machine Learning Book](https://www.amazon.com/dp/199957950X) by Andriy Burkov
     - [Designing Machine Learning Systems](https://www.amazon.com/dp/1098107969) by Chip Huyen
+    - [AI Engineering](https://www.amazon.com/dp/1098166302) by Chp Huyen [git](https://github.com/chiphuyen/aie-book)
 
 - [ref](https://newsletter.techworld-with-milan.com/p/learn-things-that-dont-change) | [ref](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software) | [ref](https://github.com/mhadidg/software-architecture-books)
 
@@ -338,7 +366,8 @@ This mindmap created by `https://app.mindmapmaker.org/`
 
 ## Data Science (ML/NN)
 
-### Free eBooks for ML, Data Science & AI: [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
+- Awesome_Math_Books: [ref](https://github.com/valeman/Awesome_Math_Books)
+- Free eBooks for ML, Data Science & AI: [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
 
 ##### Machine Learning & Deep Learning
 
@@ -352,6 +381,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 1. [Machine Learning For Dummies](https://www.ibm.com/downloads/cas/GB8ZMQZ3) – Judith Hurwitz, Daniel Kirsch
 1. [Hands-On Machine Learning with R](https://bradleyboehmke.github.io/HOML/) – Boehmke & Greenwell
 1. [Machine Learning Engineering](http://www.mlebook.com/wiki/doku.php) – Andriy Burkov
+1. [Machine Learning Systems](https://www.mlsysbook.ai/): [Introduction to Machine Learning Systems](https://github.com/harvard-edge/cs249r_book) – Vijay Janapa Reddi 
 
 ##### Mathematics & Statistical Foundations
 
@@ -365,6 +395,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 1. [Math Foundations for Computer Science](https://web.stanford.edu/class/archive/cs/cs103/cs103.1184/notes/Mathematical%20Foundations%20of%20Computing.pdf) – Stanford CS103
 1. [@mathtalent Lecture Notes](https://skim.math.msstate.edu/LectureNotes/) – Math-focused CS notes
 1. [Algorithms for Artificial Intelligence](https://web.stanford.edu/~mossr/pdf/alg4ai.pdf) – Moss
+1. [Calculus for Mathematicians, Computer Scientists, and Physicists](https://mathcs.holycross.edu/~ahwang/print/calc.pdf) – Andrew D. Hwang
 
 ##### Probabilistic, Special Topics
 
@@ -396,6 +427,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 1. [Data Science Python Notebooks](https://github.com/donnemartin/data-science-ipython-notebooks)
 1. [Awesome Data Science](https://github.com/academic/awesome-datascience)
 1. [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
+1. [Interactive Educational Data Science Python Dashboards](https://github.com/GeostatsGuy/DataScienceInteractivePython)
 
 ##### Deep Learning & Math
 
@@ -421,7 +453,7 @@ This mindmap created by `https://app.mindmapmaker.org/`
 1. [ML Interview Guide](https://github.com/Sroy20/machine-learning-interview-guide)
 1. [Data Science Interview Q\&A](https://github.com/alexeygrigorev/data-science-interviews)
 
-#### Machine Learning Essentials
+##### Machine Learning Essentials
 
 1. [StatQuest by Josh Starmer](https://www.youtube.com/user/joshstarmer)
 1. [Machine Learning Mastery by Jason Brownlee](https://machinelearningmastery.com/)
