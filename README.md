@@ -31,8 +31,8 @@
 - **Section 5**: [Terminology and Comparisons](#terminology-and-comparisons)
 
 Software terminologies and concepts, software architecture overview
-
-A summary of keywords and solutions I have encountered in my learning and experience. Due to the complexity and rapid pace of advancement, we may lose sight of the big picture.
+<!-- 
+A summary of keywords and solutions I have encountered in my learning and experience. Due to the complexity and rapid pace of advancement, we may lose sight of the big picture. -->
 
 <img src="./Preview.png" width="50%">
 
