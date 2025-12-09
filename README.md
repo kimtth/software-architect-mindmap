@@ -1,7 +1,7 @@
 # Software Architecture Mindmap
 
 > [!TIP]  
-> The mindmap can be opened and edited using [mindmap-maker-clean](https://github.com/kimtth/mindmap-maker-clean)
+> The mindmap can be opened and edited using [mindmap-maker-clean](https://github.com/kimtth/mindmap-maker-clean). You can also use it to convert the JSON source into a high-resolution PNG. Verified on Chrome and Firefox.
 
 ## Contents
 
