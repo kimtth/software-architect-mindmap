@@ -27,6 +27,7 @@
 1. [Measuring Engineering Productivity (DORA, SPACE, DX Core 4, DevEx)](#measuring-engineering-productivity-dora-space-dx-core-4-devex)
 1. [Medallion Architecture](#medallion-architecture)
 1. [Memory Consistency Model (SC vs TSO vs Relaxed)](#memory-consistency-model-sc-vs-tso-vs-relaxed)
+1. [Message Broker Pattern](#message-broker-pattern)
 1. [Mixin](#mixin)
 1. [OLAP vs OLTP](#olap-vs-oltp)
 1. [Passkey](#passkey)
@@ -45,6 +46,7 @@
 1. [SSG: Static site generator list](#ssg-static-site-generator-list)
 1. [SSO (Single Sign-On)](#sso-single-sign-on)
 1. [Star Schema](#star-schema)
+1. [Systolic Array in TPU](#systolic-array-in-tpu)
 1. [Test-Driven Development](#test-driven-development)
 1. [Top 20 System Design Concepts](#top-20-system-design-concepts)
 1. [Top Leader Election Algorithms in Distributed Databases](#top-leader-election-algorithms-in-distributed-databases)
@@ -523,6 +525,19 @@ Memory consistency model: [A Primer on Memory Consistency and Cache Coherence](h
 
 ---
 
+#### Message Broker Pattern
+<a id="msg-broker-pattern-2"></a>
+
+<img src="files/message-broker-patterns.png" alt="msg-broker-pattern" width="400"/>
+
+🔹 **Transactional Outbox**: Service writes business data and an outbox message in the same DB transaction → broker later publishes the message → guarantees no data–message mismatch  
+🔹 **CQRS**: Commands write data to a write model → queries read from a separate read model → each side scales and optimizes independently
+🔹 **CQRS + Event Sourcing**: System stores every change as an immutable event → events are replayed to build read models → full history and auditability preserved  
+🔹 **Saga Pattern**: Business process runs as a sequence of steps → each step emits the next → failures trigger compensating actions to undo prior steps  
+🔹 **Competing Consumers**: Multiple consumers pull messages from the same queue → each message is processed by one consumer → throughput and fault tolerance increase
+
+---
+
 #### Mixin
 <a id="mixin-2"></a>
 
@@ -754,8 +769,15 @@ E -- Applications --> F[SDN Applications]
 ---
 
 #### Star Schema
-<a id="star-schema-2"></a>
 The **Star Schema** is a data model for data warehouses. It has a central fact table for measurable data and surrounding dimension tables for descriptive data. [ref](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema)
+
+---
+
+#### Systolic Array in TPU
+<a id="systolic-array-2"></a>
+A systolic array is like a grid of simple workers passing data along in rhythm — instead of each worker running back and forth to memory.
+
+In a **TPU**, these workers are **tiny math units** arranged in **rows and columns**. They store **weights** and continuously perform **multiply-and-add (MAC)** operations as data flows locally through the grid, enabling fast,energy-efficient matrix math. [ref](https://blog.bytebytego.com/p/how-googles-tensor-processing-unit)
 
 ---
 
