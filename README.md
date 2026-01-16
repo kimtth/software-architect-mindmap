@@ -80,24 +80,21 @@ This mindmap was created using [Mindmap Maker](https://app.mindmapmaker.org/)
 - [Mastering AI Agents](./files/minibooks/Mastering%20AI%20Agents-compressed.pdf)
 - [Agentic Architectures for Retrieval-intensive Applications](./files/minibooks/Weaviate%20Agentic%20Architectures-ebook.pdf)
 - [Programming Notes for Professionals books](https://goalkicker.com/)
----
 - [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals)
-
+<!-- 
     <details>
     <summary>Expand</summary>
 
-    🔹 `Latency` is the response time of your application, usually expressed in milliseconds
-
-    🔹 `Throughput` is how many transactions per second or minute your application can handle
-
-    🔹 `Errors` is usually measured as a percentage of requests
-
+    🔹 `Latency` is the response time of your application, usually expressed in milliseconds  
+    🔹 `Throughput` is how many transactions per second or minute your application can handle  
+    🔹 `Errors` is usually measured as a percentage of requests  
     🔹 `Saturation` is the ability of your application to use the available CPU and Memory
 
-    </details>
+    </details> -->
 
 ### Building from scratch
 
+- [Let's Build a Simple Database](https://cstack.github.io/db_tutorial/): Writing a sqlite clone from scratch in C
 - [Let’s Build A Simple Interpreter](https://ruslanspivak.com/lsbasi-part1/)
 - [Let’s Build A Web Server](https://ruslanspivak.com/lsbaws-part1/)
 - [Web Browser Engineering](https://browser.engineering/): Building a basic but complete web browser from scratch
@@ -131,7 +128,7 @@ This mindmap was created using [Mindmap Maker](https://app.mindmapmaker.org/)
 <details>
     <summary>Expand</summary>
 
-    🔹 Abstractly speaking, a landing zone helps you plan for and design an Azure deployment, by conceptualizing a designated area for placement and integration of resources. 
+    🔹 Abstractly speaking, a landing zone helps you plan for and design an Azure deployment, by conceptualizing a designated area for placement and integration of resources.  
 
     There are two types of landing zones:
 
@@ -218,6 +215,13 @@ This mindmap was created using [Mindmap Maker](https://app.mindmapmaker.org/)
 - [PostgreSQL Wiki: Don't Do This](https://wiki.postgresql.org/wiki/Don%27t_Do_This): Common PostgreSQL pitfalls
 - [Power BI DAX Patterns](https://www.daxpatterns.com/patterns/): Patterns and best practices for Power BI DAX
 - [How To Secure A Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server)
+
+##### Visual Learning 
+- [Assembly code visualizer](https://asm.diveintosystems.org): Visualize Your Assembly Code
+- [explorar.dev](https://explorar.dev/torvalds/linux): Explore curated open-source repositories with an interactive code browser.
+- [Interactive Reinforcement Learning Explorer](https://www.alphaxiv.org/labs/rl-playground)
+- [LLM Visualization](https://bbycroft.net/llm)
+- [Understanding the Linux Kernel, Visually](https://jm233333.github.io/assets/papers/visualinux-eurosys25.pdf)
 
 ### Engineering blog
 
@@ -359,10 +363,14 @@ This mindmap was created using [Mindmap Maker](https://app.mindmapmaker.org/)
 24. [Raft Consensus Algorithm](https://raft.github.io/raft.pdf): Learn about the more understandable consensus algorithm  
 25. [Time Clocks and Ordering of Events](https://lamport.azurewebsites.net/pubs/time-clocks.pdf): The extremely important paper that explains the concept of time and event ordering in a distributed system  
 
+### The best NLP papers from 2015 to now
+- [The best NLP papers](https://thebestnlppapers.com/nlp/papers/all/)
+
 ## Data Science (ML/NN)
 
 - Awesome_Math_Books: [ref](https://github.com/valeman/Awesome_Math_Books)
 - Free eBooks for ML, Data Science & AI: [ref](https://newsletter.theaiedge.io/p/30-free-machine-learning-e-books)
+- [ML and LLM system design](https://www.evidentlyai.com/ml-system-design): A database of 800 case studies from 150+ companies.
 
 ##### Machine Learning & Deep Learning
 
