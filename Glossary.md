@@ -11,6 +11,7 @@
 1. [Cloud Design Patterns](#cloud-design-patterns)
 1. [Compiler Framework: LLVM vs GCC](#compiler-framework-llvm-vs-gcc)
 1. [Conway's Law](#conways-law)
+1. [CPU 101](#cpu-101)
 1. [Cracking Coding Interviews](#cracking-coding-interviews)
 1. [Data Engineering & Data Scientists Vocab 101](#data-engineering-data-scientists-vocab-101)
 1. [Data Management in Distributed Systems (Partitioning, Shuffling and Bucketing)](#data-management-in-distributed-systems-partitioning-shuffling-and-bucketing)
@@ -23,12 +24,14 @@
 1. [Gartner's PACE Layered Application Strategy](#gartners-pace-layered-application-strategy)
 1. [Generic: PECS (Producer Extends, Consumer Super)](#generic-pecs-producer-extends-consumer-super)
 1. [Hadoop Ecosystem](#hadoop-ecosystem)
+1. [Idempotent, Backfill](#idempotent-backfill)
 1. [JIT vs AOT](#jit-vs-aot)
 1. [Measuring Engineering Productivity (DORA, SPACE, DX Core 4, DevEx)](#measuring-engineering-productivity-dora-space-dx-core-4-devex)
 1. [Medallion Architecture](#medallion-architecture)
 1. [Memory Consistency Model (SC vs TSO vs Relaxed)](#memory-consistency-model-sc-vs-tso-vs-relaxed)
 1. [Message Broker Pattern](#message-broker-pattern)
 1. [Mixin](#mixin)
+1. [Network Design 101](#network-design-101)
 1. [OLAP vs OLTP](#olap-vs-oltp)
 1. [Passkey](#passkey)
 1. [Popular Enterprise Architecture Frameworks](#popular-enterprise-architecture-frameworks)
@@ -38,6 +41,7 @@
 1. [RBAC vs ReBAC](#rbac-vs-rebac)
 1. [Reactive Programming vs Event-Driven Architecture](#reactive-programming-vs-event-driven-architecture)
 1. [Real-time Communication and Messaging (MQTT, AMQP and WebSocket)](#real-time-communication-and-messaging-mqtt-amqp-and-websocket)
+1. [Scaling a system 101](#scaling-a-system-101)
 1. [Security Words 101](#security-words-101)
 1. [SLA, SLO, and SLI](#sla-slo-and-sli)
 1. [Slowly Changing Dimensions (SCD)](#slowly-changing-dimensions-scd)
@@ -53,6 +57,7 @@
 1. [Transfer Learning, Fine-tuning, Multitask Learning and Federated Learning](#transfer-learning-fine-tuning-multitask-learning-and-federated-learning)
 1. [Web Services and APIs (SOAP, RestAPI, GraphQL, gRPC and Kafka)](#web-services-and-apis-soap-restapi-graphql-grpc-and-kafka)
 1. [Windows UI Development Frameworks](#windows-ui-development-frameworks)
+1. [Zanzibar](#zanzibar)
 
 #### 9 Clean Code Principles
 <a id="9-clean-code-principles-2"></a>
@@ -256,6 +261,100 @@
 #### Conway's Law
 <a id="conways-law-2"></a>
 Software engineering principle that states that the structure of a system reflects the structure of the organization that designs it.
+
+---
+
+#### CPU 101
+<a id="cpu-101-2"></a>
+
+[ref](https://cpu.land/editions/one-pager)
+
+```mermaid
+flowchart TD
+    %% ── Boot ────────────────────────────────────────────────────
+    Firmware["UEFI / BIOS"] --> Bootloader["Bootloader (GRUB)"]
+    Bootloader --> KernelInit["Kernel Init<br/>(rings · page tables · IDT · scheduler)"]
+    KernelInit --> InitProcess["Init Process (PID 1)"]
+    InitProcess -->|"spawns via"| Fork
+
+    %% ── fork + exec ─────────────────────────────────────────────
+    Fork["fork()"] -->|"SYSCALL: rax=syscall#<br/>rdi/rsi=args → clone + COW pages"| IDT
+    Fork -->|"child calls"| Exec["exec()"]
+    Exec -->|"SYSCALL: execve"| IDT
+    IDT["IDT Handlers<br/>(syscalls · interrupts)"] -->|"exec: load ELF segments"| UserPages["User Pages (Ring 3)"]
+    IDT -->|"exec: set IP to entry point"| IP["Instruction Pointer (IP)"]
+    IDT -->|"Ring 0→3: SYSRET restores user mode<br/>(returning from kernel back to user · result in rax)"| Registers["Registers (eax, ebx, ...)"]
+
+    %% ── CPU Fetch-Execute loop ──────────────────────────────────
+    %% NOTE: pure computation (math, logic, local memory reads) runs here
+    %% directly in Ring 3 — NO syscall needed
+    NoteRing3["⚑ Not all operations go to kernel<br/>arithmetic · logic · local memory stay in Ring 3 — no mode switch"]
+    NoteRing3 -.->|"no kernel handoff"| IP
+
+    IP -->|"fetch (virtual addr)"| MMU["MMU<br/>Memory Management Unit<br/>(translate + ring protection)"]
+    Registers -->|"load / store"| MMU
+    MMU -->|"page table walk"| PageTable["Page Table"]
+    PageTable --> KernelPages["Kernel Pages (Ring 0)"]
+    PageTable --> UserPages
+
+    %% ── Syscall boundary note ───────────────────────────────────
+    %% NOTE: syscall only triggered at system resource boundary
+    NoteSyscall["⚑ User code is handed over to kernel via SYSCALL<br/>Kernel manages system interactions (files · network · memory)<br/>User gets result back in rax"]
+    NoteSyscall -.->|"triggers SYSCALL instruction"| IDT
+
+    %% ── Preemptive Multitasking ─────────────────────────────────
+    Timer["Hardware Timer Interrupt (PIT)"] -->|"fires IRQ every ~few ms"| IDT
+    IDT -->|"timer: run scheduler"| Scheduler["Scheduler"]
+    Scheduler -->|"restore registers + IP"| Registers
+    Scheduler -->|"swap CR3 (address space)"| MMU
+
+    %% ── Styling ─────────────────────────────────────────────────
+    classDef boot   fill:#fffacd,stroke:#333,stroke-width:2px
+    classDef cpu    fill:#f0f8ff,stroke:#333,stroke-width:2px
+    classDef mem    fill:#fff0f5,stroke:#333,stroke-width:2px
+    classDef kernel fill:#f5f5dc,stroke:#333,stroke-width:2px
+    classDef hw     fill:#e6e6fa,stroke:#333,stroke-width:2px
+    classDef proc   fill:#ffe4e1,stroke:#333,stroke-width:2px
+    classDef note   fill:#f0fff0,stroke:#999,stroke-width:1px,stroke-dasharray:4 2,color:#555
+
+    class Firmware,Bootloader,KernelInit,InitProcess boot
+    class IP,Registers cpu
+    class MMU,PageTable,KernelPages,UserPages mem
+    class IDT,Scheduler kernel
+    class Timer hw
+    class Fork,Exec proc
+    class NoteRing3,NoteSyscall note
+```
+
+🔹 **Fetch-Execute Cycle**: The CPU holds an **instruction pointer** (register) pointing into RAM. It endlessly repeats: fetch instruction → execute → advance pointer. Jump instructions alter the pointer; this is how control flow works.
+
+🔹 **Registers**: Small, extremely fast storage buckets inside the CPU (e.g., `eax`, `ebx`). One special register is the instruction pointer. Others control CPU modes and permission levels.
+
+🔹 **Privilege Rings (Kernel vs User mode)**: Modern CPUs have at least two modes.  
+- **Kernel mode (Ring 0)**: unrestricted — any instruction, any memory.  
+- **User mode (Ring 3)**: limited — no direct I/O, no arbitrary memory access, no changing CPU settings.  
+The kernel runs in Ring 0; user programs run in Ring 3. The CPU starts in kernel mode at boot; the OS switches to user mode before running programs.
+
+🔹 **System Calls (Syscalls)**: The only safe way for user-mode code to request kernel services (open file, allocate memory, spawn process, etc.).  
+1. OS pre-registers handler addresses in an **Interrupt Descriptor Table (IDT)** at boot.  
+2. Program triggers a **software interrupt** (`INT 0x80`) or uses `SYSCALL` / `SYSENTER` instructions.  
+3. CPU switches to kernel mode and jumps to the registered handler.  
+4. Kernel does the work, then executes `IRET` / `SYSRET` to return to user mode.
+
+🔹 **Paging & Virtual Memory**: Every memory address a program uses is a **virtual address**. The **Memory Management Unit (MMU)** translates it to a physical RAM address using a **page table** (a dictionary stored in RAM, pointed to by a CPU register). Benefits:  
+- Each process has its own isolated address space (e.g., two processes can both use `0x400000` pointing to different physical memory).  
+- Kernel marks its own pages as ring-0-only, so user-mode code cannot read kernel memory even though kernel addresses are present in the virtual map.  
+- **Demand paging**: pages are only loaded into physical RAM when first accessed (page fault → kernel loads the page → retries the instruction).
+
+🔹 **Preemptive Multitasking**: A **timer chip (PIT)** fires a **hardware interrupt** every few milliseconds. The CPU switches to kernel mode, the OS scheduler saves the current process state (registers, instruction pointer) and restores another process — the **context switch**. Timeslices on Linux are typically 0.75 – 6 ms.
+
+🔹 **Boot → Run sequence**:  
+`Firmware (UEFI/BIOS)` → `Bootloader (GRUB)` → `Kernel init` → `Page tables set up, interrupts registered` → `init process (PID 1, e.g. systemd)` → `fork/exec` → user programs running
+
+🔹 **fork & exec pattern**:  
+- `fork()` — clones the current process; child gets PID 0 return value, parent gets child PID. Memory pages are marked **copy-on-write (COW)**; no physical copy until a write occurs.  
+- `exec()` — replaces the current process image with a new program (parsed from an ELF binary: load `.text`, `.data`, `.bss` sections into virtual memory, jump to entry point).  
+Every process on Linux traces its ancestry back to PID 1 via fork-exec.
 
 ---
 
@@ -486,6 +585,14 @@ public static void consume(List<? super Shape> shapes) {
 
 ---
 
+#### Idempotent, Backfill
+<a id="idempotent-backfill-2"></a>
+
+🔹 **Idempotent**: An operation that produces the same result regardless of how many times it is applied. For example, a database upsert or an HTTP PUT request. Critical for safe retries in distributed systems.
+🔹 **Backfill**: The process of reprocessing or reloading historical data into a system, often used in data pipelines to populate missing or updated records retroactively.
+
+---
+
 #### JIT vs AOT
 <a id="jit-vs-aot-2"></a>
 🔹[JIT vs AOT](https://stackoverflow.com/questions/32653951/when-does-ahead-of-time-aot-compilation-happen): **JIT** and **AOT** are two types of compilers that differ in when they convert a program from one language to another, either at run-time or build-time.
@@ -542,6 +649,105 @@ Memory consistency model: [A Primer on Memory Consistency and Cache Coherence](h
 <a id="mixin-2"></a>
 
 **Mixin** = Interface + actual implementation. It is a class that provides reusable methods/behavior to other classes without requiring full inheritance.
+
+---
+
+#### Network Design 101
+<a id="network-design-101-2"></a>
+
+###### Routing Protocols
+1. Internal routing  
+RIPv2 – Distance-vector, small networks  
+OSPF – Link-state, fast internal routing  
+EIGRP – Cisco hybrid, efficient IGP  
+2. External routing  
+BGP – Inter-domain routing, policy-based  
+
+###### Network Functions / Devices
+NAT – Private ↔ public IP translation  
+PAT (NATP) – Many private IPs → one public IP  
+L2 Switch – MAC-based forwarding  
+L3 Switch – Routing + switching combined  
+VLAN – Logical network segmentation  
+ICMP – Network error & reachability checks  
+SNMP – Device monitoring & alerts  
+ARP – IP → MAC address resolution  
+
+###### VLAN vs VNET vs VPC
+In classic networking, VLANs are used for internal traffic segmentation, while a virtual network (referred to here as VNet) focuses on subnetting and routing. In public cloud, VPC (AWS/GCP) and VNet (Azure) represent tenant-scoped network, service, and security boundaries. These constructs operate at different abstraction levels and should not be treated as the same object, as they serve different roles in each context.
+
+###### E2E Network flow
+```mermaid
+sequenceDiagram
+    autonumber
+
+    participant Host as Client Endpoint<br/>(PC / Laptop, VLAN 10)
+    participant L2 as Access Switch<br/>(L2 Switch)
+    participant L3 as Distribution Switch<br/>(L3 Switch / Router)
+    participant Core as Core Router<br/>(Core Routing)
+    participant Edge as Edge Firewall / Router<br/>(NAT / PAT)
+    participant ISP as ISP Router<br/>(Internet Gateway)
+    participant Remote as External Server<br/>(Public Service)
+
+    %% --- Participant Notes (Layman) ---
+    Note over Host: User device that sends and receives data
+    Note over L2: Connects devices and forwards frames by MAC
+    Note over L3: Routes traffic between local IP networks
+    Note over Core: High-speed backbone for internal traffic
+    Note over Edge: Internet exit that translates addresses
+    Note over ISP: Provider router carrying Internet traffic
+    Note over Remote: Remote system providing the service
+
+    %% --- Design Rationale ---
+    Note over Host,L2: L2 access retained for endpoint scale,<br/>VLAN segmentation, and broadcast control
+
+    %% --- L2 / VLAN / ARP ---
+    Host->>L2: Ethernet Frame (VLAN 10)
+    Note right of L2: 802.1Q VLAN tagging
+
+    Host->>L2: ARP Request (Who is default gateway?)
+    L2->>L3: Forward ARP request (VLAN 10)
+
+    %% --- SVI ---
+    Note right of L3: SVI (Vlan10)<br/>Virtual L3 interface<br/>Default gateway for VLAN 10
+
+    L3->>L2: ARP Reply (SVI MAC)
+    L2->>Host: ARP Reply delivered
+
+    %% --- L3 Routing ---
+    Host->>L2: IP Packet to default gateway
+    L2->>L3: Frame forwarded to SVI
+    Note right of L3: Inter-VLAN routing via SVI
+
+    %% --- Internal Routing ---
+    Note over L3,Core: IGP (OSPF / EIGRP / RIP)<br/>Fast routing inside one network
+    L3->>Core: Forward packet (best internal path)
+
+    %% --- IGP vs BGP Explanation ---
+    Note over Core,Edge: IGP = internal path selection<br/>BGP = external path & policy control
+
+    %% --- Edge / NAT ---
+    Core->>Edge: Forward to perimeter
+    Edge->>Edge: NAT / PAT translation
+    Note right of Edge: Private IP → Public IP
+
+    %% --- External Routing ---
+    Note over Edge,ISP: BGP (External Routing)<br/>Policy-based Internet path selection
+    Edge->>ISP: Forward packet
+    ISP->>Remote: Deliver packet
+
+    %% --- Return Traffic ---
+    Remote->>ISP: Response
+    ISP->>Edge: Return packet
+    Edge->>Edge: Reverse NAT
+    Edge->>Core: Forward
+    Core->>L3: Forward
+    L3->>L2: Frame to VLAN 10
+    L2->>Host: Packet delivered
+
+    %% --- Monitoring ---
+    Note over L3,Edge: SNMP monitoring (health & counters)
+```
 
 ---
 
@@ -634,6 +840,23 @@ Push & Pull model in Azure
 
 ---
 
+#### Scaling a system 101
+<a id="scaling-a-system-101-2"></a>
+
+[ref](https://blog.algomaster.io/p/scaling-a-system-from-0-to-10-million-users)
+
+| Stage | Users | Strategic Focus | Architecture | Primary Bottleneck | Key Techniques | Core Takeaway |
+|-------|-------|-----------------|--------------|-------------------|----------------|---------------|
+| **1 – Single Server** | 0 – 100 | Ship fast | Everything on one VM | Dev speed, no load yet | Monolith, single VM + DB (e.g. $20–50/mo VPS), reverse proxy (Nginx) | Optimize for iteration speed, not scalability. Don't over-engineer. |
+| **2 – Separate DB** | 100 – 1K | Stabilize | App server + dedicated DB | App & DB compete for same CPU/memory | Move DB to its own server (managed: RDS/Supabase), connection pooling (PgBouncer) | Isolate DB resource contention; use managed services to save ops time. |
+| **3 – Load Balancer + Horizontal Scale** | 1K – 10K | Handle burst | Stateless app tier behind LB | Single app server is a SPOF | Add load balancer, 2+ stateless app servers, shared session store (Redis), auto-scaling group | Make app tier stateless so any server can handle any request. |
+| **4 – Caching + CDN** | 10K – 100K | Protect DB | Read-heavy architecture | DB read saturation | CDN for static assets, cache-aside with Redis/Memcached, read replicas, DB query optimization | 80–90%+ of reads can be served from cache; CDN removes static load entirely. |
+| **5 – Async + Queues** | 100K – 1M | Automate | Stateless + event-driven | Traffic spikes, slow write paths | Message queues (SQS/RabbitMQ), async workers (Celery/Sidekiq), rate limiting, auto-scaling policies | Decouple slow/heavy work from the request path; absorb traffic spikes via queues. |
+| **6 – Microservices + CQRS** | 1M – 10M | Reliability | Service-oriented + CQRS | Monolith deployment risk, DB write contention | Break into microservices, CQRS (separate read/write models), event sourcing, per-service DBs | Enables independent deployments and scaling; adds operational complexity. |
+| **7 – Multi-region + Sharding** | 10M+ | Global resilience | Distributed global systems | Latency, cross-region reliability, single-DB limits | Multi-region deployment (active-active/active-passive), DB sharding, global CDN, data locality policies | Shift focus from performance → reliability & user-perceived latency by geography. |
+
+---
+
 #### Security Words 101
 <a id="security-words-101-2"></a>
 
@@ -646,6 +869,7 @@ Push & Pull model in Azure
 🔹 **IAM**: Identity and Access Management  
 🔹 **SSO**: Single Sign-On  
 🔹 **MFA**: Multi-Factor Authentication  
+🔹 **SSPR**: Self-Service Password Reset  
 
 - **Threat Detection and Response**  
 🔹 **ATA**: Advanced Threat Analytics  
@@ -682,6 +906,8 @@ Push & Pull model in Azure
 🔹 **SCOM/ACS**: System Center Operations Manager / Audit Collection Services  
 🔹 **GRC**: Governance, Risk, and Compliance  
 🔹 **SOC**: Security Operations Center  
+🔹 **CSPM**: Cloud Security Posture Management  
+🔹 **CIEM**: Cloud Infrastructure Entitlement Management  
 
 ---
 
@@ -696,6 +922,13 @@ Push & Pull model in Azure
 #### Slowly Changing Dimensions (SCD)
 <a id="slowly-changing-dimensions-scd-2"></a>
 **Slowly Changing Dimensions** change over time, but at a slow pace and unpredictably. For example, a customer's address in a retail business.
+
+| Type | Strategy | Description | Trade-off |
+| ---- | -------- | ----------- | --------- |
+| **SCD Type 0** | Retain original | Dimension values never change; original value is always preserved. | No history; ignores real-world changes. |
+| **SCD Type 1** | Overwrite | Old value is replaced with the new value; no history kept. | Simple to implement; history is lost. |
+| **SCD Type 2** | Add new row | A new row is inserted for each change; old row is marked inactive (with `start_date` / `end_date` or `is_current` flag). | Full history preserved; table can grow large. |
+| **SCD Type 3** | Add new column | A new column stores the previous value alongside the current value. | Limited history (only one prior value). |
 
 ---
 
@@ -892,5 +1125,22 @@ graph TD
     click I "https://microsoft.github.io/react-native-windows/" "React Native for Windows: Build cross-platform apps using React Native."
     click J "https://docs.microsoft.com/en-us/aspnet/core/client-side/blazor/hybrid?view=aspnetcore-7.0" "Blazor Hybrid: Build web UIs with native capabilities."
 ```
+
+**[`^        back to top        ^`](#index)**
+
+---
+
+#### Zanzibar
+<a id="zanzibar-2"></a>
+
+**Zanzibar** is Google's global authorization system (published 2019) that underpins access control for Google Drive, YouTube, Maps, and other services.
+
+🔹 **Tuple-based approach**: Permissions are stored as relationship tuples `(object#relation@user)`, e.g., `doc:readme#owner@user:alice`. This makes relationships explicit and queryable.  
+🔹 **Zookie**: A consistency token returned on each write. Clients pass it back on subsequent reads to guarantee "read-your-writes" consistency without requiring full global linearizability on every read.  
+🔹 **Configuration language**: A schema DSL defines object types, relations, and permission inheritance rules (e.g., "viewer inherits from editor"), making access policies auditable and reusable.  
+🔹 **Leopard**: An indexing subsystem inside Zanzibar that pre-computes and caches transitive group membership, optimizing large fan-out permission checks.  
+🔹 **Spanner**: Zanzibar uses Google Spanner as its underlying storage, providing globally distributed, externally consistent transactions via TrueTime.  
+🔹 **External consistency**: Reads and writes are globally ordered using Spanner's TrueTime API, ensuring no stale permission grants across distributed replicas.  
+🔹 **Open-source adoptions**: OpenFGA (CNCF), SpiceDB (Authzed), and Ory Keto are popular open-source implementations inspired by Zanzibar.  
 
 **[`^        back to top        ^`](#index)**
