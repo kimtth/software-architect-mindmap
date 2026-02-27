@@ -767,8 +767,11 @@ sequenceDiagram
 🔹Technology: FIDO2/WebAuthn standards, public key cryptography  
 🔹Implementations: Apple (iCloud Keychain), Google (Password Manager), Microsoft (Windows Hello), 1Password, Dashlane, Bitwarden  
 
-**[`^        back to top        ^`](#terminology-and-comparisons)**#### Popular Enterprise Architecture Frameworks
+---
+
+#### Popular Enterprise Architecture Frameworks
 <a id="popular-enterprise-architecture-frameworks-2"></a>
+
 🔹[Popular Enterprise Architecture Frameworks](https://dzone.com/articles/popular-enterprise-architecture-frameworks): TOGAF, Zachman, Federal Enterprise Architecture (FEA), Gartner Enterprise Architecture Framework, Business Architecture Guild's BIZBOK, Department of Defense Architecture Framework (DoDAF), ArchiMate, and Sherwood Applied Business Security Architecture (SABSA).
 
 ---
