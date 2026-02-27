@@ -26,6 +26,7 @@
 1. [Hadoop Ecosystem](#hadoop-ecosystem)
 1. [Idempotent, Backfill](#idempotent-backfill)
 1. [JIT vs AOT](#jit-vs-aot)
+1. [Landing zone](#landing-zone)
 1. [Measuring Engineering Productivity (DORA, SPACE, DX Core 4, DevEx)](#measuring-engineering-productivity-dora-space-dx-core-4-devex)
 1. [Medallion Architecture](#medallion-architecture)
 1. [Memory Consistency Model (SC vs TSO vs Relaxed)](#memory-consistency-model-sc-vs-tso-vs-relaxed)
@@ -599,6 +600,13 @@ public static void consume(List<? super Shape> shapes) {
 
 ---
 
+#### Landing zone
+<a id="landingzone"></a>
+
+🔹Abstractly speaking, a landing zone helps you plan for and design an Azure deployment, by conceptualizing a designated area for placement and integration of resources. 1) **platform landing zone**: provides centralized enterprise-scale foundational services for workloads and applications. 2) **application landing zone**: provides services specific to an application or workload.
+
+---
+
 #### Measuring Engineering Productivity (DORA, SPACE, DX Core 4, DevEx)
 <a id="measuring-engineering-productivity-dora-space-dx-core-4-devex-2"></a>
 
@@ -767,8 +775,11 @@ sequenceDiagram
 🔹Technology: FIDO2/WebAuthn standards, public key cryptography  
 🔹Implementations: Apple (iCloud Keychain), Google (Password Manager), Microsoft (Windows Hello), 1Password, Dashlane, Bitwarden  
 
-**[`^        back to top        ^`](#terminology-and-comparisons)**#### Popular Enterprise Architecture Frameworks
+---
+
+#### Popular Enterprise Architecture Frameworks
 <a id="popular-enterprise-architecture-frameworks-2"></a>
+
 🔹[Popular Enterprise Architecture Frameworks](https://dzone.com/articles/popular-enterprise-architecture-frameworks): TOGAF, Zachman, Federal Enterprise Architecture (FEA), Gartner Enterprise Architecture Framework, Business Architecture Guild's BIZBOK, Department of Defense Architecture Framework (DoDAF), ArchiMate, and Sherwood Applied Business Security Architecture (SABSA).
 
 ---
