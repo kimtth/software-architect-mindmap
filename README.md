@@ -63,6 +63,7 @@ This mindmap was created using [Mindmap Maker](https://app.mindmapmaker.org/)
 - [Software Architecture Books](https://github.com/mhadidg/software-architecture-books)
 - [System Design Fight Club](https://github.com/systemdesignfightclub/SDFC)
 - [System Design - Neo Kim](https://github.com/systemdesign42/system-design)
+- [Low Level Design and Concurrency](https://lldcoding.com/)
 - [Awesome System Design Resources](https://github.com/ashishps1/awesome-system-design-resources)
 - [Awesome Low Level Design (LLD) / Object Oriented Design (OOD)](https://github.com/ashishps1/awesome-low-level-design)
 ---
@@ -467,3 +468,4 @@ This mindmap was created using [Mindmap Maker](https://app.mindmapmaker.org/)
 - See [Glossary.md](Glossary.md): an overview of key terminology, definitions, and comparisons between related concepts.
 
 **[`^        back to top        ^`](#contents)**
+
