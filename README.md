@@ -65,6 +65,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [System Design - Neo Kim](https://github.com/systemdesign42/system-design)
 - [Awesome System Design Resources](https://github.com/ashishps1/awesome-system-design-resources)
 - [Awesome Low Level Design (LLD) / Object Oriented Design (OOD)](https://github.com/ashishps1/awesome-low-level-design)
+- [Awesome Engineering Articles](https://github.com/ashishps1/awesome-engineering-articles): Curated high-quality engineering articles from top tech companies
 
 ### Trend Reports and Mini-Books
 
@@ -195,12 +196,14 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [PostgreSQL Wiki: Don't Do This](https://wiki.postgresql.org/wiki/Don%27t_Do_This): Common PostgreSQL pitfalls
 - [Power BI DAX Patterns](https://www.daxpatterns.com/patterns/): Patterns and best practices for Power BI DAX
 - [How To Secure A Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server)
+- [Crontab Guru](https://crontab.guru/): Interactive cron schedule expression editor and reference
 
 ##### Visual Learning 
 - [Assembly code visualizer](https://asm.diveintosystems.org): Visualize Your Assembly Code
 - [explorar.dev](https://explorar.dev/torvalds/linux): Explore curated open-source repositories with an interactive code browser.
-- [Interactive Reinforcement Learning Explorer](https://www.alphaxiv.org/labs/rl-playground)
-- [LLM Visualization](https://bbycroft.net/llm)
+- [Idea Instructions](https://idea-instructions.com/): Complex concepts explained as IKEA-style visual instructions
+- [Linux Kernel Map](https://makelinux.github.io/kernel/map/): Interactive visual map of the Linux kernel subsystems
+- [Making Software](https://www.makingsoftware.com/): Visual explanations of how software works under the hood
 - [Understanding the Linux Kernel, Visually](https://jm233333.github.io/assets/papers/visualinux-eurosys25.pdf)
 
 ##### LLM-generated wiki
@@ -233,10 +236,13 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [.NET Developer Roadmap](https://github.com/milanm/DotNet-Developer-Roadmap)
 - [Celebrate 50 years of Microsoft with the company's original source code: Altair Basic](https://www.gatesnotes.com/microsoft-original-source-code)
 - [A periodic table for machine learning](https://www.microsoft.com/en-us/research/articles/a-periodic-table-for-machine-learning/)
+- [Every GPU — Data Viz](https://sheets.works/data-viz/every-gpu): Visual comparison of GPU specs and performance across generations
 
 ### Transformer Architecture (LLM Foundations)
 
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+- [Interactive Reinforcement Learning Explorer](https://www.alphaxiv.org/labs/rl-playground)
+- [LLM Visualization](https://bbycroft.net/llm)
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 - [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
 - [Why Momentum Really Works](https://distill.pub/2017/momentum/)
