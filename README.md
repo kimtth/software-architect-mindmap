@@ -71,7 +71,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 - [InfoQ](https://www.infoq.com): News and Articles
 - [Dzone](https://dzone.com/): RefCards and Trend Reports
-- [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar
+- [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar ([archived PDFs vo.1 - vol.34](./files/tech_radar_thoughtworks/))
 - [Microsoft Learn](https://learn.microsoft.com/en-us/): Documentation and Code samples
 - [Trendshift](https://trendshift.io/): GitHub Trending repositories
 - [Design Gurus](https://www.designgurus.io/): Portal For Tech Interviews
