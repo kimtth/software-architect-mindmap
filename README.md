@@ -125,7 +125,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Ultimate Collection of 60 YouTube Courses for 21 Programming Languages](https://dev.to/arjuncodess/ultimate-collection-of-60-youtube-courses-for-21-programming-languages-mega-list-47b5)
 - [Computer Science courses with video lectures](https://github.com/Developer-Y/cs-video-courses)
 - [Introduction to CUDA Programming for Python Developers](https://www.pyspur.dev/blog/introduction_cuda_programming)
-- [AI by Hand](https://by-hand.ai)
+- [AI by Hand](https://byhand.ai)
 - [Computer Networking Fundamentals For Developers, DevOps, and Platform Engineers](https://labs.iximiuz.com/courses/computer-networking-fundamentals)
 
 ### Beginner Series by Microsoft
@@ -242,6 +242,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 - [Interactive Reinforcement Learning Explorer](https://www.alphaxiv.org/labs/rl-playground)
+- [LLM Architecture Gallery](https://github.com/rasbt/llm-architecture-gallery)
 - [LLM Visualization](https://bbycroft.net/llm)
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 - [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
@@ -460,9 +461,5 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 ## Terminology and Comparisons
 
 - See [Glossary.md](Glossary.md): an overview of key terminology, definitions, and comparisons between related concepts.
-
-## Citation
-
-- [bytebytego](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software) | [techworld-with-milan](https://newsletter.techworld-with-milan.com/p/learn-things-that-dont-change) | [bytebytego](https://blog.bytebytego.com/p/ep111-my-favorite-10-books-for-software) | [mhadidg (github)](https://github.com/mhadidg/software-architecture-books) | [milan_milanovic](https://x.com/milan_milanovic/status/1747167493553062398?s=20)
 
 **[`^        back to top        ^`](#contents)**
