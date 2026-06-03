@@ -678,7 +678,7 @@ def matrix_chain_order(p):
     dp = [[0] * n for _ in range(n)]
     
     # l is the length of the chain being considered.
-    for l in range(2, n + 1):
+    for l in range(2, n + 1):  # noqa: E741
         for i in range(n - l + 1):
             j = i + l - 1
             dp[i][j] = float('inf')
@@ -697,7 +697,7 @@ def print_matrix_chain_dp(p):
     dp = [[0] * n for _ in range(n)]
     
     # Compute cost for multiplying chains of increasing length.
-    for l in range(2, n + 1):
+    for l in range(2, n + 1):  # noqa: E741
         for i in range(n - l + 1):
             j = i + l - 1
             dp[i][j] = float('inf')
