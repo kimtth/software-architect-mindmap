@@ -184,7 +184,7 @@ References: [AWS - *What is an API Gateway?*](https://aws.amazon.com/what-is/api
 
 References: [ByteByteGo + Postman - *API Protocols*](https://bytebytego.com/)
 
-<img src="files/api_protocols.png" alt="api" width="400"/>
+<img src="files/images/api_protocols.png" alt="api" width="400"/>
 
 ---
 
@@ -497,49 +497,49 @@ References: [DailyDoseOfDS - *15 DS/ML Cheat Sheets*](https://blog.dailydoseofds
 
 References: [SeattleDataGuy - *Data Engineering 101*](https://x.com/SeattleDataGuy/status/1753950189314810358?s=20)
 
-<img src="files/data-engineering-101.jpg" alt="Data engineering 101" width="400"/>
+<img src="files/images/data-engineering-101.jpg" alt="Data engineering 101" width="400"/>
 
 🔹 **75 Key Terms That Data Scientists Remember by Heart** 
 
 References: [DailyDoseOfDS - *75 Key Terms That Data Scientists Remember by Heart*](https://blog.dailydoseofds.com/p/75-key-terms-that-data-scientists)
 
-<img src="files/de01.png" alt="Data engineering 01" width="400"/>
+<img src="files/images/dailydoseofds01.png" alt="Data engineering 01" width="400"/>
 
 🔹 **A Comprehensive NumPy Cheat Sheet Of 40 Most Used Methods** 
 
 References: [DailyDoseOfDS - *A Comprehensive NumPy Cheat Sheet*](https://blog.dailydoseofds.com/p/a-comprehensive-numpy-cheat-sheet)
 
-<img src="files/de02.png" alt="Data engineering 02" width="400"/>
+<img src="files/images/dailydoseofds02.png" alt="Data engineering 02" width="400"/>
 
 🔹 **15 Pandas ↔ Polars ↔ SQL ↔ PySpark Translations** 
 
 References: [DailyDoseOfDS - *15 Pandas ↔ Polars ↔ SQL ↔ PySpark Translations*](https://blog.dailydoseofds.com/p/15-pandas-polars-sql-pyspark-translations)
 
-<img src="files/de03.png" alt="Data engineering 03" width="400"/>
+<img src="files/images/dailydoseofds03.png" alt="Data engineering 03" width="400"/>
 
 🔹 **11 Key Probability Distributions** 
 
 References: [DailyDoseOfDS - *11 Key Probability Distributions*](https://blog.dailydoseofds.com/p/11-key-probability-distributions)
 
-<img src="files/de04.png" alt="Data engineering 04" width="400"/>
+<img src="files/images/dailydoseofds04.png" alt="Data engineering 04" width="400"/>
 
 🔹 **6 Must-Know Types of Clustering Algorithms in Machine Learning** 
 
 References: [DailyDoseOfDS - *6 Must-Know Types of Clustering Algorithms*](https://blog.dailydoseofds.com/p/beyond-kmeans-6-must-know-types-of)
 
-<img src="files/de05.png" alt="Data engineering 05" width="400"/>
+<img src="files/images/dailydoseofds05.png" alt="Data engineering 05" width="400"/>
 
 🔹 **25 Most Important Mathematical Definitions in Data Science**
 
 References: [DailyDoseOfDS - *25 Most Important Mathematical Definitions in Data Science*](https://blog.dailydoseofds.com/p/25-most-important-mathematical-definitions)
 
-<img src="files/de06.png" alt="Data engineering 06" width="400"/>
+<img src="files/images/dailydoseofds06.png" alt="Data engineering 06" width="400"/>
 
 🔹 **10 Regression and Classification Loss Functions**
 
 References: [DailyDoseOfDS - *10 Regression and Classification Loss Functions*](https://blog.dailydoseofds.com/p/10-regression-and-classification)
 
-<img src="files/de07.png" alt="Data engineering 07" width="400"/>
+<img src="files/images/dailydoseofds07.png" alt="Data engineering 07" width="400"/>
 
 ---
 
@@ -870,7 +870,7 @@ References: [Sorin, Hill & Wood - *A Primer on Memory Consistency and Cache Cohe
 
 References: [Gregor Hohpe & Bobby Woolf - *Enterprise Integration Patterns*](https://www.enterpriseintegrationpatterns.com/) | [Microsoft - *Transactional Outbox pattern*](https://learn.microsoft.com/en-us/azure/architecture/databases/guide/transactional-outbox-cosmos)
 
-<img src="files/message-broker-patterns.png" alt="msg-broker-pattern" width="400"/>
+<img src="files/images/message-broker-patterns.png" alt="msg-broker-pattern" width="400"/>
 
 🔹 **Transactional Outbox**: Service writes business data and an outbox message in the same DB transaction → broker later publishes the message → guarantees no data–message mismatch  
 🔹 **CQRS**: Commands write data to a write model → queries read from a separate read model → each side scales and optimizes independently
@@ -1660,7 +1660,7 @@ References: [Kent Beck - *Test-Driven Development: By Example*](https://www.pear
 
 References: [ByteByteGo - *Top 20 System Design Concepts Every Developer Should Know*](https://bytebytego.com/) | [Alex Xu - *System Design Interview* (Vol. 1 & 2)](https://bytebytego.com/courses/system-design-interview)
 
-<img src="files/top20-system-design-concepts.png" alt="top-20-sys-design" width="400"/>
+<img src="files/images/top20-system-design-concepts.png" alt="top-20-sys-design" width="400"/>
 
 ---
 
@@ -1686,7 +1686,7 @@ References: [ByteByteGo - *Top Leader Election Algorithms in Distributed Databas
 
 References: [DailyDoseOfDS - *Transfer Learning, Fine-tuning, Multitask, Federated Learning*](https://blog.dailydoseofds.com/p/transfer-learning-fine-tuning-multitask) | [McMahan et al. - *Federated Learning* (Google AI)](https://arxiv.org/abs/1602.05629)
 
-<img src="files/ml-learning-types.png" alt="-" width="400"/>
+<img src="files/images/ml-learning-types.png" alt="-" width="400"/>
 
 ---
 
