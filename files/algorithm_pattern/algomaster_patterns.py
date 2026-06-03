@@ -484,7 +484,7 @@ print("Previous Smaller Elements:", previous_smaller_elements(nums))  # Get prev
 
 print("\n7. TOP 'K' ELEMENTS PATTERN\n" + "-" * 50)
 
-import heapq  # Import heapq for heap operations
+import heapq  # Import heapq for heap operations  # noqa: E402
 
 def top_k_largest(nums, k):
     # Use heapq.nlargest to find the k largest elements in nums
@@ -679,7 +679,7 @@ print("DFS starting from 'A':", dfs(graph, 'A'))  # Perform DFS starting from no
 
 print("\n12. BREADTH-FIRST SEARCH (BFS) PATTERN\n" + "-" * 50)
 
-from collections import deque  # Import deque for efficient FIFO queue operations
+from collections import deque  # Import deque for efficient FIFO queue operations  # noqa: E402
 
 def bfs(graph, start):
     # Initialize visited set to keep track of visited nodes

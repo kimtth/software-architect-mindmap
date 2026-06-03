@@ -297,7 +297,7 @@ def num_islands(grid):
     return count  # Return the total number of islands
 
 
-from collections import deque
+from collections import deque  # noqa: E402
 
 
 def level_order(root):
