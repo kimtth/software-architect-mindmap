@@ -4,6 +4,7 @@
 
 **101s**
 
+1. [AI Engineering 101](#ai-engineering-101)
 1. [CPU 101](#cpu-101)
 1. [Data Engineering & Data Scientists Vocab 101](#data-engineering--data-scientists-vocab-101)
 1. [Distributed system 101](#distributed-system-101)
@@ -11,6 +12,7 @@
 1. [Network Design 101](#network-design-101)
 1. [Scaling a system 101](#scaling-a-system-101)
 1. [Security Words 101](#security-words-101)
+1. [System Design Napkin Math](#system-design-napkin-math)
 1. [System Design Patterns 101](#system-design-patterns-101)
 1. [System Design Terminology 101](#system-design-terminology-101)
 
@@ -59,6 +61,7 @@
 **APIs / Network**
 
 1. [API Protocols](#api-protocols)
+1. [Kubernetes Networking and Traffic Exposure](#kubernetes-networking-and-traffic-exposure)
 1. [Real-time Communication and Messaging (MQTT, AMQP and WebSocket)](#real-time-communication-and-messaging-mqtt-amqp-and-websocket)
 1. [Software Defined Networking (SDN)](#software-defined-networking-sdn)
 1. [Web Services and APIs (SOAP, RestAPI, GraphQL, gRPC and Kafka)](#web-services-and-apis-soap-restapi-graphql-grpc-and-kafka)
@@ -84,6 +87,7 @@
 1. [Passkey](#passkey)
 1. [Public Cloud Security Services (TCP/IP Model)](#public-cloud-security-services-tcpip-model)
 1. [SSO (Single Sign-On)](#sso-single-sign-on)
+1. [Web Auth History](#web-auth-history)
 1. [Zanzibar](#zanzibar)
 
 **AI/ML**
@@ -168,6 +172,34 @@ References: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.da
 | **Harness**  | 2025–2026  | How the agent acts in the real world          | Function Calling, Tool Ecosystems, MCP, Skills, Workflow Graphs, Multi-agent, A2A protocols, Orchestration, Agent Infrastructure, Security |
 
 🔹 **Implication**: Modern agent quality is decided less by raw model choice and more by harness design - which tools are exposed, how skills are composed, how agents coordinate, and how the whole loop is observed and secured.  
+
+---
+
+#### AI Engineering 101
+
+References: [Google - *Introduction to Machine Learning*](https://developers.google.com/machine-learning/intro-to-ml) | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) | [Anthropic - *Building Effective Agents*](https://www.anthropic.com/engineering/building-effective-agents) | [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro)
+
+🔹 **AI, machine learning, deep learning, and AI engineering**: AI is the broad field of machines performing tasks associated with intelligence. Machine learning learns patterns from data; deep learning uses multi-layer neural networks. AI engineering applies these models in reliable, useful, and maintainable products.  
+🔹 **Dataset, feature, and label**: A dataset is a collection of examples. Features are input variables; a label is the expected output for supervised learning.  
+🔹 **Train, validation, and test sets**: The train set updates a model, the validation set selects designs and settings, and the test set estimates final performance on unseen data.  
+🔹 **Model, parameter, and hyperparameter**: A model maps input to output. Parameters are learned values such as weights; hyperparameters are chosen settings such as learning rate, batch size, and model size.  
+🔹 **Tensor and neural network**: A tensor is a multidimensional numeric array. A neural network transforms tensors through stacked layers to learn increasingly useful representations.  
+🔹 **Loss, gradient descent, and backpropagation**: Loss measures prediction error. Backpropagation calculates how each parameter affects that error; gradient descent or an optimizer updates parameters to reduce it.  
+🔹 **Training and inference**: Training updates model parameters from data. Inference uses fixed trained parameters to make predictions or generate output.  
+🔹 **Overfitting and generalization**: Overfitting means a model memorizes training-specific patterns and fails on new data. Generalization is useful performance on unseen examples.  
+🔹 **Token and tokenizer**: A tokenizer converts text to token IDs. A token is usually a word fragment rather than a complete word.  
+🔹 **Embedding and vector similarity**: An embedding represents text, images, or other items as a dense numeric vector. Similar items have nearby vectors, often compared with cosine similarity.  
+🔹 **Transformer and self-attention**: A transformer processes sequences with self-attention, which lets each token weight information from other relevant tokens.  
+🔹 **LLM and context window**: A large language model is a transformer trained to predict the next token. Its context window is the maximum input and output token budget for one request.  
+🔹 **Prompt, system prompt, and sampling**: A prompt supplies task input and context; a system prompt sets application-level behavior. Sampling controls such as temperature trade predictability for variation in generated tokens.  
+🔹 **Fine-tuning**: Continue training a pre-trained model on a smaller task-specific dataset to adapt its behavior or output style.  
+🔹 **RAG (retrieval-augmented generation)**: Split and embed source content, retrieve the most relevant chunks at query time, then provide them as context for a grounded response.  
+🔹 **Vector database**: A store optimized for nearest-neighbor retrieval over embeddings, usually with metadata filters; it supports semantic search and RAG. [A Comprehensive Survey on Vector Databases](https://arxiv.org/pdf/2310.11703.pdf)     
+🔹 **Tool calling and MCP**: Tool calling lets a model request a typed external operation. MCP is a protocol for exposing tools, resources, and prompts consistently to AI applications.  
+🔹 **Agent and workflow**: A workflow follows predefined steps. An agent chooses the next action from available tools, observes the result, and repeats until it reaches a goal or stop condition.  
+🔹 **Evaluation**: Test representative tasks using objective checks and human review. Measure quality, groundedness, tool success, latency, cost, and safety before and after changes.  
+🔹 **Guardrails, hallucination, and alignment**: Hallucination is plausible but unsupported output. Guardrails use authorization, validation, and input/output controls to constrain behavior; alignment seeks behavior consistent with intended human goals and values.  
+🔹 **Production operations**: Version prompts, models, tools, and data; collect logs, traces, metrics, feedback, and incident signals to monitor quality, reliability, latency, and cost.  
 
 ---
 
@@ -772,6 +804,32 @@ References: [Stack Overflow - *When does Ahead-of-Time (AOT) compilation happen?
 
 ---
 
+#### Kubernetes Networking and Traffic Exposure
+
+References: [Kubernetes Load Balancers in K3s](https://dev.to/pendelabhargavasai/the-ultimate-guide-to-kubernetes-load-balancers-in-2026-k3s-edition-18me) | [Kubernetes Service documentation](https://kubernetes.io/docs/concepts/services-networking/service/) | [Kubernetes Gateway API](https://gateway-api.sigs.k8s.io/)
+
+🔹 **CNI**: The Container Network Interface implementation configures pod networking. K3s uses Flannel by default; Cilium can replace it with an eBPF data plane and advanced network-policy and observability capabilities.
+
+🔹 **Lightweight Kubernetes**: Minikube is intended for local Kubernetes learning and development. K3s is a compact, production-capable Kubernetes distribution that is suited to edge, homelab, and resource-constrained clusters.
+
+🔹 **Traffic layers**: A `LoadBalancer` Service exposes L4 TCP or UDP traffic and needs a cloud provider or bare-metal implementation such as MetalLB. An Ingress or Gateway routes L7 HTTP(S) traffic. A service mesh manages east-west traffic between services; it does not replace an external L4 load balancer.
+
+| Component | Primary role | Common K3s choice | Strength | Trade-off |
+|-----------|--------------|-------------------|----------|-----------|
+| Flannel | Pod-network CNI | K3s default | Low operational complexity | Limited advanced policy and observability |
+| Cilium | eBPF CNI and optional service mesh | Replace Flannel | High-performance dataplane, policy, and Hubble observability | Requires eBPF knowledge and a deliberate migration |
+| Minikube | Local Kubernetes distribution | Developer workstation | Quick local learning and testing | Not a multi-node production platform |
+| K3s | Lightweight Kubernetes distribution | Edge or small cluster | Small footprint and bundled defaults | Components must be explicitly replaced when requirements grow |
+| ServiceLB (Klipper) | K3s L4 service exposure | Single-node or development K3s | Enabled by default and needs little configuration | Uses node ports rather than advertising service IPs |
+| MetalLB | Bare-metal L4 `LoadBalancer` implementation | Multi-node K3s on-premises | Allocates external IPs using L2 or BGP | Disable ServiceLB first; BGP needs compatible network equipment |
+| Traefik | L7 ingress controller | K3s default ingress | Dynamic configuration and built-in ACME support | Less ecosystem-specific configuration than NGINX |
+| NGINX Ingress | L7 ingress controller | Teams standardised on NGINX | Mature ecosystem and annotation support | TLS automation normally needs cert-manager |
+| Linkerd or Istio | Service mesh | Multi-service workloads | mTLS, traffic policy, and service observability | Added runtime and operational complexity |
+
+🔹 **Decision guide**: Use K3s defaults for local learning or a single-node deployment. For bare-metal production, use MetalLB with Traefik or another ingress controller. Add a service mesh only when east-west security, traffic controls, or service-level telemetry justify its operational cost.
+
+---
+
 #### Landing zone
 
 References: [Microsoft - *What is an Azure landing zone?*](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/) | [AWS - *Landing Zone*](https://docs.aws.amazon.com/controltower/latest/userguide/customize-landing-zone.html)
@@ -1297,6 +1355,28 @@ References: [OAuth 2.0 - RFC 6749](https://www.rfc-editor.org/rfc/rfc6749) | [Op
 - Kerberos: Less suitable for internet-facing SSO due to the shared secret between KDC (Key Distributin Center) and all participants.
 - Smart card authentication: Physical card
 
+---
+
+#### Web Auth History
+
+References: [Web Session, JWT, and Cookie History](https://zenn.dev/khale/articles/web-session-jwt-cookie-history) | [OAuth 2.0 Security Best Current Practice](https://datatracker.ietf.org/doc/html/rfc9700)
+
+🔹 **Core idea**: Browser authentication has shifted from server-held sessions, to browser-held bearer tokens, and then toward a backend-for-frontend (BFF) boundary that keeps high-value tokens off the browser. JWTs remain useful for server-to-server and OAuth interactions; their location, rather than their existence, is the key design decision.
+
+| Period | Mainstream | Why it spread | Main problem | Next move |
+|--------|------------|---------------|--------------|-----------|
+| ~2000s | Server session plus cookie | Straightforward same-origin web applications | Shared session state became harder to operate at large scale | Stateless APIs and distributed session stores |
+| ~2010s | SPA plus JWT in `localStorage` | Cross-origin APIs, mobile clients, and microservices favored bearer tokens | XSS can exfiltrate tokens readable by JavaScript | Keep browser tokens out of JavaScript |
+| Late 2010s | OAuth 2.0 and OIDC with JWTs | Standardized cloud identity and API authorization | Frontend token handling became complex and fragile | Backend-managed token handling |
+| ~2020s | HttpOnly cookie revival | Browser JavaScript cannot read an HttpOnly cookie | Cookie-based requests still need CSRF defenses | BFF pattern |
+| Current | BFF plus browser cookie and internal JWT or OAuth token | Limits token exposure while retaining modern backend integration | More server-side infrastructure and lifecycle management | Managed and edge authentication platforms |
+
+🔹 **Current browser boundary**: Prefer an `HttpOnly`, `Secure`, and appropriately scoped `SameSite` session cookie between the browser and a same-site BFF. Use CSRF tokens and Origin or Referer validation for state-changing requests, because cookie attributes do not replace CSRF controls.
+
+🔹 **Security boundary**: `HttpOnly` prevents token extraction by JavaScript but does not prevent XSS from issuing authenticated requests. Apply CSP, output encoding, input validation, and server-side authorization checks as separate controls.
+
+---
+
 🔹SSO Implementations: Microsoft Entra ID (FKA Micorsoft Active Directory), Okta, Ping Identity, OneLogin, Auth0
 
 ---
@@ -1306,6 +1386,46 @@ References: [OAuth 2.0 - RFC 6749](https://www.rfc-editor.org/rfc/rfc6749) | [Op
 References: [Microsoft Power BI - *Star schema guidance*](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema) | [Ralph Kimball - *The Data Warehouse Toolkit*](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/books/data-warehouse-dw-toolkit/)
 
 The **Star Schema** is a data model for data warehouses. It has a central fact table for measurable data and surrounding dimension tables for descriptive data.
+
+---
+
+#### System Design Napkin Math
+
+References: [System Design Math](https://www.arjaythedev.com/napkin-math) | [Detailed estimation worksheet](nm.md)
+
+🔹 **Napkin math**: An assumption-driven, order-of-magnitude estimate that turns a product workload into initial traffic, compute, database, storage, and bandwidth requirements.
+
+🔹 **Key terms**: **DAU (daily active users)** is the number of distinct users active in one day. **RPS (requests per second)** is the number of requests a system receives or serves each second.
+
+🔹 **Core formulas**
+
+| Capacity question | Formula |
+|---|---|
+| Average traffic | $\frac{\text{DAU} \times \text{requests per user per day}}{86{,}400}$ = average RPS |
+| Peak traffic | $\text{average RPS} \times \text{peak multiplier}$ |
+| Application servers | $\left\lceil\frac{\text{peak RPS}}{\text{RPS per server} \times \text{target utilization}}\right\rceil + 1$ |
+| Database reads | $\text{peak reads} \times (1 - \text{cache hit rate})$ |
+| Storage | $\text{writes per day} \times \text{object size} \times \text{replication factor} \times \text{retention days}$ |
+| Egress bandwidth | $\text{peak reads per second} \times \text{response size}$ |
+
+🔹 **Useful constants**
+
+| Measurement | Approximation | Why it is useful |
+|---|---|---|
+| Seconds per day | $86{,}400 \approx 10^5$ | Converts daily totals to per-second traffic by dropping five zeros |
+| 1 million requests per day | About 12 RPS | First-pass traffic conversion |
+| Typical database row | About 1 KB | Initial storage estimate for text-heavy products |
+| JSON API response | 1 to 10 KB | Initial egress estimate |
+| Memory read | About 100 ns | Baseline for explaining cache value |
+| SSD random read | About 100 μs | Compares storage latency with memory and network latency |
+| Same-datacenter round trip | About 0.5 ms | Baseline network latency |
+| Cross-ocean round trip | About 150 ms | Explains the value of regional placement and CDNs |
+
+🔹 **Starting assumptions**: Use a 2 to 3 times peak multiplier and 70% target utilization unless workload evidence supports different values. Treat every value in this table as an estimate to validate, not a limit.
+
+🔹 **Estimation steps**: (1) Gather DAU, requests per user, read/write ratio, response size, and cache-hit rate from analytics or logs — assume conservatively when data is absent. (2) Derive average RPS, then multiply by the peak factor. (3) Size servers and DB from measured per-node capacity; add a spare. (4) Compute storage (writes × size × replication × retention) and egress (peak reads × response size) separately. (5) Apply cache-hit rate to reduce DB reads; prefer replicas before sharding.
+
+🔹 **Working rule**: Plan for peak, state every assumption, and replace estimates with load-test measurements as soon as possible.
 
 ---
 
