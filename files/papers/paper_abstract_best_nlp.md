@@ -24,7 +24,7 @@ It replaces recurrence with stacked encoder and decoder blocks made from multi-h
 
 #### Key Formulas or Algorithms
 
-Scaled dot-product attention is $\operatorname{softmax}(QK^\top/\sqrt{d_k})V$. Multi-head attention concatenates independently projected heads $\operatorname{head}_i=\operatorname{Attention}(QW_i^Q,KW_i^K,VW_i^V)$, then applies $W^O$; $Q,K,V$ are queries, keys, and values, and $d_k$ prevents large dot products from saturating softmax.
+Scaled dot-product attention is $\mathrm{softmax}(QK^\top/\sqrt{d_k})V$. Multi-head attention concatenates independently projected heads $\mathrm{head}_i=\mathrm{Attention}(QW_i^Q,KW_i^K,VW_i^V)$, then applies $W^O$; $Q,K,V$ are queries, keys, and values, and $d_k$ prevents large dot products from saturating softmax.
 
 #### Intuition
 
@@ -82,7 +82,7 @@ GPT-3 is a decoder-only Transformer trained by next-token prediction at 175 bill
 
 #### Key Formulas or Algorithms
 
-The model uses autoregressive likelihood $p(x)=\prod_{i=1}^{n}p(x_i\mid x_{<i})$. In few-shot evaluation, a prompt $c=[(x_1,y_1),\ldots,(x_k,y_k),x_*]$ defines the task and the prediction is $\arg\max_y p_\theta(y\mid c)$; $k=0,1,$ or several gives zero-, one-, or few-shot settings.
+The model uses autoregressive likelihood $p(x)=\prod_{i=1}^{n}p(x_i\mid x_{\lt i})$. In few-shot evaluation, a prompt $c=[(x_1,y_1),\ldots,(x_k,y_k),x_*]$ defines the task and the prediction is $\arg\max_y p_\theta(y\mid c)$; $k=0,1,$ or several gives zero-, one-, or few-shot settings.
 
 #### Intuition
 
@@ -140,7 +140,7 @@ In modern machine learning practice, providing this knowledge is rarely done exp
 
 #### Key Formulas or Algorithms
 
-Span corruption replaces a contiguous masked span with one sentinel token in the input and asks the decoder to emit the missing spans, each preceded by its sentinel. Training is teacher-forced sequence likelihood $L=-\sum_t\log p_\theta(y_t^*\mid y_{<t}^*,x)$, where $x$ includes the task prefix and corrupted text.
+Span corruption replaces a contiguous masked span with one sentinel token in the input and asks the decoder to emit the missing spans, each preceded by its sentinel. Training is teacher-forced sequence likelihood $L=-\sum_t\log p_\theta(y_t^*\mid y_{\lt t}^*,x)$, where $x$ includes the task prefix and corrupted text.
 
 #### Intuition
 
@@ -169,7 +169,7 @@ Care should be taken when using the outputs of GPT-4, particularly in contexts w
 
 #### Key Formulas or Algorithms
 
-The pretraining model factorizes document likelihood as $p(x)=\prod_t p(x_t\mid x_{<t})$. The report fits scaling relationships from smaller training runs, including loss as a function of compute, then compares extrapolated and observed capability metrics; proprietary architectural and optimization details are intentionally withheld.
+The pretraining model factorizes document likelihood as $p(x)=\prod_t p(x_t\mid x_{\lt t})$. The report fits scaling relationships from smaller training runs, including loss as a function of compute, then compares extrapolated and observed capability metrics; proprietary architectural and optimization details are intentionally withheld.
 
 #### Intuition
 
@@ -198,7 +198,7 @@ LLaMA is a decoder-only family trained on publicly available data, emphasizing t
 
 #### Key Formulas or Algorithms
 
-For each token sequence, training minimizes $L=-\sum_t\log p_\theta(x_t\mid x_{<t})$. Rotary embeddings rotate each query and key pair by a position-dependent angle, making their dot product depend on relative distance; the compute comparison holds architecture close while varying parameters and training tokens.
+For each token sequence, training minimizes $L=-\sum_t\log p_\theta(x_t\mid x_{\lt t})$. Rotary embeddings rotate each query and key pair by a position-dependent angle, making their dot product depend on relative distance; the compute comparison holds architecture close while varying parameters and training tokens.
 
 #### Intuition
 
@@ -256,7 +256,7 @@ most similar sentence pair in a collection of 10,000 sentences is reduced from 6
 
 #### Key Formulas or Algorithms
 
-For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\operatorname{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\operatorname{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
+For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\mathrm{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\mathrm{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
 
 #### Intuition
 
@@ -397,11 +397,11 @@ The paper maps an input sequence to an output sequence and studies how represent
 
 #### Why It Matters and Impact
 
-Bidirectional Encoder A _ C _ E B D (a) BERT: Random tokens are replaced with masks, and the document is encoded bidirectionally. Autoregressive Decoder A B C D E <s> A B C D (b) GPT: Tokens are predicted auto-regressively, meaning GPT can be used for generation. The contribution matters because later work can test, reuse, or challenge this particular mechanism and protocol.
+BART showed that one denoising sequence-to-sequence design can support both bidirectional contextualization and left-to-right generation. It bridged encoder-only methods, which are strong for understanding, and decoder-only methods, which are strong for generation, while leaving the corruption process as an explicit training design choice.
 
 #### Key Formulas or Algorithms
 
-Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{<t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{<t},x)$; attention or a copy distribution can direct probability mass to source positions.
+Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{\lt t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{\lt t},x)$; attention or a copy distribution can direct probability mass to source positions.
 
 #### Intuition
 
@@ -459,7 +459,7 @@ In recent years, many methods have been proposed to incor- porate morphological 
 
 #### Key Formulas or Algorithms
 
-For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\operatorname{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\operatorname{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
+For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\mathrm{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\mathrm{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
 
 #### Intuition
 
@@ -604,7 +604,7 @@ We ﬁnd our architecture simpler and more effective than using large vocabulari
 
 #### Key Formulas or Algorithms
 
-For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\operatorname{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\operatorname{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
+For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\mathrm{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\mathrm{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
 
 #### Intuition
 
@@ -633,7 +633,7 @@ fectiveness in mind, two novel types of attention- based models: a global approa
 
 #### Key Formulas or Algorithms
 
-Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{<t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{<t},x)$; attention or a copy distribution can direct probability mass to source positions.
+Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{\lt t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{\lt t},x)$; attention or a copy distribution can direct probability mass to source positions.
 
 #### Intuition
 
@@ -749,7 +749,7 @@ We also show that BERTS CORE is well-correlated with human annotators for image 
 
 #### Key Formulas or Algorithms
 
-Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{<t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{<t},x)$; attention or a copy distribution can direct probability mass to source positions.
+Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{\lt t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{\lt t},x)$; attention or a copy distribution can direct probability mass to source positions.
 
 #### Intuition
 
@@ -807,7 +807,7 @@ responsible for this gap: its slower training and inference speed, ineﬀectiven
 
 #### Key Formulas or Algorithms
 
-Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{<t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{<t},x)$; attention or a copy distribution can direct probability mass to source positions.
+Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{\lt t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{\lt t},x)$; attention or a copy distribution can direct probability mass to source positions.
 
 #### Intuition
 
@@ -1242,7 +1242,7 @@ scription of a data table, as shown in Figure 1, where the task input is a linea
 
 #### Key Formulas or Algorithms
 
-Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{<t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{<t},x)$; attention or a copy distribution can direct probability mass to source positions.
+Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{\lt t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{\lt t},x)$; attention or a copy distribution can direct probability mass to source positions.
 
 #### Intuition
 
@@ -1673,11 +1673,11 @@ The paper maps an input sequence to an output sequence and studies how represent
 
 #### Why It Matters and Impact
 
-Attention Distribution <START> Vocabulary Distribution Context Vector Germany a zoo Partial Summary "beat" Germany emerge victorious in 2-0 win against Argentina on Saturday ... Encoder Hidden States Decoder Hidden States Source Text Figure 2: Baseline sequence-to-sequence model with attention. The contribution matters because later work can test, reuse, or challenge this particular mechanism and protocol.
+Pointer-generator models address the tension between fluent generation from a fixed vocabulary and faithful reproduction of source-specific names, numbers, and facts. Their copy distribution and coverage mechanism influenced later summarizers that need both abstraction and source grounding.
 
 #### Key Formulas or Algorithms
 
-Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{<t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{<t},x)$; attention or a copy distribution can direct probability mass to source positions.
+Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{\lt t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{\lt t},x)$; attention or a copy distribution can direct probability mass to source positions.
 
 #### Intuition
 
@@ -1731,7 +1731,7 @@ The work couples visual and linguistic representations so textual tokens can att
 
 #### Why It Matters and Impact
 
-k⨉ <IMG> 𝑤" 𝑤# 𝑤$ 𝑤& 𝑤( 𝑤) ℎ,",ℎ,#,⋯,ℎ,𝒯 ℎ/",ℎ/#,⋯,ℎ/) Figure 1: Our ViLBERT model consists of two parallel streams for visual (green) and linguistic (purple) processing that interact through novel co-attentional transformer layers. This structure allows for variable depths for each modality and enables sparse interaction through co-attention. The contribution matters because later work can test, reuse, or challenge this particular mechanism and protocol.
+Earlier vision-and-language systems often fused image and text representations at a single point, which limited how each modality could retain specialized processing. ViLBERT showed that separate visual and linguistic streams can interact selectively through co-attention while retaining their own Transformer layers. This two-stream design became an influential alternative for multimodal pretraining, although it depends on the quality of upstream visual-region features and increases cross-modal architecture complexity.
 
 #### Key Formulas or Algorithms
 
@@ -1822,7 +1822,7 @@ E (a) Unsupervised SimCSE (b) Supervised SimCSE label=entailment label=contradic
 
 #### Key Formulas or Algorithms
 
-For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\operatorname{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\operatorname{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
+For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\mathrm{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\mathrm{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
 
 #### Intuition
 
@@ -1880,7 +1880,7 @@ The paper learns representations that place related linguistic items close in ve
 
 #### Key Formulas or Algorithms
 
-For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\operatorname{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\operatorname{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
+For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\mathrm{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\mathrm{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
 
 #### Intuition
 
@@ -2025,7 +2025,7 @@ RoFormer It is noteworthy that the self-attention architecture of the current PL
 
 #### Key Formulas or Algorithms
 
-For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\operatorname{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\operatorname{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
+For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\mathrm{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\mathrm{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
 
 #### Intuition
 
@@ -2141,7 +2141,7 @@ Published as a conference paper at ICLR 2020 tained from the model rely on rando
 
 #### Key Formulas or Algorithms
 
-Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{<t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{<t},x)$; attention or a copy distribution can direct probability mass to source positions.
+Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{\lt t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{\lt t},x)$; attention or a copy distribution can direct probability mass to source positions.
 
 #### Intuition
 
@@ -2257,7 +2257,7 @@ sewing-carpentry register-nurse-physician housewife-shopkeeper nurse-surgeon int
 
 #### Key Formulas or Algorithms
 
-For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\operatorname{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\operatorname{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
+For anchor representation $h_i$, positive $h_i^+$, and candidates $h_j$, contrastive learning minimizes $-\log\frac{\exp(\mathrm{sim}(h_i,h_i^+)/\tau)}{\sum_j\exp(\mathrm{sim}(h_i,h_j)/\tau)}$. The temperature $\tau$ controls how sharply the model separates positives from negatives.
 
 #### Intuition
 
@@ -2286,7 +2286,7 @@ Convolutional Sequence to Sequence Learning tures which are partially convolutio
 
 #### Key Formulas or Algorithms
 
-Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{<t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{<t},x)$; attention or a copy distribution can direct probability mass to source positions.
+Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{\lt t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{\lt t},x)$; attention or a copy distribution can direct probability mass to source positions.
 
 #### Intuition
 
@@ -2340,11 +2340,11 @@ The paper maps an input sequence to an output sequence and studies how represent
 
 #### Why It Matters and Impact
 
-Pointer Sentinel Mixture Models · · · Sentinel x RNN Distribution pvocab (yN|w1,...,w N 1)pvocab (yN|w1,...,w N 1) Pointer Distribution pptr(yN|w1,...,w N 1)pptr(yN|w1,...,w N 1) Output Distribution p(yN|w1,...,w N 1)p(yN|w1,...,w N 1) Sentinel Query RNN Embed + ··· ··· Softmax Softmax · · · · · · · · · Mixture gate gg Figure 2. The query, produced from applying an MLP to the last output of the RNN, is used by the pointer network to identify likely matching words from the past. The contribution matters because later work can test, reuse, or challenge this particular mechanism and protocol.
+Fixed-vocabulary language models normally replace rare or unseen words with a generic unknown token, even when the needed word appears earlier in the same context. The pointer sentinel mixture model adds copying without requiring a separate full vocabulary for every possible word. It helped establish copy mechanisms as a practical way for generation models to preserve names, numbers, and other locally available but infrequent tokens.
 
 #### Key Formulas or Algorithms
 
-Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{<t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{<t},x)$; attention or a copy distribution can direct probability mass to source positions.
+Teacher-forced training minimizes $L=-\sum_t\log p_\theta(y_t^*\mid y_{\lt t}^*,x)$. At inference, the decoder repeatedly selects $y_t$ from $p_\theta(y_t\mid y_{\lt t},x)$; attention or a copy distribution can direct probability mass to source positions.
 
 #### Intuition
 
@@ -2630,7 +2630,7 @@ The work defines a benchmark with collection, annotation, split, and scoring rul
 
 #### Why It Matters and Impact
 
-Dataset Large scale Freeform Answer Well formed Independent of Evidence Varied Evidence TriviaQA      SQuAD (Rajpurkar et al., 2016)      MS Marco (Nguyen et al., 2016)      NewsQA(Trischler et al., 2016)    *  WikiQA (Yang et al., 2016)      TREC (V oorhees and Tice, 2000)      Table 1: Comparison of TriviaQA with existing QA datasets. Our dataset is unique in that it is natu- rally occurring, well-formed questions collected independent of the evidences. The contribution matters because later work can test, reuse, or challenge this particular mechanism and protocol.
+TriviaQA emphasizes naturally occurring, well-formed trivia questions that were collected independently from the evidence documents used to answer them. This contrasts with datasets whose questions are written after annotators have read a particular passage, a process that can make lexical clues unusually direct. The benchmark therefore tests retrieval and reading more realistically, while still depending on the quality and coverage of its collected evidence.
 
 #### Key Formulas or Algorithms
 

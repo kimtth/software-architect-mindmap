@@ -276,7 +276,7 @@ It shows that a tiny ordered key-value API can support relational, document, gra
 
 #### Key Formulas or Algorithms
 
-A transaction $T$ reads at version $v_r$ and commits at $v_c$. It may commit only if no committed transaction since $v_r$ wrote a key range overlapping $T$'s read-conflict range. Formally, reject $T$ if $\exists U: v_r<v_U<v_c$ and $W_U\cap R_T\ne\varnothing$; otherwise serialize its mutations at $v_c$.
+A transaction $T$ reads at version $v_r$ and commits at $v_c$. It may commit only if no committed transaction since $v_r$ wrote a key range overlapping $T$'s read-conflict range. Formally, reject $T$ if $\exists U: v_r\lt v_U\lt v_c$ and $W_U\cap R_T\ne\varnothing$; otherwise serialize its mutations at $v_c$.
 
 #### Intuition
 
@@ -360,7 +360,7 @@ The paper separated causal order from wall-clock time. That distinction underlie
 
 #### Key Formulas or Algorithms
 
-Each process increments its clock before every event. A message sent with timestamp $t$ causes the receiver to set $C_j\leftarrow\max(C_j,t)+1$. Thus $a\rightarrow b\Rightarrow C(a)<C(b)$. Total order uses $(C(a),i)<(C(b),j)$ lexicographically, where $i$ and $j$ are process identifiers.
+Each process increments its clock before every event. A message sent with timestamp $t$ causes the receiver to set $C_j\leftarrow\max(C_j,t)+1$. Thus $a\rightarrow b\Rightarrow C(a)\lt C(b)$. Total order uses $(C(a),i)\lt(C(b),j)$ lexicographically, where $i$ and $j$ are process identifiers.
 
 #### Intuition
 
@@ -388,7 +388,7 @@ Large-scale batch computation had required distributed-systems expertise for eve
 
 #### Key Formulas or Algorithms
 
-The model is $\operatorname{map}(k_1,v_1)\rightarrow[(k_2,v_2)]$ and $\operatorname{reduce}(k_2,[v_2])\rightarrow[(k_3,v_3)]$. The master chooses reducer $r$ for intermediate key $k_2$ using $r=\operatorname{hash}(k_2)\bmod R$, where $R$ is the number of reduce tasks; each reducer then sorts and groups all values with the same $k_2$.
+The model is $\mathrm{map}(k_1,v_1)\rightarrow[(k_2,v_2)]$ and $\mathrm{reduce}(k_2,[v_2])\rightarrow[(k_3,v_3)]$. The master chooses reducer $r$ for intermediate key $k_2$ using $r=\mathrm{hash}(k_2)\bmod R$, where $R$ is the number of reduce tasks; each reducer then sorts and groups all values with the same $k_2$.
 
 #### Intuition
 
@@ -416,7 +416,7 @@ Monitoring at Google's scale means ingesting terabytes every second while servin
 
 #### Key Formulas or Algorithms
 
-For samples $x(t)$ in a query interval $I$, a grouped aggregation produces $A_g(I)=\operatorname{agg}\{x_s(t)\mid s\in g,t\in I\}$. Query planning first selects series by label predicates, maps each selected series to its owning zones, runs subqueries there, and merges partial aggregates; for sum, $\sum_s\sum_t x_s(t)=\sum_z \operatorname{partialSum}_z$.
+For samples $x(t)$ in a query interval $I$, a grouped aggregation produces $A_g(I)=\mathrm{agg}\{x_s(t)\mid s\in g,t\in I\}$. Query planning first selects series by label predicates, maps each selected series to its owning zones, runs subqueries there, and merges partial aggregates; for sum, $\sum_s\sum_t x_s(t)=\sum_z \mathrm{partialSum}_z$.
 
 #### Intuition
 
@@ -472,7 +472,7 @@ The paper proposed decentralized agreement among mutually distrustful participan
 
 #### Key Formulas or Algorithms
 
-A block is valid when $H(\text{header})<T$, where $T$ is the difficulty target; expected search work is inversely proportional to $T$. If honest miners control fraction $p$ and an attacker has $q=1-p$, the attacker's chance of catching up decreases as confirmations $z$ increase when $q<p$, following the paper's Poisson race model.
+A block is valid when $H(\text{header})\lt T$, where $T$ is the difficulty target; expected search work is inversely proportional to $T$. If honest miners control fraction $p$ and an attacker has $q=1-p$, the attacker's chance of catching up decreases as confirmations $z$ increase when $q\lt p$, following the paper's Poisson race model.
 
 #### Intuition
 
@@ -556,7 +556,7 @@ Distributed databases often choose between global scale and transaction semantic
 
 #### Key Formulas or Algorithms
 
-TrueTime returns $TT.now()=[earliest,latest]$ with uncertainty $\epsilon=latest-earliest$. A coordinator chooses $s\ge TT.now().latest$ as commit timestamp and performs commit wait until $TT.after(s)$, ensuring that if transaction $T_1$ finishes before $T_2$ begins, then $s_1<s_2$.
+TrueTime returns $TT.now()=[earliest,latest]$ with uncertainty $\epsilon=latest-earliest$. A coordinator chooses $s\ge TT.now().latest$ as commit timestamp and performs commit wait until $TT.after(s)$, ensuring that if transaction $T_1$ finishes before $T_2$ begins, then $s_1\lt s_2$.
 
 #### Intuition
 
@@ -640,7 +640,7 @@ Removing sequential recurrence made training highly parallel and gave each token
 
 #### Key Formulas or Algorithms
 
-Scaled dot-product attention is $\operatorname{Attention}(Q,K,V)=\operatorname{softmax}(QK^T/\sqrt{d_k})V$. Multi-head attention concatenates $h$ projected heads: $\operatorname{MultiHead}(Q,K,V)=\operatorname{Concat}(head_1,\ldots,head_h)W^O$. Training minimizes token cross-entropy $-\sum_t\log p_\theta(y_t\mid y_{<t},x)$ with label smoothing.
+Scaled dot-product attention is $\mathrm{Attention}(Q,K,V)=\mathrm{softmax}(QK^T/\sqrt{d_k})V$. Multi-head attention concatenates $h$ projected heads: $\mathrm{MultiHead}(Q,K,V)=\mathrm{Concat}(head_1,\ldots,head_h)W^O$. Training minimizes token cross-entropy $-\sum_t\log p_\theta(y_t\mid y_{\lt t},x)$ with label smoothing.
 
 #### Intuition
 
@@ -668,7 +668,7 @@ Embeddings make semantic search, recommendation, and retrieval-augmented generat
 
 #### Key Formulas or Algorithms
 
-For query vector $q$, $k$-nearest-neighbor retrieval returns $\operatorname{arg\,top}_k\{-d(q,x_i)\}$. Common distances are Euclidean $d_2(q,x)=\sqrt{\sum_j(q_j-x_j)^2}$ and cosine similarity $\frac{q\cdot x}{\lVert q\rVert\lVert x\rVert}$. An IVF-PQ procedure clusters vectors into coarse cells, probes selected cells, replaces subvectors with compact codebook identifiers, then reranks candidates by approximate or exact distance.
+For query vector $q$, $k$-nearest-neighbor retrieval returns $\mathrm{arg\,top}_k\{-d(q,x_i)\}$. Common distances are Euclidean $d_2(q,x)=\sqrt{\sum_j(q_j-x_j)^2}$ and cosine similarity $\frac{q\cdot x}{\lVert q\rVert\lVert x\rVert}$. An IVF-PQ procedure clusters vectors into coarse cells, probes selected cells, replaces subvectors with compact codebook identifiers, then reranks candidates by approximate or exact distance.
 
 #### Intuition
 
@@ -696,7 +696,7 @@ Authorization is a correctness boundary: a stale "allow" can disclose private da
 
 #### Key Formulas or Algorithms
 
-An access check computes whether $u\in Expand(o\#r)$, where $o$ is an object and $r$ a relation. For a union definition, $Expand(r_1\cup r_2)=Expand(r_1)\cup Expand(r_2)$; for an intersection use $\cap$. A zookie carries a commit timestamp $z$, and a check waits until the serving replica has applied all relevant changes through $z$ before returning `allow` or `deny`.
+An access check computes whether $u\in \mathrm{Expand}(o,r)$, where $(o,r)$ is an object-and-relation pair. For a union definition, $\mathrm{Expand}(r_1\cup r_2)=\mathrm{Expand}(r_1)\cup \mathrm{Expand}(r_2)$; for an intersection use $\cap$. A zookie carries a commit timestamp $z$, and a check waits until the serving replica has applied all relevant changes through $z$ before returning `allow` or `deny`.
 
 #### Intuition
 
@@ -814,7 +814,7 @@ The assignment axiom is $\{P[E/x]\}\ x:=E\ \{P\}$. The conditional rule requires
 
 #### Intuition
 
-A Hoare triple $$\(\{P\}\ C\ \{Q\}\)$ specifies partial correctness: if command $C$ starts in a state satisfying precondition $P$ and terminates, it ends satisfying postcondition $Q$. Proof rules transform assertions with program structure, such as substituting an assigned expression backward through an assignment and proving each branch under its guard. For a loop, an invariant must hold initially and be preserved by one body execution whenever the condition holds; on exit it combines with the false condition to establish the result. Termination requires an additional decreasing measure, so invariants explain correctness but not necessarily progress.
+A Hoare triple $\{P\}\ C\ \{Q\}$ specifies partial correctness: if command $C$ starts in a state satisfying precondition $P$ and terminates, it ends satisfying postcondition $Q$. Proof rules transform assertions with program structure, such as substituting an assigned expression backward through an assignment and proving each branch under its guard. For a loop, an invariant must hold initially and be preserved by one body execution whenever the condition holds; on exit it combines with the false condition to establish the result. Termination requires an additional decreasing measure, so invariants explain correctness but not necessarily progress.
 
 #### Main Takeaway
 
@@ -866,7 +866,7 @@ Distributed programs cannot infer causal order merely from clocks on separate ma
 
 #### Key Formulas or Algorithms
 
-Before each event process $i$ increments $C_i$. Sending attaches $C_i=t$; receiving updates $C_j\leftarrow\max(C_j,t)+1$. This guarantees $a\rightarrow b\Rightarrow C(a)<C(b)$. To totally order events, compare pairs $(C(a),i)$ and $(C(b),j)$ lexicographically.
+Before each event process $i$ increments $C_i$. Sending attaches $C_i=t$; receiving updates $C_j\leftarrow\max(C_j,t)+1$. This guarantees $a\rightarrow b\Rightarrow C(a)\lt C(b)$. To totally order events, compare pairs $(C(a),i)$ and $(C(b),j)$ lexicographically.
 
 #### Intuition
 

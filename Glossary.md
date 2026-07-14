@@ -1353,7 +1353,9 @@ References: [OAuth 2.0 - RFC 6749](https://www.rfc-editor.org/rfc/rfc6749) | [Op
 
 🔹Some other Types of SSO: Kerberos, Smart card authentication
 - Kerberos: Less suitable for internet-facing SSO due to the shared secret between KDC (Key Distributin Center) and all participants.
-- Smart card authentication: Physical card
+- Smart card authentication: Physical card  
+ 
+🔹SSO Implementations: Microsoft Entra ID (FKA Micorsoft Active Directory), Okta, Ping Identity, OneLogin, Auth0
 
 ---
 
@@ -1374,10 +1376,6 @@ References: [Web Session, JWT, and Cookie History](https://zenn.dev/khale/articl
 🔹 **Current browser boundary**: Prefer an `HttpOnly`, `Secure`, and appropriately scoped `SameSite` session cookie between the browser and a same-site BFF. Use CSRF tokens and Origin or Referer validation for state-changing requests, because cookie attributes do not replace CSRF controls.
 
 🔹 **Security boundary**: `HttpOnly` prevents token extraction by JavaScript but does not prevent XSS from issuing authenticated requests. Apply CSP, output encoding, input validation, and server-side authorization checks as separate controls.
-
----
-
-🔹SSO Implementations: Microsoft Entra ID (FKA Micorsoft Active Directory), Okta, Ping Identity, OneLogin, Auth0
 
 ---
 

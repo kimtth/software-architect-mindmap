@@ -24,7 +24,7 @@ Distributed machines cannot observe a universal "now," yet they must reason abou
 
 #### Key Formulas or Algorithms
 
-For any event $a$ and $b$, $a \rightarrow b$ holds when $a$ precedes $b$ locally, $a$ sends a message received by $b$, or there is an event $c$ such that $a \rightarrow c \rightarrow b$. Maintain clock $C_i$ at process $i$: before each event set $C_i \leftarrow C_i+1$; send $C_i$ with every message; after receiving timestamp $t$, set $C_i \leftarrow \max(C_i,t)+1$. Then $a \rightarrow b$ implies $C(a)<C(b)$. A total order breaks equal timestamps with process identifiers: $a \Rightarrow b$ when $(C(a),i_a)$ is lexicographically smaller than $(C(b),i_b)$.
+For any event $a$ and $b$, $a \rightarrow b$ holds when $a$ precedes $b$ locally, $a$ sends a message received by $b$, or there is an event $c$ such that $a \rightarrow c \rightarrow b$. Maintain clock $C_i$ at process $i$: before each event set $C_i \leftarrow C_i+1$; send $C_i$ with every message; after receiving timestamp $t$, set $C_i \leftarrow \max(C_i,t)+1$. Then $a \rightarrow b$ implies $C(a)\lt C(b)$. A total order breaks equal timestamps with process identifiers: $a \Rightarrow b$ when $(C(a),i_a)$ is lexicographically smaller than $(C(b),i_b)$.
 
 #### Intuition
 
@@ -108,7 +108,7 @@ The approach made model parallelism practical in ordinary PyTorch rather than a 
 
 #### Key Formulas or Algorithms
 
-For a column-parallel linear layer, each GPU computes $Y_i=XA_i$ and the following row-parallel layer computes $Z=\sum_i Y_iB_i$. The first split needs no communication; the second uses an all-reduce. Attention heads are split similarly, with $\operatorname{softmax}(QK^\top/\sqrt{d_k})V$ computed independently per head.
+For a column-parallel linear layer, each GPU computes $Y_i=XA_i$ and the following row-parallel layer computes $Z=\sum_i Y_iB_i$. The first split needs no communication; the second uses an all-reduce. Attention heads are split similarly, with $\mathrm{softmax}(QK^\top/\sqrt{d_k})V$ computed independently per head.
 
 #### Intuition
 
@@ -248,7 +248,7 @@ It made cluster-scale batch processing accessible without requiring every progra
 
 #### Key Formulas or Algorithms
 
-$\operatorname{map}(k_1,v_1)\rightarrow[(k_2,v_2)]$ and $\operatorname{reduce}(k_2,[v_2])\rightarrow[(k_3,v_3)]$. Hash-partition intermediate keys to reducers, execute map tasks near input blocks, and re-execute failed or straggling tasks speculatively before committing one output.
+$\mathrm{map}(k_1,v_1)\rightarrow[(k_2,v_2)]$ and $\mathrm{reduce}(k_2,[v_2])\rightarrow[(k_3,v_3)]$. Hash-partition intermediate keys to reducers, execute map tasks near input blocks, and re-execute failed or straggling tasks speculatively before committing one output.
 
 #### Intuition
 
@@ -304,7 +304,7 @@ The vertex-centric model hides partitioning and recovery while directly expressi
 
 #### Key Formulas or Algorithms
 
-In superstep $s$, invoke $\operatorname{Compute}(v,M_v^{s-1})$ and deliver all emitted messages in $s+1$. PageRank illustrates the pattern: $r_v^{s+1}=(1-d)/N+d\sum_{u\to v}r_u^s/\deg^+(u)$.
+In superstep $s$, invoke $\mathrm{Compute}(v,M_v^{s-1})$ and deliver all emitted messages in $s+1$. PageRank illustrates the pattern: $r_v^{s+1}=(1-d)/N+d\sum_{u\to v}r_u^s/\deg^+(u)$.
 
 #### Intuition
 
@@ -360,7 +360,7 @@ A system can scale with additional cores yet still be slower than one thread at 
 
 #### Key Formulas or Algorithms
 
-For platform $P$, $\operatorname{COST}(P)=\min\{n:T_P(n)<T_{\text{single}}(1)\}$. Measure the single-thread baseline, run the distributed system at increasing core counts, and report the first $n$ that crosses that threshold.
+For platform $P$, $\mathrm{COST}(P)=\min\{n:T_P(n)\lt T_{\text{single}}(1)\}$. Measure the single-thread baseline, run the distributed system at increasing core counts, and report the first $n$ that crosses that threshold.
 
 #### Intuition
 
@@ -472,7 +472,7 @@ The paper articulated why centralized cloud economics cannot satisfy every mobil
 
 #### Key Formulas or Algorithms
 
-Offloading is useful when $T_{\text{edge}}+T_{\text{network}}<T_{\text{device}}$ and the energy cost is acceptable. Placement weighs latency, bandwidth, privacy constraints, and device mobility; state may be cached or migrated between nearby edge nodes.
+Offloading is useful when $T_{\text{edge}}+T_{\text{network}}\lt T_{\text{device}}$ and the energy cost is acceptable. Placement weighs latency, bandwidth, privacy constraints, and device mobility; state may be cached or migrated between nearby edge nodes.
 
 #### Intuition
 
@@ -752,8 +752,7 @@ Microservices can expose effects out of causal order across independent stores. 
 
 #### Key Formulas or Algorithms
 
-If operation $a
-ightarrow b$, a read exposing $b$ must expose $a$; attach lineage metadata, merge it through calls, and delay visibility until dependencies are satisfied.
+If operation $a\rightarrow b$, a read exposing $b$ must expose $a$; attach lineage metadata, merge it through calls, and delay visibility until dependencies are satisfied.
 
 #### Intuition
 
@@ -1481,7 +1480,7 @@ A cache hit matters only when it accelerates a whole transaction; object-level p
 
 #### Key Formulas or Algorithms
 
-Transactional hit rate is $\#\{	ext{transactions served without storage wait}\}/\#\{	ext{transactions}\}$. Build dependency sets, prefetch likely co-accessed objects, and evict objects with low transaction-level value.
+Transactional hit rate is $\frac{\text{transactions served without storage wait}}{\text{transactions}}$. Build dependency sets, prefetch likely co-accessed objects, and evict objects with low transaction-level value.
 
 #### Intuition
 
@@ -1957,10 +1956,7 @@ Its inclusion reinforces that systems contributions are judged by a coherent arg
 
 #### Key Formulas or Algorithms
 
-Structure the argument as problem $
-ightarrow$ contribution $
-ightarrow$ design $
-ightarrow$ evaluation; every claimed benefit needs a baseline and a measurement that controls confounders.
+Structure the argument as problem $\rightarrow$ contribution $\rightarrow$ design $\rightarrow$ evaluation; every claimed benefit needs a baseline and a measurement that controls confounders.
 
 #### Intuition
 

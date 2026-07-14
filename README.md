@@ -10,13 +10,14 @@
 - **Section 1**: [Software Architecture Mindmap](#software-architecture-mindmap)
 - **Section 2**: [Software Architecture Reference](#software-architecture-reference)
     - [Industry Trends](#industry-trends)
-    - [Trend Reports and Mini-Books](#trend-reports-and-mini-books)
+    - [Trend Reports](#trend-reports)
     - [Newsletter](#newsletter)
     - [Cloud Architecture](#cloud-architecture)
     - [Engineering blog](#engineering-blog)
     - [Building from scratch](#building-from-scratch)
     - [Computer Science courses](#computer-science-courses)
     - [Beginner Series by Microsoft](#beginner-series-by-microsoft)
+    - [Mini-Books](#mini-books)
     - [Tools & Research](#tools--research)
         - [Algorithm & Visualization](#algorithm--visualization)
         - [Best Practices](#best-practices)
@@ -25,7 +26,7 @@
         - [LLM-generated wiki](#llm-generated-wiki)
         - [Research & Academic Tools](#research--academic-tools)
         - [Transformer Architecture (LLM Foundations)](#transformer-architecture-llm-foundations)
-            - [Visual Learning](#visual-learning)
+        - [Visual Learning](#visual-learning)
     - [Other Topics](#other-topics)
     - [Computer Science Books](#computer-science-books)
 - **Section 3**: [Computer Science Papers](#computer-science-papers)
@@ -67,6 +68,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Awesome Software Architecture (simskij)](https://github.com/simskij/awesome-software-architecture)
 - [Awesome System Design Resources](https://github.com/ashishps1/awesome-system-design-resources)
 - [Ecosyste.ms: Awesome](https://awesome.ecosyste.ms/): An open API service indexing awesome lists
+- [Microsoft Learn](https://learn.microsoft.com/en-us/): 🪟Microsoft documentation, tutorials, and code samples
 - [Microsoft .NET Application Architecture - Reference Apps](https://github.com/dotnet-architecture/eShopOnWeb)
 - [Software Architecture Books](https://github.com/mhadidg/software-architecture-books): A comprehensive list of books on Software Architecture
 - [Software Architecture Books](https://github.com/mhadidg/software-architecture-books)
@@ -86,27 +88,18 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista Industry Insight
 - [Stanford AI Index Annual Report](https://hai.stanford.edu/ai-index)
 
-### Trend Reports and Mini-Books
+### Trend Reports
 
-- [Agentic Architectures for Retrieval-intensive Applications](./files/minibooks/Weaviate%20Agentic%20Architectures-ebook.pdf)
-- [Building a scalable authorization system](./files/minibooks/Building%20a%20scalable%20authorization%20system_%20a%20step-by-step%20blueprint.pdf)
-- [Design Gurus](https://www.designgurus.io/): Portal For Tech Interviews
 - [Dzone](https://dzone.com/): RefCards and Trend Reports
-- [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals) 
 - [InfoQ](https://www.infoq.com): News and Articles
-- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You've Always Wondered About 📖([Downloaded PDFs 2021 - 2025](./files/minibooks/)) / [Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
 - [InfoQ Trends Reports](https://www.infoq.com/infoq-trends-report/): 📖([Downloaded PDFs 2019 and 2021 - 2025](./files/infoq_trends_report/))
-- [Mastering AI Agents](./files/minibooks/Mastering%20AI%20Agents-compressed.pdf)
-- [Mastering RAG](./files/minibooks/Mastering%20RAG-compressed.pdf)
-- [Microsoft Learn](https://learn.microsoft.com/en-us/): 🪟Microsoft documentation, tutorials, and code samples
-- [Programming Notes for Professionals books](https://goalkicker.com/)
-- [System Design Blueprint: The Ultimate Guide](https://blog.bytebytego.com/p/ep56-system-design-blueprint-the)
 - [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar 📖([Downloaded PDFs vo.1 - vol.34](./files/tech_radar_thoughtworks/))
 - [Trendshift](https://trendshift.io/): GitHub Trending repositories
 
 ### Newsletter
 
 - [daily.dev](https://app.daily.dev): Personalized news feed
+- [Hacker News](https://news.ycombinator.com/)
 - [Substack Leaderboard](https://substack.com/browse/technology): Newsletter
 
 ### Cloud Architecture
@@ -186,6 +179,18 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Web Dev for Beginners](https://github.com/microsoft/Web-Dev-For-Beginners)
 - [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners)
 
+### Mini-Books
+
+- [Agentic Architectures for Retrieval-intensive Applications](./files/minibooks/Weaviate%20Agentic%20Architectures-ebook.pdf)
+- [Building a scalable authorization system](./files/minibooks/Building%20a%20scalable%20authorization%20system_%20a%20step-by-step%20blueprint.pdf)
+- [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals) 
+- [InfoQ Architectures You've Always Wondered About](https://www.infoq.com/minibooks/): 📖([Downloaded PDFs 2021 - 2025](./files/minibooks/)) 
+- [InfoQ Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
+- [Mastering AI Agents](./files/minibooks/Mastering%20AI%20Agents-compressed.pdf)
+- [Mastering RAG](./files/minibooks/Mastering%20RAG-compressed.pdf)
+- [Programming Notes for Professionals books](https://goalkicker.com/)
+- [System Design Blueprint: The Ultimate Guide](https://blog.bytebytego.com/p/ep56-system-design-blueprint-the)
+
 ### Tools & Research
 
 ##### Algorithm & Visualization
@@ -237,7 +242,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [scite_](https://scite.ai/): Smart citation analysis and discovery
 - [Semantic Scholar](https://www.semanticscholar.org): AI-powered academic search engine
 
-### Transformer Architecture (LLM Foundations)
+##### Transformer Architecture (LLM Foundations)
 
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762): Transformer architecture based on self-attention
 - [How Top AI Labs Are Building RL Agents in 2026](https://blog.dailydoseofds.com/p/how-top-ai-labs-are-building-rl-agents): RLHF, verifiable rewards, GRPO, and LLM-as-a-judge reward signals for agent training
@@ -333,7 +338,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 ### Computer Science Papers Every Developer Should Read
 
-- [Downloaded PDFs - 12 files](files/papers/paper_index.md#computer-science-papers-every-developer-should-read)
+- 📖[Downloaded PDFs - 12 files](files/papers/paper_index.md#computer-science-papers-every-developer-should-read) | [Study notes](files/papers/paper_abstract_core.md#computer-science-papers-every-developer-should-read)
 - [An Axiomatic Basis for Computer Programming (1969)](http://sunnyday.mit.edu/16.355/Hoare-CACM-69.pdf): C.A.R. Hoare  
 - [A Metrics Suite for Object-Oriented Design (1994)](https://sites.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf): S.R. Chidamber  
 - [A Note On Distributed Computing (1994)](https://scholar.harvard.edu/files/waldo/files/waldo-94.pdf): J. Waldo, G. Wyant, A. Wollrath, S. Kendall  
@@ -348,7 +353,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 ### 25 Papers That Completely Transformed the Computer World
 
-- [Downloaded PDFs - 25 files](files/papers/paper_index.md#25-papers-that-completely-transformed-the-computer-world)
+- 📖[Downloaded PDFs - 25 files](files/papers/paper_index.md#25-papers-that-completely-transformed-the-computer-world) | [Study notes](files/papers/paper_abstract_core.md#25-papers-that-completely-transformed-the-computer-world)
 - [Amazon Aurora](https://web.stanford.edu/class/cs245/readings/aurora.pdf): How Amazon provides high availability and performance  
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762): Into a new deep learning architecture known as the transformer  
 - [BigTable](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf): The design principles behind a distributed storage system  
@@ -376,12 +381,12 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 ### The best NLP papers from 2015 to now
 - [The best NLP papers](https://thebestnlppapers.com/nlp/papers/all/): 🔬A curated collection of influential NLP papers
-- [Downloaded PDFS - 100 files](files/papers/paper_index.md#the-best-nlp-papers-from-2015-to-now) 
+- 📖[Downloaded PDFS - 100 files](files/papers/paper_index.md#the-best-nlp-papers-from-2015-to-now) | [Study notes](files/papers/paper_abstract_best_nlp.md#the-best-nlp-papers-from-2015-to-now)
 
 ### 70+ Distributed Systems papers
 
 - Here's a reading list of 70+ Distributed Systems papers *mostly from conferences in just last 2 years*! [70+ Distributed Systems papers](https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit) [Jan 2024]
-- [Downloaded PDFS - 72 files](files/papers/paper_index.md#70-distributed-systems-papers) 
+- 📖[Downloaded PDFS - 72 files](files/papers/paper_index.md#70-distributed-systems-papers) | [Study notes](files/papers/paper_abstract_dist.md#70-distributed-systems-papers)
 
 ## Data Science (ML/NN)
 
