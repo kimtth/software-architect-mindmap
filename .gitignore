@@ -1,1 +1,5 @@
 /.vscode
+/.copilot-tracking
+main.py
+pyproject.toml
+uv.lock

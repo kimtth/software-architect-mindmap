@@ -9,23 +9,30 @@
 
 - **Section 1**: [Software Architecture Mindmap](#software-architecture-mindmap)
 - **Section 2**: [Software Architecture Reference](#software-architecture-reference)
+    - [Industry Trends](#industry-trends)
     - [Trend Reports and Mini-Books](#trend-reports-and-mini-books)
-    - [Building from scratch](#building-from-scratch)
+    - [Newsletter](#newsletter)
     - [Cloud Architecture](#cloud-architecture)
+    - [Engineering blog](#engineering-blog)
+    - [Building from scratch](#building-from-scratch)
     - [Computer Science courses](#computer-science-courses)
     - [Beginner Series by Microsoft](#beginner-series-by-microsoft)
-    - [Industry Trends](#industry-trends)
-    - [Newsletter](#newsletter)
     - [Tools & Research](#tools--research)
-    - [Engineering blog](#engineering-blog)
+        - [Algorithm & Visualization](#algorithm--visualization)
+        - [Best Practices](#best-practices)
+        - [Design Patterns & Development](#design-patterns--development)
+        - [Diagramming & Visualization Tools](#diagramming--visualization-tools)
+        - [LLM-generated wiki](#llm-generated-wiki)
+        - [Research & Academic Tools](#research--academic-tools)
+        - [Transformer Architecture (LLM Foundations)](#transformer-architecture-llm-foundations)
+            - [Visual Learning](#visual-learning)
     - [Other Topics](#other-topics)
-    - [Transformer Architecture (LLM Foundations)](#transformer-architecture-llm-foundations)
     - [Computer Science Books](#computer-science-books)
 - **Section 3**: [Computer Science Papers](#computer-science-papers)
     - [Computer Science Papers Every Developer Should Read](#computer-science-papers-every-developer-should-read-ref)
-    - [70+ Distributed Systems papers](#70-distributed-systems-papers)
     - [25 Papers That Completely Transformed the Computer World](#25-papers-that-completely-transformed-the-computer-world-ref)
     - [The best NLP papers from 2015 to now](#the-best-nlp-papers-from-2015-to-now)
+    - [70+ Distributed Systems papers](#70-distributed-systems-papers)
 - **Section 4**: [Data Science (ML/NN)](#data-science-mlnn)
     - [eBooks for ML, Data Science & AI](#ebooks-for-ml-data-science--ai)
     - [Github for ML, Data Science & AI](#github-for-ml-data-science--ai)
@@ -68,6 +75,17 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [System Design 101](https://github.com/ByteByteGoHq/system-design-101): 🗺️ByteByteGo 
 - [System Design Fight Club](https://github.com/systemdesignfightclub/SDFC)
 
+### Industry Trends
+
+- [Gartner Top Strategic Technology Trends 2024](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)
+- [Google DORA](https://dora.community/): DevOps Research and Assessment (DORA)
+- [Hype Cycle for Emerging Technologies 2024](https://www.gartner.com/en/newsroom/press-releases/2024-08-21-gartner-2024-hype-cycle-for-emerging-technologies-highlights-developer-productivity-total-experience-ai-and-security)
+- [MAD (ML/AI/Data) Landscape](https://mad.firstmark.com/)
+- [Microsoft Digital Defense Report](https://aka.ms/MDDR)
+- [Postman State of the API Report](https://www.postman.com/state-of-api)
+- [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista Industry Insight
+- [Stanford AI Index Annual Report](https://hai.stanford.edu/ai-index)
+
 ### Trend Reports and Mini-Books
 
 - [Agentic Architectures for Retrieval-intensive Applications](./files/minibooks/Weaviate%20Agentic%20Architectures-ebook.pdf)
@@ -76,15 +94,53 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Dzone](https://dzone.com/): RefCards and Trend Reports
 - [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals) 
 - [InfoQ](https://www.infoq.com): News and Articles
-- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You've Always Wondered About 📖([archived PDFs 2021 - 2025](./files/minibooks/)) / [Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
-- [InfoQ Trends Reports](https://www.infoq.com/infoq-trends-report/): 📖([archived PDFs 2019 and 2021 - 2025](./files/infoq_trends_report/))
+- [InfoQ minibooks](https://www.infoq.com/minibooks/): Architectures You've Always Wondered About 📖([Downloaded PDFs 2021 - 2025](./files/minibooks/)) / [Cell-Based Architecture](https://www.infoq.com/minibooks/cell-based-architecture-2024)
+- [InfoQ Trends Reports](https://www.infoq.com/infoq-trends-report/): 📖([Downloaded PDFs 2019 and 2021 - 2025](./files/infoq_trends_report/))
 - [Mastering AI Agents](./files/minibooks/Mastering%20AI%20Agents-compressed.pdf)
 - [Mastering RAG](./files/minibooks/Mastering%20RAG-compressed.pdf)
 - [Microsoft Learn](https://learn.microsoft.com/en-us/): 🪟Microsoft documentation, tutorials, and code samples
 - [Programming Notes for Professionals books](https://goalkicker.com/)
 - [System Design Blueprint: The Ultimate Guide](https://blog.bytebytego.com/p/ep56-system-design-blueprint-the)
-- [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar 📖([archived PDFs vo.1 - vol.34](./files/tech_radar_thoughtworks/))
+- [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar 📖([Downloaded PDFs vo.1 - vol.34](./files/tech_radar_thoughtworks/))
 - [Trendshift](https://trendshift.io/): GitHub Trending repositories
+
+### Newsletter
+
+- [daily.dev](https://app.daily.dev): Personalized news feed
+- [Substack Leaderboard](https://substack.com/browse/technology): Newsletter
+
+### Cloud Architecture
+
+- [AI agent orchestration patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#implementations-in-microsoft-semantic-kernel)
+- [AWS to Azure services comparison](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/services)
+- [Azure Architecture Center :AAC](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/?product=popular): architecture patterns and reference architectures
+- [Azure Cloud Adoption Framework :CAF](https://learn.microsoft.com/en-gb/azure/cloud-adoption-framework/): organization-wide adoption guidance
+- [Azure FinOps Guide](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/the-azure-finops-guide/bc-p/4237205#M1023)
+- [Azure Well-architected Framework :WAF](https://learn.microsoft.com/en-us/azure/well-architected/): workload-focussed design and continuous improvement guidance
+- [Best practices in cloud applications](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices): Azure application architecture
+- [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+- [Compare AWS and Azure services to Google Cloud](https://cloud.google.com/docs/get-started/aws-azure-gcp-service-comparison)
+- [Data partitioning strategies](https://learn.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning-strategies)
+- [Google Cloud to Azure services comparison](https://learn.microsoft.com/en-us/azure/architecture/gcp-professional/services)
+- [Landing zone](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-virtual-desktop/design-guide?tabs=baseline)
+- [Microsoft Azure Developer's Cheat Sheet](https://github.com/milanm/azure-cheat-sheet): Every product, feature and service in the Azure family
+- [Modern Web App pattern for .NET](https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/dotnet/guidance) / [GitHub](https://github.com/Azure/modern-web-app-pattern-dotnet)
+- [Resources for architects and developers of multitenant solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/related-resources)
+
+### Engineering blog
+
+- [79 Engineering Blogs To Level Up Your System Design Skills](https://blog.bytebytego.com/p/79-engineering-blogs-to-level-up)
+- [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
+- [Azure Architecture Blog](https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog)
+- [Discord Blog: Engineering & Developers](https://discord.com/category/engineering)
+- [Engineering at Meta](https://engineering.fb.com/)
+- [GCP Cloud Blog](https://cloud.google.com/blog)
+- [LinkedIn Engineering](https://engineering.linkedin.com/blog)
+- [Netflix TechBlog](https://medium.com/netflix-techblog)
+- [Slack Engineering](https://slack.engineering/)
+- [Stripe Blog: Engineering](https://stripe.com/blog/engineering)
+- [The Cloudflare Blog](https://blog.cloudflare.com/)
+- [Uber Blog](http://eng.uber.com/)
 
 ### Building from scratch
 
@@ -100,25 +156,6 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [PyTorch internals](https://blog.ezyang.com/2019/05/pytorch-internals/)
 - [Web Browser Engineering](https://browser.engineering/): Building a basic but complete web browser from scratch
 - [Writing an Operating System in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines)
-
-### Cloud Architecture
-
-- [AI agent orchestration patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#implementations-in-microsoft-semantic-kernel)
-- [AWS to Azure services comparison](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/services)
-- [Azure Architecture Center :AAC](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/?product=popular): architecture patterns and reference architectures
-- [Azure Cloud Adoption Framework :CAF](https://learn.microsoft.com/en-gb/azure/cloud-adoption-framework/): organization-wide adoption guidance
-- [Azure FinOps Guide](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/the-azure-finops-guide/bc-p/4237205#M1023)
-- [Azure Well-architected Framework :WAF](https://learn.microsoft.com/en-us/azure/well-architected/): workload-focussed design and continuous improvement guidance
-- [Best practices in cloud applications](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices): Azure application architecture
-- [Best practices in cloud applications](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices)
-- [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
-- [Compare AWS and Azure services to Google Cloud](https://cloud.google.com/docs/get-started/aws-azure-gcp-service-comparison)
-- [Data partitioning strategies](https://learn.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning-strategies)
-- [Google Cloud to Azure services comparison](https://learn.microsoft.com/en-us/azure/architecture/gcp-professional/services)
-- [Landing zone](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-virtual-desktop/design-guide?tabs=baseline)
-- [Microsoft Azure Developer's Cheat Sheet](https://github.com/milanm/azure-cheat-sheet): Every product, feature and service in the Azure family
-- [Modern Web App pattern for .NET](https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/dotnet/guidance) / [GitHub](https://github.com/Azure/modern-web-app-pattern-dotnet)
-- [Resources for architects and developers of multitenant solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/related-resources)
 
 ### Computer Science courses
 
@@ -149,53 +186,17 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Web Dev for Beginners](https://github.com/microsoft/Web-Dev-For-Beginners)
 - [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners)
 
-### Industry Trends
-
-- [Gartner Top Strategic Technology Trends 2024](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)
-- [Google DORA](https://dora.community/): DevOps Research and Assessment (DORA)
-- [Hype Cycle for Emerging Technologies 2024](https://www.gartner.com/en/newsroom/press-releases/2024-08-21-gartner-2024-hype-cycle-for-emerging-technologies-highlights-developer-productivity-total-experience-ai-and-security)
-- [MAD (ML/AI/Data) Landscape](https://mad.firstmark.com/)
-- [Microsoft Digital Defense Report](https://aka.ms/MDDR)
-- [Postman State of the API Report](https://www.postman.com/state-of-api)
-- [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista Industry Insight
-- [Stanford AI Index Annual Report](https://hai.stanford.edu/ai-index)
-
-### Newsletter
-
-- [daily.dev](https://app.daily.dev): Personalized news feed
-- [Substack Leaderboard](https://substack.com/browse/technology): Newsletter
-
 ### Tools & Research
 
 ##### Algorithm & Visualization
+
 - [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): Interactive algorithm visualization
 - [Hello Algo](https://www.hello-algo.com/en/): Algorithm tutorials
 - [Netron](https://github.com/lutzroeder/netron): Neural network visualizer
 - [Wikipedia: List of Algorithms](https://www.wikiwand.com/en/articles/List_of_algorithms): Comprehensive algorithm reference
 
-##### Design Patterns & Development
-- [Data Engineering Wiki](https://dataengineering.wiki/Index): Data engineering resources and guides
-- [Dev Encyclopedia](https://devpedia.dev/): Encyclopedia for developers ([GitHub](https://github.com/Buzzpy/Dev-Encyclopedia))
-- [OOP Design Patterns](https://refactoring.guru/design-patterns): Object-oriented design patterns explained
-- [Paperdraw](https://paperdraw.dev/): System Design Simulator
-
-##### Research & Academic Tools
-- [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery): AI-powered paper discovery tool
-- [Connected Papers](https://www.connectedpapers.com/): Explore connected academic papers
-- [Liner](https://getliner.com/): AI research tool for highlighting and annotating
-- [Litmaps](https://www.litmaps.com): Visualize relationships between research papers
-- [Moonlight](https://www.themoonlight.io/en): Browser extension for academic research
-- [scite_](https://scite.ai/): Smart citation analysis and discovery
-- [Semantic Scholar](https://www.semanticscholar.org): AI-powered academic search engine
-
-##### Diagramming & Visualization Tools
-- [Excalidraw](https://excalidraw.com/): Hand-drawn style diagrams
-- [Eraser.io](https://www.eraser.io/): Diagramming as code
-- [GraphViz](https://graphviz.org/): Graph visualization
-- [Mermaid Diagram](https://mermaid.live): Diagramming and charting tool
-- [PlantUML](https://plantuml.com/): UML diagrams
-
 ##### Best Practices
+
 - [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Curated Kubernetes tools by Bluelight Consulting
 - [Crontab Guru](https://crontab.guru/): Interactive cron schedule expression editor and reference
 - [Google Engineering Practices Documentation](https://github.com/google/eng-practices)
@@ -205,13 +206,20 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Robin Wieruch Blog](https://www.robinwieruch.de/blog/): React.js, Next.js, TypeScript, JavaScript libraries, and trends
 - [Wise Tech Stack](https://medium.com/wise-engineering/wise-tech-stack-2025-update-d0e63fe718c7): Platform engineering practices across Kubernetes, delivery, data, AI, and observability
 
-##### Visual Learning 
-- [Assembly code visualizer](https://asm.diveintosystems.org): Visualize Your Assembly Code
-- [explorar.dev](https://explorar.dev/torvalds/linux): Explore curated open-source repositories with an interactive code browser.
-- [Idea Instructions](https://idea-instructions.com/): Complex concepts explained as IKEA-style visual instructions
-- [Linux Kernel Map](https://makelinux.github.io/kernel/map/): Interactive visual map of the Linux kernel subsystems
-- [Making Software](https://www.makingsoftware.com/): Visual explanations of how software works under the hood
-- [Understanding the Linux Kernel, Visually](https://jm233333.github.io/assets/papers/visualinux-eurosys25.pdf)
+##### Design Patterns & Development
+
+- [Data Engineering Wiki](https://dataengineering.wiki/Index): Data engineering resources and guides
+- [Dev Encyclopedia](https://devpedia.dev/): Encyclopedia for developers ([GitHub](https://github.com/Buzzpy/Dev-Encyclopedia))
+- [OOP Design Patterns](https://refactoring.guru/design-patterns): Object-oriented design patterns explained
+- [Paperdraw](https://paperdraw.dev/): System Design Simulator
+
+##### Diagramming & Visualization Tools
+
+- [Excalidraw](https://excalidraw.com/): Hand-drawn style diagrams
+- [Eraser.io](https://www.eraser.io/): Diagramming as code
+- [GraphViz](https://graphviz.org/): Graph visualization
+- [Mermaid Diagram](https://mermaid.live): Diagramming and charting tool
+- [PlantUML](https://plantuml.com/): UML diagrams
 
 ##### LLM-generated wiki
 
@@ -219,31 +227,15 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Google Code Wiki](https://codewiki.google/)
 - [Grokpedia](https://grokipedia.com/) 
 
-### Engineering blog
+##### Research & Academic Tools
 
-- [79 Engineering Blogs To Level Up Your System Design Skills](https://blog.bytebytego.com/p/79-engineering-blogs-to-level-up)
-- [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
-- [Azure Architecture Blog](https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog)
-- [Discord Blog: Engineering & Developers](https://discord.com/category/engineering)
-- [Engineering at Meta](https://engineering.fb.com/)
-- [GCP Cloud Blog](https://cloud.google.com/blog)
-- [LinkedIn Engineering](https://engineering.linkedin.com/blog)
-- [Netflix TechBlog](https://medium.com/netflix-techblog)
-- [Slack Engineering](https://slack.engineering/)
-- [Stripe Blog: Engineering](https://stripe.com/blog/engineering)
-- [The Cloudflare Blog](https://blog.cloudflare.com/)
-- [Uber Blog](http://eng.uber.com/)
-
-### Other Topics
-
-- [.NET Developer Roadmap](https://github.com/milanm/DotNet-Developer-Roadmap)
-- [A periodic table for machine learning](https://www.microsoft.com/en-us/research/articles/a-periodic-table-for-machine-learning/):🔬A visual guide to machine learning concepts and techniques
-- [Celebrate 50 years of Microsoft with the company's original source code: Altair Basic](https://www.gatesnotes.com/microsoft-original-source-code)
-- [Every GPU — Data Viz](https://sheets.works/data-viz/every-gpu): Visual comparison of GPU specs and performance across generations
-- [Frugal Architect Handbook](http://thefrugalarchitect.com/)
-- [Generative Search: Practical Advice for Retrieval Augmented Generation (RAG)](https://www.infoq.com/presentations/vector-embedding-llm/)
-- [How to Architect Software for a Greener Future](https://www.infoq.com/articles/architect-software-for-greener-future)
-- [What are the Greenest Programming Languages?](https://datasciencelearningcenter.substack.com/p/what-are-the-greenest-software-programming)
+- [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery): AI-powered paper discovery tool
+- [Connected Papers](https://www.connectedpapers.com/): Explore connected academic papers
+- [Liner](https://getliner.com/): AI research tool for highlighting and annotating
+- [Litmaps](https://www.litmaps.com): Visualize relationships between research papers
+- [Moonlight](https://www.themoonlight.io/en): Browser extension for academic research
+- [scite_](https://scite.ai/): Smart citation analysis and discovery
+- [Semantic Scholar](https://www.semanticscholar.org): AI-powered academic search engine
 
 ### Transformer Architecture (LLM Foundations)
 
@@ -255,6 +247,26 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 - [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
 - [Why Momentum Really Works](https://distill.pub/2017/momentum/)
+
+##### Visual Learning 
+
+- [Assembly code visualizer](https://asm.diveintosystems.org): Visualize Your Assembly Code
+- [explorar.dev](https://explorar.dev/torvalds/linux): Explore curated open-source repositories with an interactive code browser.
+- [Idea Instructions](https://idea-instructions.com/): Complex concepts explained as IKEA-style visual instructions
+- [Linux Kernel Map](https://makelinux.github.io/kernel/map/): Interactive visual map of the Linux kernel subsystems
+- [Making Software](https://www.makingsoftware.com/): Visual explanations of how software works under the hood
+- [Understanding the Linux Kernel, Visually](https://jm233333.github.io/assets/papers/visualinux-eurosys25.pdf)
+
+### Other Topics
+
+- [.NET Developer Roadmap](https://github.com/milanm/DotNet-Developer-Roadmap)
+- [A periodic table for machine learning](https://www.microsoft.com/en-us/research/articles/a-periodic-table-for-machine-learning/):🔬A visual guide to machine learning concepts and techniques
+- [Celebrate 50 years of Microsoft with the company's original source code: Altair Basic](https://www.gatesnotes.com/microsoft-original-source-code)
+- [Every GPU — Data Viz](https://sheets.works/data-viz/every-gpu): Visual comparison of GPU specs and performance across generations
+- [Frugal Architect Handbook](http://thefrugalarchitect.com/)
+- [Generative Search: Practical Advice for Retrieval Augmented Generation (RAG)](https://www.infoq.com/presentations/vector-embedding-llm/)
+- [How to Architect Software for a Greener Future](https://www.infoq.com/articles/architect-software-for-greener-future)
+- [What are the Greenest Programming Languages?](https://datasciencelearningcenter.substack.com/p/what-are-the-greenest-software-programming)
 
 ### Computer Science Books
 
@@ -333,10 +345,6 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Transmission Control Protocol (1981)](https://archive.org/details/rfc793): J. Postel | [A TCP/IP Tutorial (1991)](https://archive.org/details/rfc1180): a tutorial on the TCP/IP protocol 
 - [Why Functional Programming Matters (1990)](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf): J. Hughes 
 
-### 70+ Distributed Systems papers
-
-- Here's a reading list of 70+ Distributed Systems papers *mostly from conferences in just last 2 years*! [70+ Distributed Systems papers](https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit) [Jan 2024]
-
 ### 25 Papers That Completely Transformed the Computer World
 
 - [Amazon Aurora](https://web.stanford.edu/class/cs245/readings/aurora.pdf): How Amazon provides high availability and performance  
@@ -365,7 +373,13 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Zanzibar](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/d84ab6c93881af998de877d0070a706de7bec6d8.pdf): A look at the design, implementation, and deployment of a global system for managing access control lists at Google  
 
 ### The best NLP papers from 2015 to now
-- [The best NLP papers](https://thebestnlppapers.com/nlp/papers/all/): 🔬 A curated collection of influential NLP papers
+- [The best NLP papers](https://thebestnlppapers.com/nlp/papers/all/): 🔬A curated collection of influential NLP papers
+- [Downloaded PDFS - 100 files](files/papers/paper_index.md#the-best-nlp-papers-from-2015-to-now) 
+
+### 70+ Distributed Systems papers
+
+- Here's a reading list of 70+ Distributed Systems papers *mostly from conferences in just last 2 years*! [70+ Distributed Systems papers](https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit) [Jan 2024]
+- [Downloaded PDFS - 72 files](files/papers/paper_index.md#70-distributed-systems-papers) 
 
 ## Data Science (ML/NN)
 
