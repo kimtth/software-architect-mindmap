@@ -29,8 +29,8 @@
     - [Other Topics](#other-topics)
     - [Computer Science Books](#computer-science-books)
 - **Section 3**: [Computer Science Papers](#computer-science-papers)
-    - [Computer Science Papers Every Developer Should Read](#computer-science-papers-every-developer-should-read-ref)
-    - [25 Papers That Completely Transformed the Computer World](#25-papers-that-completely-transformed-the-computer-world-ref)
+    - [Computer Science Papers Every Developer Should Read](#computer-science-papers-every-developer-should-read)
+    - [25 Papers That Completely Transformed the Computer World](#25-papers-that-completely-transformed-the-computer-world)
     - [The best NLP papers from 2015 to now](#the-best-nlp-papers-from-2015-to-now)
     - [70+ Distributed Systems papers](#70-distributed-systems-papers)
 - **Section 4**: [Data Science (ML/NN)](#data-science-mlnn)
@@ -333,6 +333,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 ### Computer Science Papers Every Developer Should Read
 
+- [Downloaded PDFs - 12 files](files/papers/paper_index.md#computer-science-papers-every-developer-should-read)
 - [An Axiomatic Basis for Computer Programming (1969)](http://sunnyday.mit.edu/16.355/Hoare-CACM-69.pdf): C.A.R. Hoare  
 - [A Metrics Suite for Object-Oriented Design (1994)](https://sites.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf): S.R. Chidamber  
 - [A Note On Distributed Computing (1994)](https://scholar.harvard.edu/files/waldo/files/waldo-94.pdf): J. Waldo, G. Wyant, A. Wollrath, S. Kendall  
@@ -347,6 +348,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 ### 25 Papers That Completely Transformed the Computer World
 
+- [Downloaded PDFs - 25 files](files/papers/paper_index.md#25-papers-that-completely-transformed-the-computer-world)
 - [Amazon Aurora](https://web.stanford.edu/class/cs245/readings/aurora.pdf): How Amazon provides high availability and performance  
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762): Into a new deep learning architecture known as the transformer  
 - [BigTable](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf): The design principles behind a distributed storage system  

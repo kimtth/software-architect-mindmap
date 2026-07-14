@@ -3,3 +3,4 @@
 main.py
 pyproject.toml
 uv.lock
+*.ps1
