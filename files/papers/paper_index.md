@@ -6,7 +6,7 @@ ms.date: 2026-07-14
 
 ## Papers
 
-### 25 Papers That Completely Transformed the Computer World
+### 25 Papers That Completely Transformed the Computer World | [Study notes](paper_abstract_core.md)
 
 1. Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases | [Source](https://dl.acm.org/doi/pdf/10.1145/3035918.3056101) | [Local file](25_transfrom/001-amazon-aurora-design-considerations-for-high-throughput-cloud-native-relational-2017.pdf)
 2. Bigtable: A Distributed Storage System for Structured Data | [Source](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf) | [Local file](25_transfrom/002-bigtable-a-distributed-storage-system-for-structured-data-2006.pdf)
@@ -34,7 +34,7 @@ ms.date: 2026-07-14
 24. A Comprehensive Survey on Vector Database: Storage and Retrieval Technique, Challenge | [Source](https://arxiv.org/pdf/2310.11703) | [Local file](25_transfrom/024-a-survey-on-vector-database-storage-and-retrieval-technique-challenge-2023.pdf)
 25. Zanzibar: Google's Consistent, Global Authorization System | [Source](https://www.usenix.org/system/files/atc19-pang.pdf) | [Local file](25_transfrom/025-zanzibar-google-s-consistent-global-authorization-system-2019.pdf)
 
-### Computer Science Papers Every Developer Should Read
+### Computer Science Papers Every Developer Should Read | [Study notes](paper_abstract_core.md)
 
 26. A Metrics Suite for Object Oriented Design | [Source](https://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf) | [Local file](cs_should_read/001-a-metrics-suite-for-object-oriented-design-1994.pdf)
 27. A Relational Model of Data for Large Shared Data Banks | [Source](https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf) | [Local file](cs_should_read/002-a-relational-model-of-data-for-large-shared-data-banks-1970.pdf)
@@ -49,7 +49,7 @@ ms.date: 2026-07-14
 36. A TCP/IP Tutorial | [Source](https://www.rfc-editor.org/rfc/pdfrfc/rfc1180.txt.pdf) | [Local file](cs_should_read/011-a-tcp-ip-tutorial-1991.pdf)
 37. A Note on Distributed Computing | [Source](https://www.cs.cmu.edu/~15-749/READINGS/required/intro/distributed.pdf) | [Local file](cs_should_read/012-a-note-on-distributed-computing-1994.pdf)
 
-### 70+ Distributed Systems Papers
+### 70+ Distributed Systems Papers | [Study notes](paper_abstract_dist.md)
 
 38. Time, Clocks, and the Ordering of Events in a Distributed System | [Source](https://lamport.azurewebsites.net/pubs/time-clocks.pdf) | [Local file](70_plus_dist/001-time-clocks-and-the-ordering-of-events-in-a-distributed-system-1978.pdf)
 39. QuePaxa: Escaping the Tyranny of Timeouts in Consensus | [Source](https://discovery.ucl.ac.uk/10181480/1/quepaxa.pdf) | [Local file](70_plus_dist/002-quepaxa-escaping-the-tyranny-of-timeouts-in-consensus-2023.pdf)
@@ -124,7 +124,7 @@ ms.date: 2026-07-14
 108. The Demikernel Datapath OS Architecture for Microsecond-Scale Datacenter Systems | [Source](https://irenezhang.net/papers/demikernel-sosp21.pdf) | [Local file](70_plus_dist/071-the-demikernel-datapath-os-architecture-for-microsecond-scale-datacenter-systems-2021.pdf)
 109. Twine: A Unified Cluster Management System for Shared Infrastructure | [Source](https://www.usenix.org/system/files/osdi20-tang.pdf) | [Local file](70_plus_dist/072-twine-a-unified-cluster-management-system-for-shared-infrastructure-2020.pdf)
 
-### The Best NLP Papers from 2015 to Now
+### The Best NLP Papers from 2015 to Now | [Study notes](paper_abstract_best_nlp.md)
 
 110. Attention Is All You Need | [Source](https://arxiv.org/abs/1706.03762) | [Local file](best_nlp/001-attention-is-all-you-need-2017.pdf)
 111. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding | [Source](https://arxiv.org/abs/1810.04805) | [Local file](best_nlp/002-bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-2018.pdf)

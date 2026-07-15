@@ -1,9 +1,11 @@
 # Software Architecture Mindmap
 
-> [!TIP]  
-> The mindmap can be opened and edited using [mindmap-maker-clean](https://github.com/kimtth/mindmap-maker-clean). You can also use it to convert the JSON source into a high-resolution PNG. Verified on Chrome and Firefox.
+- This repository was initially created for the mind map; currently, it is used as a curated collection of software architecture references. 
+- This mind map is based on the Fresco Play curriculum (the internal learning platform of Tata Consultancy Services). © 2022 
 
-<a href="https://trendshift.io/repositories/19612?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-19612" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/19612/daily" alt="kimtth%2Fsoftware-architect-mindmap | Trendshift" width="250" height="55"/></a>
+<div align="center">
+    <a href="https://trendshift.io/repositories/19612?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-19612" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/19612/daily" alt="kimtth%2Fsoftware-architect-mindmap | Trendshift" width="250" height="55"/></a>
+</div>
 
 ## Contents
 
@@ -43,17 +45,10 @@ Software terminologies and concepts, software architecture overview
 
 <img src="./Preview.png" width="50%">
 
-`Software_Architecture_Mindmap.png`
-
-**Three Main Pillars of Software Architecture:**
-
-- Modern Application Development
-- Cloud Computing (AWS/Azure/GCP)
-- Data Science (ML/NN)
+Software_Architecture_Mindmap.png: Application development, Cloud Computing, and Data science.
 
 > [!TIP]  
-> - This mind map is based on the Fresco Play curriculum (the internal learning platform of Tata Consultancy Services). © 2022 
-> - This repository was initially created for the mind map; currently, it is used as a curated collection of software architecture references. 
+> The mindmap can be opened and edited using [mindmap-maker-clean](https://github.com/kimtth/mindmap-maker-clean). You can also use it to convert the JSON source into a high-resolution PNG. Verified on Chrome and Firefox.
 
 <!--
 so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 100+ courses and 90%+ of the curriculum. the mind map covers most of topic in the platform. 
