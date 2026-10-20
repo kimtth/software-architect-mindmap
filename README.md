@@ -82,6 +82,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [Postman State of the API Report](https://www.postman.com/state-of-api)
 - [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista Industry Insight
 - [Stanford AI Index Annual Report](https://hai.stanford.edu/ai-index)
+- [State of Devs](https://stateofdevs.com/en-US)
 
 ### Trend Reports
 
@@ -143,12 +144,13 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [minimal GPT](https://www.k-a.in/minimalGPT.html)
 - [PyTorch internals](https://blog.ezyang.com/2019/05/pytorch-internals/)
 - [Web Browser Engineering](https://browser.engineering/): Building a basic but complete web browser from scratch
+- [How does a request travel in ~200ms?](https://200ms.thenodebook.com/)
 - [Writing an Operating System in 1,000 Lines](https://github.com/nuta/operating-system-in-1000-lines)
 
 ### Computer Science courses
 
 - AI learning portals: [Anthropic Academy](https://anthropic.skilljar.com/), [Google AI Training](https://grow.google/ai), [Meta AI Resources](https://ai.meta.com/resources/), [NVIDIA CUDA](https://developer.nvidia.com/cuda), [Microsoft Learn](https://learn.microsoft.com/en-us/training/), [OpenAI Academy](https://academy.openai.com/), [IBM SkillsBuild](https://skillsbuild.org/), [AWS Skill Builder](https://skillbuilder.aws/), [DeepLearning.AI](https://www.deeplearning.ai/), and [Hugging Face Learn](https://huggingface.co/learn)
-- [AI by Hand](https://byhand.ai)
+- [AI by Hand](https://byhand.ai) | [AI by Hand - Solutions](https://github.com/kimtth/learn-ai-by-hand-solution)
 - [Best-of Machine Learning with Python](https://github.com/ml-tooling/best-of-ml-python): A ranked list of awesome machine learning Python libraries. Updated weekly.
 - [Computer Networking Fundamentals For Developers, DevOps, and Platform Engineers](https://labs.iximiuz.com/courses/computer-networking-fundamentals)
 - [Computer Science courses with video lectures](https://github.com/Developer-Y/cs-video-courses)
@@ -177,6 +179,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 ### Mini-Books
 
 - [Agentic Architectures for Retrieval-intensive Applications](./files/minibooks/Weaviate%20Agentic%20Architectures-ebook.pdf)
+- [Building Evolutionary Architectures](https://www.infoq.com/minibooks/evolutionary-architecture/): InfoQ mini-book on guiding architecture to change over time with fitness functions
 - [Building a scalable authorization system](./files/minibooks/Building%20a%20scalable%20authorization%20system_%20a%20step-by-step%20blueprint.pdf)
 - [Google SRE Handbook](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals) 
 - [InfoQ Architectures You've Always Wondered About](https://www.infoq.com/minibooks/): 📖([Downloaded PDFs 2021 - 2025](./files/minibooks/)) 
@@ -210,6 +213,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 - [Data Engineering Wiki](https://dataengineering.wiki/Index): Data engineering resources and guides
 - [Dev Encyclopedia](https://devpedia.dev/): Encyclopedia for developers ([GitHub](https://github.com/Buzzpy/Dev-Encyclopedia))
+- [System Design Notes](https://github.com/liquidslr/system-design-notes)
 - [OOP Design Patterns](https://refactoring.guru/design-patterns): Object-oriented design patterns explained
 - [Paperdraw](https://paperdraw.dev/): System Design Simulator
 
@@ -231,6 +235,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 - [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery): AI-powered paper discovery tool
 - [Connected Papers](https://www.connectedpapers.com/): Explore connected academic papers
+- [Global Research Space](https://www.globalresearchspace.com)
 - [Liner](https://getliner.com/): AI research tool for highlighting and annotating
 - [Litmaps](https://www.litmaps.com): Visualize relationships between research papers
 - [Moonlight](https://www.themoonlight.io/en): Browser extension for academic research
@@ -261,6 +266,8 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 - [.NET Developer Roadmap](https://github.com/milanm/DotNet-Developer-Roadmap)
 - [A periodic table for machine learning](https://www.microsoft.com/en-us/research/articles/a-periodic-table-for-machine-learning/):🔬A visual guide to machine learning concepts and techniques
+- [AI made me doubt everything about programming - Felienne Hermans, DDD Europe 2026](https://youtu.be/0-6-f94n_9M): Tech is not neutral and programming culture favors "hard" over helpful. Real intellectual work is explaining and defending the theory behind code, which LLMs don't have. Build software that serves people, not just programmers.
+- [Are Ideas Getting Harder to Find?](https://www.nber.org/papers/w23782): Across industries, research effort has risen sharply while research productivity has fallen, so sustaining growth needs ever more researchers.
 - [Celebrate 50 years of Microsoft with the company's original source code: Altair Basic](https://www.gatesnotes.com/microsoft-original-source-code)
 - [Every GPU — Data Viz](https://sheets.works/data-viz/every-gpu): Visual comparison of GPU specs and performance across generations
 - [Frugal Architect Handbook](http://thefrugalarchitect.com/)
@@ -328,6 +335,20 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 - [AI Engineering](https://www.amazon.com/dp/1098166302) by Chip Huyen / [GitHub](https://github.com/chiphuyen/aie-book)
 - [Designing Machine Learning Systems](https://www.amazon.com/dp/1098107969) by Chip Huyen
 - [The Hundred-Page Machine Learning Book](https://www.amazon.com/dp/199957950X) by Andriy Burkov
+
+##### Foundations & Free Textbooks
+
+- [Algorithms + Data Structures = Programs](https://en.wikipedia.org/wiki/Algorithms_%2B_Data_Structures_%3D_Programs) by [Niklaus Wirth](https://en.wikipedia.org/wiki/Niklaus_Wirth): Classic showing that program design is inseparable from the choice of data structures and algorithms
+- 🆓 [Computer Networking: A Top-Down Approach](https://gaia.cs.umass.edu/kurose_ross/): Networking taught from the application layer down to the physical layer
+- 🆓 [Crafting Interpreters](https://craftinginterpreters.com/): Build two complete interpreters for a scripting language, from scratch
+- 🆓 [Deep Learning](https://www.deeplearningbook.org/): Goodfellow, Bengio, Courville's textbook covering math basics through modern deep networks
+- [Fundamentals of Software Engineering](https://www.oreilly.com/library/view/fundamentals-of-software/9781098143206/) by Nathaniel Schutta, Dan Vega: Practical overview of the core skills and practices of a software engineer
+- 🆓 [Game Programming Patterns](https://gameprogrammingpatterns.com/): Design patterns applied to game code, with a focus on performance and decoupling
+- 🆓 [Immersive Linear Algebra](http://immersivemath.com/ila/index.html): Interactive, visual introduction to linear algebra
+- 🆓 [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/): OS concepts organized around virtualization, concurrency, and persistence
+- 🆓 [Physically Based Rendering](https://pbrt.org/): Literate-programming guide to building a physically based ray tracer
+- 🆓 [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/): Jurafsky & Martin's NLP textbook, from basics to LLMs
+- [Thinking in Systems](https://www.amazon.com/dp/1603580557) by Donella Meadows, Diana Wright: Primer on stocks, flows, feedback loops, and finding leverage points in complex systems
 
 ## Computer Science Papers
 
@@ -443,6 +464,7 @@ so it does not cover all IT topics. I achieved a T-Factor of 3.99, completing 10
 
 - [Awesome Data Science](https://github.com/academic/awesome-datascience)
 - [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
+- [30u30](https://github.com/Ojhaharsh/30u30): Master Ilya's 30 Foundational AI Papers in 30 Days
 - [Data Science Python Notebooks](https://github.com/donnemartin/data-science-ipython-notebooks)
 - [Interactive Educational Data Science Python Dashboards](https://github.com/GeostatsGuy/DataScienceInteractivePython)
 - [Machine Learning for Beginners – Microsoft](https://github.com/microsoft/ML-For-Beginners)
