@@ -32,12 +32,14 @@
 
 **Architecture**
 
+1. [Architecture Documentation (C4, ADR, arc42)](#architecture-documentation-c4-adr-arc42)
 1. [Architecture Styles, Patterns, and Design Patterns](#architecture-styles-patterns-and-design-patterns)
 1. [Cloud Design Patterns](#cloud-design-patterns)
 1. [Domain-Driven Design (DDD)](#domain-driven-design-ddd)
 1. [Gartner's PACE Layered Application Strategy](#gartners-pace-layered-application-strategy)
 1. [Jevons paradox](#jevons-paradox)
 1. [Landing zone](#landing-zone)
+1. [Layered → Clean → Hexagonal Architecture (Ports and Adapters)](#layered--clean--hexagonal-architecture-ports-and-adapters)
 1. [Lehman's laws of software evolution](#lehmans-laws-of-software-evolution)
 1. [OKR (From OKR to Work item)](#okr-from-okr-to-work-item)
 1. [Popular Enterprise Architecture Frameworks](#popular-enterprise-architecture-frameworks)
@@ -251,6 +253,34 @@ References: [Milan Milanović - *Are Architecture Styles, Patterns, and Design P
     🔹 Creational: here we have Factory Method, Builder, Singleton, ...  
     🔹 Structural: here we have an Adapter, Bridge, and Decorator, ...  
     🔹 Behavioral: here we have Command, Iterator, State, Strategy, ...  
+
+---
+
+#### Architecture Documentation (C4, ADR, arc42)
+
+References: [*C4 · ADR · arc42*](https://youtu.be/LaLtZsRWFMc)
+
+🔹 **C4 model** (diagrams): four abstraction levels: Context, Container, Component, Code. In practice, Context and Container diagrams are usually enough; generate lower levels with IDE tooling.  
+🔹 **ADR** (Architecture Decision Record): a template (status, context, decision, consequences) that records *why* a decision was made, e.g. choosing Kafka.  
+🔹 **arc42** (structure): a 12-section documentation template. Fill in only the sections that suit the system and stakeholders (about 5 minimum).  
+🔹 **Relationship**: complementary, not competing. arc42 = what goes where, C4 = how to draw it, ADR = how to record decisions. Suggested adoption order: C4 Context diagram → ADRs → arc42 sections as needed.  
+🔹 Why it matters in the AI era: code shows *what*, not *why*; as AI speeds up implementation, fewer people know the core structure and decision rationale.  
+
+---
+
+#### Layered → Clean → Hexagonal Architecture (Ports and Adapters)
+
+References: [Alistair Cockburn - *Hexagonal Architecture*](https://alistair.cockburn.us/hexagonal-architecture/) | [Robert C. Martin - *The Clean Architecture*](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) | [Jeffrey Palermo - *The Onion Architecture*](https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/) | [Microsoft - *Architectural principles (Clean Architecture)*](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles)
+
+🔹 **Layered**: code is stacked in floors: screen, business rules, data access, database. Each floor depends on the one below it.  
+🔹 **Hexagonal** (Ports and Adapters): the business rules sit in the middle. They have sockets (ports). The database, screen, and tests plug in through adapters.  
+🔹 **Onion**: the business rules are the center. The database and screen are outer layers. Outer layers know the inner ones, never the other way.  
+🔹 **Clean**: the same idea, with named rings: business objects, use cases (like "place order"), adapters, tools. Code only depends inward.  
+
+🔹 **Layered → Hexagonal**: the database stops being the base of the stack. It becomes a plug-in, so you can swap it or fake it in tests.  
+🔹 **Hexagonal → Onion**: the middle gets rings of its own, so each kind of code has a clear place.  
+🔹 **Onion → Clean**: "depend only inward" becomes a strict rule. The ring for actions is named use cases.  
+🔹 **Trade-off**: more interfaces to write. Skip it for small apps. Use it when the rules are complex and the app will live for years.  
 
 ---
 
