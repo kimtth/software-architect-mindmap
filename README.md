@@ -19,10 +19,10 @@
     - [Cloud Architecture](#cloud-architecture)
     - [Computer Science courses](#computer-science-courses)
     - [Beginner Series by Microsoft](#beginner-series-by-microsoft)
-    - [Tools & Research](#tools--research)
     - [Engineering blog](#engineering-blog)
-    - [Other Topics](#other-topics)
     - [Transformer Architecture (LLM Foundations)](#transformer-architecture-llm-foundations)
+    - [Other Topics](#other-topics)
+    - [Tools & Research](#tools--research)
 - **Section 3**: [Computer Science Books](#computer-science-books)
 - **Section 4**: [Computer Science Papers](#computer-science-papers)
     - [Computer Science Papers Every Developer Should Read](#computer-science-papers-every-developer-should-read)
@@ -49,7 +49,7 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 ## Software Architecture Reference
 
 - [System Design 101](https://github.com/ByteByteGoHq/system-design-101): 🗺️ByteByteGo. System design basics explained with diagrams
-- [Awesome Lists](https://github.com/sindresorhus/awesome): 🗂️Lists of useful links on many topics / `awesome.re` / [github topic](https://github.com/topics/awesome)
+- [Awesome Lists](https://github.com/sindresorhus/awesome): 🗂️Lists of useful links on many topics / `awesome.re` / [GitHub Topic: `awesome`](https://github.com/topics/awesome)
 - [Ecosyste.ms: Awesome](https://awesome.ecosyste.ms/): Searchable index of awesome lists
 - [Awesome Software Architecture (simskij)](https://github.com/simskij/awesome-software-architecture): Architecture patterns, principles, and tools
 - [Awesome Software Architecture](https://github.com/mehdihadeli/awesome-software-architecture): Articles, videos, patterns, and principles
@@ -68,27 +68,25 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - [InfoQ Trends Reports](https://www.infoq.com/infoq-trends-report/): 📖([Downloaded PDFs 2019 and 2021 - 2025](./files/infoq_trends_report/))
 - [Dzone](https://dzone.com/): RefCards and Trend Reports
 - [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar 📖([archived PDFs vo.1 - vol.34](./files/tech_radar_thoughtworks/))
-- [Microsoft Learn](https://learn.microsoft.com/en-us/): 🪟Documentation and Code samples
 - [Trendshift](https://trendshift.io/): GitHub Trending repositories
-- [Design Gurus](https://www.designgurus.io/): Portal For Tech Interviews
 
 ### Industry Trends
 
 - [Software Industry Statistics](https://www.statista.com/markets/418/topic/484/software/#overview): Statista market figures
-- [Gartner Top Strategic Technology Trends 2024](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024): Ten key technology trends for 2024
+- [Gartner Top Strategic Technology Trends](https://www.gartner.com/en/information-technology/insights/top-technology-trends): Key technology trends for strategic planning
 - [MAD (ML/AI/Data) Landscape](https://mad.firstmark.com/): Map of companies in AI, machine learning, and data
-- [Hype Cycle for Emerging Technologies 2024](https://www.gartner.com/en/newsroom/press-releases/2024-08-21-gartner-2024-hype-cycle-for-emerging-technologies-highlights-developer-productivity-total-experience-ai-and-security): New technologies and how mature each one is
+- [Gartner Hype Cycle](https://www.gartner.com/en/research/methodologies/gartner-hype-cycle): Framework for assessing technology maturity and adoption
 - [Microsoft Digital Defense Report](https://aka.ms/MDDR): Cyber threat and protection trends
 - [Google DORA](https://dora.community/): DevOps performance research and metrics
 - [Postman State of the API Report](https://www.postman.com/state-of-api): Survey on API usage and tooling
 - [Stanford AI Index Annual Report](https://hai.stanford.edu/ai-index): Yearly data on AI research, spending, and policy
-- [State of Devs](https://stateofdevs.com/en-US)
+- [State of Devs](https://stateofdevs.com/en-US): Developer life survey
 
 ### Newsletter
 
 - [Substack Leaderboard](https://substack.com/browse/technology): Technology newsletters on Substack
 - [daily.dev](https://app.daily.dev): Personalized developer feed
-- [Hacker News](https://news.ycombinator.com/)
+- [Hacker News](https://news.ycombinator.com/): Tech news and discussions
 
 ### Mini-Books
 
@@ -133,15 +131,17 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - [Resources for architects and developers of multitenant solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/related-resources): Multitenant SaaS design links
 - [Data partitioning strategies](https://learn.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning-strategies): Splitting data across storage
 - [Azure FinOps Guide](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/the-azure-finops-guide/bc-p/4237205#M1023): Cloud cost management
-- [Modern Web App pattern for .NET](https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/dotnet/guidance) / [git](https://github.com/Azure/modern-web-app-pattern-dotnet): Design guide with sample .NET app
+- [Modern Web App pattern for .NET](https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/dotnet/guidance) / [GitHub](https://github.com/Azure/modern-web-app-pattern-dotnet): Design guide with sample .NET app
 - [AI agent orchestration patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#implementations-in-microsoft-semantic-kernel): How to make several AI agents work together
 
 ### Computer Science courses
 
+- [Microsoft Learn](https://learn.microsoft.com/en-us/): 🪟Documentation and Code samples
+- [Design Gurus](https://www.designgurus.io/): Portal For Tech Interviews
 - AI learning portals: [Anthropic Academy](https://anthropic.skilljar.com/), [Google AI Training](https://grow.google/ai), [Meta AI Resources](https://ai.meta.com/resources/), [NVIDIA CUDA](https://developer.nvidia.com/cuda), [Microsoft Learn](https://learn.microsoft.com/en-us/training/), [OpenAI Academy](https://academy.openai.com/), [IBM SkillsBuild](https://skillsbuild.org/), [AWS Skill Builder](https://skillbuilder.aws/), [DeepLearning.AI](https://www.deeplearning.ai/), and [Hugging Face Learn](https://huggingface.co/learn)
 - [Kaggle Solutions and Ideas](https://github.com/faridrashidi/kaggle-solutions): Examples from Kaggle competitions
 - [Best-of Machine Learning with Python](https://github.com/ml-tooling/best-of-ml-python): Ranked Python machine learning libraries, updated weekly
-- [freeCodeCamp](https://www.freecodecamp.org): Free coding lessons and exercises. [youtube](https://www.youtube.com/freecodecamp)
+- [freeCodeCamp](https://www.freecodecamp.org): Free coding lessons and exercises. / [YouTube](https://www.youtube.com/freecodecamp)
 - [Ultimate Collection of 60 YouTube Courses for 21 Programming Languages](https://dev.to/arjuncodess/ultimate-collection-of-60-youtube-courses-for-21-programming-languages-mega-list-47b5): YouTube courses by language
 - [Computer Science courses with video lectures](https://github.com/Developer-Y/cs-video-courses): University lectures grouped by topic
 - [Introduction to CUDA Programming for Python Developers](https://www.pyspur.dev/blog/introduction_cuda_programming): Using NVIDIA GPUs from Python
@@ -165,62 +165,6 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst): AR, VR, and mixed reality
 - [Mastering GitHub Copilot for AI Paired Programming](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming?WT.mc_id=academic-113596-abartolo): Using Copilot to write, test, and review code
 
-### Tools & Research
-
-##### Algorithm & Visualization
-- [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): Watch algorithms run step by step
-- [Netron](https://github.com/lutzroeder/netron): View layers and connections of a machine learning model
-- [Hello Algo](https://www.hello-algo.com/en/): Illustrated lessons on algorithms and data structures
-- [Wikipedia: List of Algorithms](https://www.wikiwand.com/en/articles/List_of_algorithms): Algorithms listed by type
-
-##### Design Patterns & Development
-- [System Design Notes](https://github.com/liquidslr/system-design-notes): Chapter-by-chapter notes on System Design Interview books
-- [Paperdraw](https://paperdraw.dev/): System Design Simulator
-- [OOP Design Patterns](https://refactoring.guru/design-patterns): Examples of common object-oriented patterns
-- [Dev Encyclopedia](https://devpedia.dev/): Definitions of software terms ([GitHub](https://github.com/Buzzpy/Dev-Encyclopedia))
-- [Data Engineering Wiki](https://dataengineering.wiki/Index): Data pipelines, storage, and platforms
-
-##### Research & Academic Tools
-- [Global Research Space](https://www.globalresearchspace.com)
-- [Semantic Scholar](https://www.semanticscholar.org): Search research papers with AI
-- [Liner](https://liner.com/): Highlight and annotate research papers
-- [Litmaps](https://www.litmaps.com): Map links between research papers
-- [Connected Papers](https://www.connectedpapers.com/): Find related papers in a visual graph
-- [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery): Find papers by asking a question
-- [scite_](https://scite.ai/): See how later papers cite a study
-- [Moonlight](https://www.themoonlight.io/en): Read research papers in a browser
-
-##### Diagramming & Visualization Tools
-- [Excalidraw](https://excalidraw.com/): Draw diagrams by hand
-- [Eraser.io](https://www.eraser.io/): Make diagrams from text
-- [PlantUML](https://plantuml.com/): UML diagrams from text
-- [GraphViz](https://graphviz.org/): Graph diagrams from DOT files
-- [Mermaid Diagram](https://mermaid.live): Flowcharts and sequence diagrams in Markdown
-
-##### Best Practices
-- [Google Engineering Practices Documentation](https://github.com/google/eng-practices)
-- [Wise Tech Stack](https://medium.com/wise-engineering/wise-tech-stack-2025-update-d0e63fe718c7): Platform engineering practices across Kubernetes, delivery, data, AI, and observability
-- [Robin Wieruch Blog](https://www.robinwieruch.de/blog/): React and TypeScript tutorials
-- [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Kubernetes tools listed by Bluelight Consulting
-- [PostgreSQL Wiki: Don't Do This](https://wiki.postgresql.org/wiki/Don%27t_Do_This): Common PostgreSQL mistakes
-- [Power BI DAX Patterns](https://www.daxpatterns.com/patterns/): Ready-made DAX formulas
-- [How To Secure A Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server): Steps to make a Linux server safer
-- [Crontab Guru](https://crontab.guru/): Cron expression editor
-
-##### Visual Learning 
-- [Assembly code visualizer](https://asm.diveintosystems.org): See how assembly instructions run
-- [explorar.dev](https://explorar.dev/torvalds/linux): Browse source code in an interactive view
-- [Idea Instructions](https://idea-instructions.com/): Ideas explained with IKEA-style pictures
-- [Linux Kernel Map](https://makelinux.github.io/kernel/map/): Map of Linux kernel parts
-- [Making Software](https://www.makingsoftware.com/): Pictures and explanations of how software works
-- [Understanding the Linux Kernel, Visually](https://jm233333.github.io/assets/papers/visualinux-eurosys25.pdf): Research paper on showing Linux data structures visually
-
-##### LLM-generated wiki
-
-- [Grokpedia](https://grokipedia.com/): Encyclopedia articles written by AI
-- [DeepWiki](https://deepwiki.org/): AI-made guides to code repositories
-- [Google Code Wiki](https://codewiki.google/): AI-made guides to code
-
 ### Engineering blog
 
 - [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
@@ -236,6 +180,17 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - [Slack Engineering](https://slack.engineering/)
 - [79 Engineering Blogs To Level Up Your System Design Skills](https://blog.bytebytego.com/p/79-engineering-blogs-to-level-up): Links to engineering blogs from many companies
 
+### Transformer Architecture (LLM Foundations)
+
+- [How Top AI Labs Are Building RL Agents in 2026](https://blog.dailydoseofds.com/p/how-top-ai-labs-are-building-rl-agents): RLHF, verifiable rewards, GRPO, and LLM-as-a-judge reward signals for agent training
+- [LLM Architecture Gallery](https://github.com/rasbt/llm-architecture-gallery)
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762): Paper that introduced the Transformer
+- [Interactive Reinforcement Learning Explorer](https://www.alphaxiv.org/labs/rl-playground): Try how agents learn from rewards
+- [LLM Visualization](https://bbycroft.net/llm): 3D view of how a GPT model works
+- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/): Drawings that explain attention in Transformers
+- [Transformer Explainer](https://poloclub.github.io/transformer-explainer/): Interactive view of how a Transformer predicts text
+- [Why Momentum Really Works](https://distill.pub/2017/momentum/): Interactive explanation of momentum in model training
+
 ### Other Topics
 
 - [Are Ideas Getting Harder to Find?](https://www.nber.org/papers/w23782): Across industries, research effort has risen sharply while research productivity has fallen, so sustaining growth needs ever more researchers.
@@ -249,16 +204,67 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - [A periodic table for machine learning](https://www.microsoft.com/en-us/research/articles/a-periodic-table-for-machine-learning/): 🔬Visual map of machine learning methods
 - [Every GPU — Data Viz](https://sheets.works/data-viz/every-gpu): Compare GPU specs and performance across generations
 
-### Transformer Architecture (LLM Foundations)
+### Tools & Research
 
-- [How Top AI Labs Are Building RL Agents in 2026](https://blog.dailydoseofds.com/p/how-top-ai-labs-are-building-rl-agents): RLHF, verifiable rewards, GRPO, and LLM-as-a-judge reward signals for agent training
-- [LLM Architecture Gallery](https://github.com/rasbt/llm-architecture-gallery)
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762): Paper that introduced the Transformer
-- [Interactive Reinforcement Learning Explorer](https://www.alphaxiv.org/labs/rl-playground): Try how agents learn from rewards
-- [LLM Visualization](https://bbycroft.net/llm): 3D view of how a GPT model works
-- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/): Drawings that explain attention in Transformers
-- [Transformer Explainer](https://poloclub.github.io/transformer-explainer/): Interactive view of how a Transformer predicts text
-- [Why Momentum Really Works](https://distill.pub/2017/momentum/): Interactive explanation of momentum in model training
+#### Algorithm & Visualization
+
+- [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer): Watch algorithms run step by step
+- [Netron](https://github.com/lutzroeder/netron): View layers and connections of a machine learning model
+- [Hello Algo](https://www.hello-algo.com/en/): Illustrated lessons on algorithms and data structures
+- [Wikipedia: List of Algorithms](https://www.wikiwand.com/en/articles/List_of_algorithms): Algorithms listed by type
+
+#### Design Patterns & Development
+
+- [System Design Notes](https://github.com/liquidslr/system-design-notes): Chapter-by-chapter notes on System Design Interview books
+- [Paperdraw](https://paperdraw.dev/): System Design Simulator
+- [OOP Design Patterns](https://refactoring.guru/design-patterns): Examples of common object-oriented patterns
+- [Dev Encyclopedia](https://devpedia.dev/): Definitions of software terms ([GitHub](https://github.com/Buzzpy/Dev-Encyclopedia))
+- [Data Engineering Wiki](https://dataengineering.wiki/Index): Data pipelines, storage, and platforms
+
+#### Research & Academic Tools
+
+- [Global Research Space](https://www.globalresearchspace.com): Map-based research discovery
+- [Semantic Scholar](https://www.semanticscholar.org): Search research papers with AI
+- [Liner](https://liner.com/): Highlight and annotate research papers
+- [Litmaps](https://www.litmaps.com): Map links between research papers
+- [Connected Papers](https://www.connectedpapers.com/): Find related papers in a visual graph
+- [Ask R Discovery](https://discovery.researcher.life/ask-rdiscovery): Find papers by asking a question
+- [scite_](https://scite.ai/): See how later papers cite a study
+- [Moonlight](https://www.themoonlight.io/en): Read research papers in a browser
+
+#### Diagramming & Visualization Tools
+
+- [Excalidraw](https://excalidraw.com/): Draw diagrams by hand
+- [Eraser.io](https://www.eraser.io/): Make diagrams from text
+- [PlantUML](https://plantuml.com/): UML diagrams from text
+- [GraphViz](https://graphviz.org/): Graph diagrams from DOT files
+- [Mermaid Diagram](https://mermaid.live): Flowcharts and sequence diagrams in Markdown
+
+#### Best Practices
+
+- [Google Engineering Practices Documentation](https://github.com/google/eng-practices): Code review guidelines
+- [Wise Tech Stack](https://medium.com/wise-engineering/wise-tech-stack-2025-update-d0e63fe718c7): Platform engineering practices across Kubernetes, delivery, data, AI, and observability
+- [Robin Wieruch Blog](https://www.robinwieruch.de/blog/): React and TypeScript tutorials
+- [Best Kubernetes Tools](https://bluelight.co/blog/best-kubernetes-tools): Kubernetes tools listed by Bluelight Consulting
+- [PostgreSQL Wiki: Don't Do This](https://wiki.postgresql.org/wiki/Don%27t_Do_This): Common PostgreSQL mistakes
+- [Power BI DAX Patterns](https://www.daxpatterns.com/patterns/): Ready-made DAX formulas
+- [How To Secure A Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server): Steps to make a Linux server safer
+- [Crontab Guru](https://crontab.guru/): Cron expression editor
+
+#### Visual Learning 
+
+- [Assembly code visualizer](https://asm.diveintosystems.org): See how assembly instructions run
+- [explorar.dev](https://explorar.dev/torvalds/linux): Browse source code in an interactive view
+- [Idea Instructions](https://idea-instructions.com/): Ideas explained with IKEA-style pictures
+- [Linux Kernel Map](https://makelinux.github.io/kernel/map/): Map of Linux kernel parts
+- [Making Software](https://www.makingsoftware.com/): Pictures and explanations of how software works
+- [Understanding the Linux Kernel, Visually](https://jm233333.github.io/assets/papers/visualinux-eurosys25.pdf): Research paper on showing Linux data structures visually
+
+#### LLM-generated wiki
+
+- [Grokpedia](https://grokipedia.com/): Encyclopedia articles written by AI
+- [DeepWiki](https://deepwiki.org/): AI-made guides to code repositories
+- [Google Code Wiki](https://codewiki.google/): AI-made guides to code
 
 ## Computer Science Books
 
@@ -319,7 +325,7 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 
 - 🆓 [The Hundred-Page Machine Learning Book](https://themlbook.com/wiki/doku.php) by Andriy Burkov: Short introduction to machine learning (read first, buy later)
 - [Designing Machine Learning Systems](https://www.amazon.com/dp/1098107969) by Chip Huyen: Building and running machine learning systems
-- [AI Engineering](https://www.amazon.com/dp/1098166302) by Chip Huyen / [git](https://github.com/chiphuyen/aie-book): Building applications with large language models
+- [AI Engineering](https://www.amazon.com/dp/1098166302) by Chip Huyen / [GitHub](https://github.com/chiphuyen/aie-book): Building applications with large language models
 
 ### Foundations & Free Textbooks
 
@@ -339,7 +345,7 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 
 ### Computer Science Papers Every Developer Should Read
 
-- 📖[Downloaded PDFs - 12 files](files/papers/paper_index.md#computer-science-papers-every-developer-should-read--study-notes) | [Study notes](files/papers/paper_abstract_core.md#computer-science-papers-every-developer-should-read)
+- 📖 [Downloaded PDFs - 12 files](files/papers/paper_index.md#computer-science-papers-every-developer-should-read--study-notes) | [Study notes](files/papers/paper_abstract_core.md#computer-science-papers-every-developer-should-read)
 - [On the Criteria To Be Used in Decomposing Systems into Modules (1972)](https://win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf): D.L. Parnas – keep each module's inner workings hidden
 - [An Axiomatic Basis for Computer Programming (1969)](http://sunnyday.mit.edu/16.355/Hoare-CACM-69.pdf): C.A.R. Hoare – ways to prove a program is correct
 - [Time, Clocks, and the Ordering of Events in a Distributed System (1978)](https://microsoft.com/en-us/research/publication/time-clocks-ordering-events-distributed-system/): L. Lamport – track which event happened before another
@@ -354,12 +360,12 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 
 ### 70+ Distributed Systems papers
 
-- 📖[Downloaded PDFS - 72 files](files/papers/paper_index.md#70-distributed-systems-papers--study-notes) | [Study notes](files/papers/paper_abstract_dist.md#70-distributed-systems-papers)
+- 📖 [Downloaded PDFS - 72 files](files/papers/paper_index.md#70-distributed-systems-papers--study-notes) | [Study notes](files/papers/paper_abstract_dist.md#70-distributed-systems-papers)
 - Here's a reading list of 70+ Distributed Systems papers *mostly from conferences in just last 2 years*! [70+ Distributed Systems papers](https://docs.google.com/document/d/1XX5ksgLVnkPE-dfeVDZPlv5NMbgxJqWmi13YEQt1t1o/edit) [Jan 2024]
 
 ### 25 Papers That Completely Transformed the Computer World
 
-- 📖[Downloaded PDFs - 25 files](files/papers/paper_index.md#25-papers-that-completely-transformed-the-computer-world--study-notes) | [Study notes](files/papers/paper_abstract_core.md#25-papers-that-completely-transformed-the-computer-world)
+- 📖 [Downloaded PDFs - 25 files](files/papers/paper_index.md#25-papers-that-completely-transformed-the-computer-world--study-notes) | [Study notes](files/papers/paper_abstract_core.md#25-papers-that-completely-transformed-the-computer-world)
 - [Dynamo](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf): Key-value store that stays available during failures
 - [Google File System](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf): Storing large files on many low-cost computers
 - [Scaling Memcached at Facebook](https://research.facebook.com/file/839620310074473/scaling-memcache-at-facebook.pdf): How Facebook runs a large cache
@@ -388,7 +394,7 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 
 ### The best NLP papers from 2015 to now
 
-- 📖[Downloaded PDFS - 100 files](files/papers/paper_index.md#the-best-nlp-papers-from-2015-to-now--study-notes) | [Study notes](files/papers/paper_abstract_best_nlp.md#the-best-nlp-papers-from-2015-to-now)
+- 📖 [Downloaded PDFS - 100 files](files/papers/paper_index.md#the-best-nlp-papers-from-2015-to-now--study-notes) | [Study notes](files/papers/paper_abstract_best_nlp.md#the-best-nlp-papers-from-2015-to-now)
 - [The best NLP papers](https://thebestnlppapers.com/nlp/papers/all/): 🔬List of important NLP papers
 
 ## Data Science (ML/NN)
@@ -399,7 +405,7 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 
 ### Machine Learning, Data Science & AI Books
 
-##### Machine Learning & Deep Learning
+#### Machine Learning & Deep Learning
 
 - 🆓 [Deep Learning](http://www.deeplearningbook.org/) – Ian Goodfellow, Yoshua Bengio, Aaron Courville
 - 🆓 [Dive into Deep Learning](https://d2l.ai/) – Aston Zhang et al.
@@ -413,7 +419,7 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - 🆓 [Machine Learning Engineering](https://www.mlebook.com/wiki/doku.php) – Andriy Burkov (read first, buy later)
 - 🆓 [Machine Learning Systems](https://www.mlsysbook.ai/): [Introduction to Machine Learning Systems](https://github.com/harvard-edge/cs249r_book) – Vijay Janapa Reddi
 
-##### Mathematics & Statistical Foundations
+#### Mathematics & Statistical Foundations
 
 - 🆓 [Mathematics for Machine Learning](https://mml-book.github.io/) – Deisenroth, Faisal, Ong
 - 🆓 [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) – Friedman, Tibshirani, Hastie
@@ -427,7 +433,7 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - 🆓 [Algorithms for Artificial Intelligence](https://robert-moss.com/pdf/alg4ai.pdf) – Moss
 - 🆓 [Calculus for Mathematicians, Computer Scientists, and Physicists](https://archive.org/details/calculus-for-mathematicians-computer-scientists-and-physicists-2008-andrew-d.-hwang) – Andrew D. Hwang
 
-##### Probabilistic, Special Topics
+#### Probabilistic, Special Topics
 
 - 🆓 [Probabilistic ML: An Introduction](https://probml.github.io/pml-book/book1.html) – Kevin P. Murphy
 - 🆓 [Probabilistic ML: Advanced Topics](https://probml.github.io/pml-book/book2.html) – Kevin P. Murphy
@@ -446,7 +452,7 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 
 ### Machine Learning, Data Science & AI Repositories
 
-##### Foundational Learning
+#### Foundational Learning
 
 - [30u30](https://github.com/Ojhaharsh/30u30): Master Ilya's 30 Foundational AI Papers in 30 Days
 - [Machine Learning for Beginners – Microsoft](https://github.com/microsoft/ML-For-Beginners): 12-week classical ML course
@@ -459,15 +465,15 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning): Machine learning libraries by language
 - [Interactive Educational Data Science Python Dashboards](https://github.com/GeostatsGuy/DataScienceInteractivePython): Interactive demos of data science concepts
 
-##### Deep Learning & Math
+#### Deep Learning & Math
 
-- [Deep Learning Book (MIT)](https://github.com/janishar/mit-deep-learning-book-pdf): PDF of the Goodfellow, Bengio, and Courville textbook
+- 🆓 [Deep Learning Book (MIT)](https://github.com/janishar/mit-deep-learning-book-pdf): PDF of the Goodfellow, Bengio, and Courville textbook
 - 🆓 [fastai Book (fastbook)](https://github.com/fastai/fastbook) | [Fast.ai courses](https://course.fast.ai/): Notebook-based deep learning course, code first
 - 🆓 [Mathematics for Machine Learning](https://github.com/mml-book/mml-book.github.io): Book website and materials
 - [labml.ai – Deep Learning Paper Implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations): Paper implementations with side-by-side notes
 - [Deep Learning Models by Rasbt](https://github.com/rasbt/deeplearning-models): Model implementations in PyTorch and TensorFlow notebooks
 
-##### Practical Skills & Production
+#### Practical Skills & Production
 
 - [Machine Learning Tutorials](https://github.com/ujjwalkarn/Machine-Learning-Tutorials): Tutorials and articles by topic
 - [Machine Learning ZoomCamp](https://github.com/alexeygrigorev/mlbookcamp-code): Code for the ML Bookcamp book and course
@@ -477,13 +483,13 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - [365 Data Science Flashcards](https://365datascience.com/flashcards/): Flashcards for data science terms
 - [openpilot – Driver Assistance System](https://github.com/commaai/openpilot): Open-source driver assistance software for cars
 
-##### Interviews & Cheatsheets
+#### Interviews & Cheatsheets
 
 - [CS 229 ML Cheatsheets](https://github.com/afshinea/stanford-cs-229-machine-learning): Stanford CS 229 summary sheets
 - [ML Interview Guide](https://github.com/Sroy20/machine-learning-interview-guide): Interview preparation topics
 - [Data Science Interview Q\&A](https://github.com/alexeygrigorev/data-science-interviews): Interview questions and answers
 
-##### Machine Learning Essentials
+#### Machine Learning Essentials
 
 - [StatQuest by Josh Starmer](https://www.youtube.com/user/joshstarmer): Statistics and ML videos
 - [Machine Learning Mastery by Jason Brownlee](https://machinelearningmastery.com/): ML tutorials with code examples
