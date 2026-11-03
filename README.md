@@ -239,6 +239,7 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - [PlantUML](https://plantuml.com/): UML diagrams from text
 - [GraphViz](https://graphviz.org/): Graph diagrams from DOT files
 - [Mermaid Diagram](https://mermaid.live): Flowcharts and sequence diagrams in Markdown
+- [Archboard](https://getarchboard.app/): Architecture, Kubernetes and C4 diagrams that people and AI agents edit together
 
 #### Best Practices
 
