@@ -26,3 +26,37 @@ Create five Markdown files for working memory and user guidance:
 ## Code Quality
 
 - **Very Important:** Keep the codebase compact, lean, concise, and clean.
+
+---
+
+# Principles
+- Prefer simplicity, clarity, and correctness.
+- Make the smallest change that fully solves the problem.
+- Avoid overengineering, unnecessary abstractions, and speculative complexity.
+- Follow existing project conventions and architecture.
+- Do not introduce backward compatibility unless explicitly required.
+
+# Implementation
+- Inspect relevant code before making changes.
+- Identify root causes; avoid superficial fixes.
+- Reuse existing components and dependencies.
+- Avoid unrelated refactoring or modifications.
+- Do not add dependencies without clear justification.
+- Preserve existing behavior outside the requested scope.
+
+# Execution
+- Act autonomously; do not stop at planning when implementation is requested.
+- Make reasonable assumptions and proceed.
+- Ask questions only when ambiguity materially affects correctness.
+- Prefer direct implementation over unnecessary discussion.
+
+# Verification
+- Run relevant tests and checks proportional to the change.
+- Add tests when they provide meaningful regression coverage.
+- Fix issues introduced by your changes.
+- Never claim verification that was not performed.
+
+# Completion
+- Ensure the implementation satisfies the request.
+- Update documentation when necessary.
+- Report changes, verification results, and known limitations concisely.
