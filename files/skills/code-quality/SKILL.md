@@ -1,4 +1,23 @@
-# Development Guidelines
+---
+name: code-quality
+description: Implement, fix, or refactor code with minimal scope, clear reasoning, and verification proportional to the change. Use when asked to improve code quality, resolve a defect, implement a feature, or make a focused refactor while following project conventions.
+---
+
+# Code Quality
+
+## When to Use
+
+Use this skill for implementation, bug fixes, and focused refactoring in an existing codebase.
+
+## Workflow
+
+1. Inspect the relevant code, documentation, and project conventions.
+2. Define the expected outcome and identify the root cause or required behavior.
+3. Resolve material ambiguity, then make the smallest complete change.
+4. Verify the outcome with the relevant tests, builds, integration checks, and runtime or visual checks.
+5. Update directly related documentation and report the result and known limitations.
+
+## Development Guidelines
 
 - **Simplicity First:** Write the minimum code required to solve the problem. Nothing speculative.
 - **Think Before Coding:** Don't assume. Don't hide confusion. Surface trade-offs.
@@ -29,14 +48,14 @@ Create five Markdown files for working memory and user guidance:
 
 ---
 
-# Principles
+## Principles
 - Prefer simplicity, clarity, and correctness.
 - Make the smallest change that fully solves the problem.
 - Avoid overengineering, unnecessary abstractions, and speculative complexity.
 - Follow existing project conventions and architecture.
 - Do not introduce backward compatibility unless explicitly required.
 
-# Implementation
+## Implementation
 - Inspect relevant code before making changes.
 - Identify root causes; avoid superficial fixes.
 - Reuse existing components and dependencies.
@@ -44,19 +63,19 @@ Create five Markdown files for working memory and user guidance:
 - Do not add dependencies without clear justification.
 - Preserve existing behavior outside the requested scope.
 
-# Execution
+## Execution
 - Act autonomously; do not stop at planning when implementation is requested.
 - Make reasonable assumptions and proceed.
 - Ask questions only when ambiguity materially affects correctness.
 - Prefer direct implementation over unnecessary discussion.
 
-# Verification
+## Verification
 - Run relevant tests and checks proportional to the change.
 - Add tests when they provide meaningful regression coverage.
 - Fix issues introduced by your changes.
 - Never claim verification that was not performed.
 
-# Completion
+## Completion
 - Ensure the implementation satisfies the request.
 - Update documentation when necessary.
 - Report changes, verification results, and known limitations concisely.
