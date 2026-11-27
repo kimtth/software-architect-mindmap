@@ -1,6 +1,7 @@
 $BaseUrl = "https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar"
 
 $Radars = @{
+    35 = "2026/11"
     34 = "2026/04"
     33 = "2025/10"
     32 = "2025/04"

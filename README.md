@@ -67,7 +67,7 @@ Software_Architecture_Mindmap.png: Application development, Cloud Computing, and
 - [InfoQ](https://www.infoq.com): News and Articles
 - [InfoQ Trends Reports](https://www.infoq.com/infoq-trends-report/): 📖([Downloaded PDFs 2019 and 2021 - 2025](./files/infoq_trends_report/))
 - [Dzone](https://dzone.com/): RefCards and Trend Reports
-- [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar 📖([archived PDFs vo.1 - vol.34](./files/tech_radar_thoughtworks/))
+- [Thoughtworks](https://www.thoughtworks.com/radar): Technology Radar 📖([archived PDFs vo.1 - vol.35](./files/tech_radar_thoughtworks/))
 - [Trendshift](https://trendshift.io/): GitHub Trending repositories
 
 ### Industry Trends

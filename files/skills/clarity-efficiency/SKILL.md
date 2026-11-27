@@ -1,4 +1,21 @@
-## Clear Writing & Token Efficiency
+---
+name: clarity-efficiency
+description: Write or revise technical documents, comments, UI text, and chat responses in clear, concise English without losing accuracy. Use when asked to simplify wording, improve readability, remove repetition, or reduce token use while preserving essential context.
+---
+
+# Clear Writing and Token Efficiency
+
+## When to Use
+
+Use this skill when writing or revising text for clarity, readability, and brevity. Apply the chat-specific rules only to chat responses.
+
+## Workflow
+
+1. Identify the audience, purpose, and facts that must remain unchanged.
+2. Apply the before-writing checks in section 6.
+3. Draft or revise the text using the wording, terminology, and structure rules below.
+4. Remove repetition without removing necessary context or technical distinctions.
+5. Apply the before-delivery review in section 6.
 
 Write documents, comments, UI text, and chat responses so that a 12-year-old can understand them. Keep the text short, but never at the cost of clarity.
 
